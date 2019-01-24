@@ -1,0 +1,164 @@
+<#+
+public class ModelManager
+    {
+        /// <summary>
+        /// 根据表名查询表结构信息
+        /// </summary>
+        private const string SELECT_SCHEMA_BY_TABLE_NAME = @"SELECT A.column_name    字段名,                                                                                           
+                                                                    A.data_type      数据类型,
+                                                                    A.data_length    长度,
+                                                                    A.data_precision 整数位,
+                                                                    A.Data_Scale     小数位,
+                                                                    A.nullable       允许空值,
+                                                                    A.Data_default   缺省值,
+                                                                    B.comments       备注,
+                                                                    A.TABLE_NAME     表名
+                                                                    FROM user_tab_columns A, user_col_comments B
+                                                                    WHERE a.COLUMN_NAME = b.column_name
+                                                                    AND A.Table_Name = B.Table_Name
+                                                                    AND A.Table_Name = '{0}'";
+
+        /// <summary>
+        /// 获得数据连接
+        /// </summary>
+        /// <returns></returns>
+        private OracleConnection GetConnection()
+        {
+            return new OracleConnection(config.ConnectionString);
+        }
+
+        /// <summary>
+        /// 得到当前用户的所有表名
+        /// </summary>
+        /// <returns></returns>
+        public List<string> GetTableList()
+        {
+            string sql = "SELECT * FROM USER_TABLES";
+            DataTable dt = OracleHelper.ExecuteDataTable(sql);
+            List<string> list = new List<string>();
+            if (dt!=null&&dt.Rows.Count>0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    list.Add(dt.Rows[i]["TABLE_NAME"].ToString());
+                } 
+            }
+            return list;
+         }
+
+        public DataTable GetTableSchema(string tableName)
+        {
+            DataTable dt;
+            using (OracleConnection con = GetConnection())
+            {
+                con.Open();
+                OracleCommand cmd = con.CreateCommand();
+                cmd.CommandText = string.Format(SELECT_SCHEMA_BY_TABLE_NAME,tableName);
+                cmd.CommandType = CommandType.Text;
+                OracleDataAdapter adapter = new OracleDataAdapter(cmd);
+                DataSet ds = new DataSet(); 
+                adapter.Fill(ds);
+                dt = ds.Tables[0];
+            }
+
+            return dt;
+        }
+
+        /// <summary>
+        /// SQL[不完善,需要的自己改造]
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public string TransFromSqlType(string type)
+        {
+            if (string.IsNullOrEmpty(type))
+            {
+                return string.Empty;
+            }
+            if (string.Equals(type, "number", StringComparison.OrdinalIgnoreCase))
+            {
+                return "int";
+            }
+            if (string.Equals(type, "date", StringComparison.OrdinalIgnoreCase))
+            {
+                return "DateTime";
+            }
+            else if (string.Equals(type, "nvarchar2", StringComparison.OrdinalIgnoreCase))
+            {
+                return "string";
+            }
+            return "string";
+        }
+    }
+
+	public class OracleHelper
+    {
+
+        private static string ConnectionString = config.ConnectionString;
+
+
+        public static DataTable ExecuteDataTable(string sql, params OracleParameter[] paramList)
+        {
+            using (OracleConnection conn = new OracleConnection(ConnectionString))
+            {
+                conn.Open();
+                using (OracleCommand command = conn.CreateCommand())
+                {
+                    command.CommandText = sql;
+
+                    command.Parameters.AddRange(paramList);
+
+                    DataTable dt = new DataTable();
+
+                    OracleDataAdapter adapter = new OracleDataAdapter(command);
+
+                    adapter.Fill(dt);
+
+                    return dt;
+                }
+            }
+        }
+
+        public static int ExecuteNonQuery(string sql, params OracleParameter[] paramList)
+        {
+            using (OracleConnection conn = new OracleConnection(ConnectionString))
+            {
+                conn.Open();
+                using (OracleCommand command = conn.CreateCommand())
+                {
+                    command.CommandText = sql;
+                    command.Parameters.AddRange(paramList);
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public static object ExecuteScalar(string sql, params OracleParameter[] paramList)
+        {
+            using (OracleConnection conn = new OracleConnection(ConnectionString))
+            {
+                conn.Open();
+                using (OracleCommand command = conn.CreateCommand())
+                {
+                    command.CommandText = sql;
+                    command.Parameters.AddRange(paramList);
+
+                    return command.ExecuteScalar();
+                }
+            }
+        }
+    }
+
+class config
+	{
+		
+        public static readonly string ConnectionString = "Data Source=11.11.185.98/ZBCMISPRODUCT;User ID=SCOTT;Password=TIGER";
+        public static readonly string DbDatabase = "";
+        public static readonly string TableName = "";
+		public static readonly string ModelNameSpace = "Blog.Entities";
+		public static readonly string IRepositoryNameSpace = "Blog.IRepository";
+		public static readonly string RepositoryNameSpace = "Blog.Repository";
+		public static readonly string IServicesNameSpace = "Blog.IServices";
+		public static readonly string ServicesNameSpace = "Blog.Services";
+	}#>

@@ -1,0 +1,132 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="System.Data.OracleClient" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Data.OracleClient" #>
+
+<#@ include file="$(ProjectDir)OracleHelper.ttinclude"  #>
+<#@ include file="$(ProjectDir)ModelAuto.ttinclude"	#>
+
+
+<# 
+    var OutputPath1 = Path.GetDirectoryName(Host.TemplateFile)+"\\work";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+	#> 
+<# var manager = new Manager(Host, GenerationEnvironment, true) { OutputPath = OutputPath1 }; #>
+
+<# 
+	var tableName=config.TableName;
+ #>
+<# 
+if(tableName!=""){
+    #>  
+<# manager.StartBlock(tableName +"Service"+".cs"); #>
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+using <#=config.IServicesNameSpace#>;
+
+namespace <#=config.ServicesNameSpace#>
+{	
+	/// <summary>
+	/// <#=tableName#>Service
+	/// </summary>	
+	public class <#=tableName#>Service : BaseService<<#=tableName#>>, I<#=tableName#>Service
+    {
+        I<#=tableName#>Repository _repository;
+
+        public <#=tableName#>Service(I<#=tableName#>Repository repository) : base(repository)
+        {
+            _repository = repository;
+        }  
+    }
+}
+
+<# 
+  manager.EndBlock();
+  manager.Process(true);
+    } else{ 
+
+	#>
+
+<# 
+    OracleConnection conn = new OracleConnection(config.ConnectionString); 
+    conn.Open(); 
+    System.Data.DataTable schema = conn.GetSchema("TABLES", new string[]{"SCOTT"}); 
+ #>
+
+<# 
+    foreach(System.Data.DataRow row in schema.Rows) 
+    {  
+		manager.StartBlock(row["TABLE_NAME"].ToString()+"Service"+".cs");
+	 #>
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+using <#=config.IServicesNameSpace#>;
+
+namespace <#=config.ServicesNameSpace#>
+{	
+	/// <summary>
+	/// <#=row["TABLE_NAME"].ToString()#>Service
+	/// </summary>	
+	public class <#=row["TABLE_NAME"].ToString()#>Service : BaseService<<#=row["TABLE_NAME"].ToString()#>>, I<#=row["TABLE_NAME"].ToString() #>Service
+    {
+	
+        I<#=row["TABLE_NAME"].ToString() #>Repository _repository;
+
+        public <#=row["TABLE_NAME"].ToString() #>Service(I<#=row["TABLE_NAME"].ToString() #>Repository repository) : base(repository)
+        {
+            _repository = repository;
+        }
+       
+    }
+}
+	<# 
+		manager.EndBlock(); 
+		} 
+
+		{  
+		manager.StartBlock("BaseService.cs");
+	 #>
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+using <#=config.IServicesNameSpace#>;
+
+namespace <#=config.ServicesNameSpace#>
+{	
+	/// <summary>
+	/// IBaseRepository
+	/// </summary>	
+	public class BaseService<TEntity> : IBaseService<TEntity> where TEntity : class, new()
+    {
+		public IBaseRepository<TEntity> _repository;
+
+		public BaseService(IBaseRepository<TEntity> repository)
+        {
+            _repository = repository;
+        }
+    }
+}
+	<# 
+		manager.EndBlock(); 
+		} 
+
+		manager.Process(true);
+	}
+	#> 
+

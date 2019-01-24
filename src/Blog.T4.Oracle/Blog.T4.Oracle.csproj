@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Blog.Entities\App.Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.Entities.cs</LastGenOutput>
+    </None>
+    <None Update="Blog.IRepository\App.IRepository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.IRepository.cs</LastGenOutput>
+    </None>
+    <None Update="App.IServices\App.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="App.Repository\App.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="App.Services\App.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.Services.cs</LastGenOutput>
+    </None>
+    <None Update="Blog.IServices\App.IServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.IServices.cs</LastGenOutput>
+    </None>
+    <None Update="Blog.Repository\App.Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.Repository.cs</LastGenOutput>
+    </None>
+    <None Update="Blog.Services\App.Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>App.Services.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Blog.Entities\App.Entities.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Blog.IRepository\App.IRepository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.IRepository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="App.IServices\App.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="App.Repository\App.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="App.Services\App.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.Services.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Blog.IServices\App.IServices.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.IServices.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Blog.Repository\App.Repository.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Blog.Services\App.Services.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>App.Services.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

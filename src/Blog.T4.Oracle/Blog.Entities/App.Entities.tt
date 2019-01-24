@@ -1,0 +1,68 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Data" #>
+<#@ assembly name="System.Data.OracleClient" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.OracleClient" #>
+<#@ import namespace="System.Collections.Generic"#>
+
+<#@ include file="$(ProjectDir)OracleHelper.ttinclude"  #>
+<#@ include file="$(ProjectDir)ModelAuto.ttinclude"	#>
+
+<#
+  var OutputPath1 = Path.GetDirectoryName(Host.TemplateFile)+"\\work";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+    var manager2 = new Manager(Host, GenerationEnvironment, true) { OutputPath = OutputPath1 };
+#>
+<# 
+ModelManager manager = new ModelManager();
+List<string> list=manager.GetTableList();
+#>
+
+<# 
+    foreach (var item in list)
+    {
+		string tableName=item;
+        DataTable table= manager.GetTableSchema(tableName);
+ #>
+
+ <# 
+		manager2.StartBlock(tableName+".cs");
+ #>
+using System;
+using System.Data;
+
+namespace <#=config.ModelNameSpace#>
+{
+    /// <summary>
+    /// <#= tableName #> 
+    /// </summary>
+	public class <#= tableName #>
+	{
+<#
+foreach(DataRow row in table.Rows)
+{
+#>
+	   /// <summary>
+	   /// <#=row["备注"]#>
+	   /// </summary>     
+	   public <#= manager.TransFromSqlType(row["数据类型"].ToString())#> <#=row["字段名"]#>{ get; set; }
+
+<#}
+#>
+	}
+}
+
+<# manager2.EndBlock(); #>
+
+<#
+    }  
+ #>	 
+   
+<# manager2.Process(true); #>

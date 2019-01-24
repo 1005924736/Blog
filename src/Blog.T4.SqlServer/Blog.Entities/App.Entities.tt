@@ -1,0 +1,91 @@
+﻿<#@ template debug="false" hostspecific="True" language="C#" #>
+<#@ output extension=".cs" #>
+
+<#@ assembly name="System.Data" #>
+<#@ assembly name="System.xml" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Data" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+
+<#@ include file="$(ProjectDir)SqlServerHelper.ttinclude"  #>
+<#@ include file="$(ProjectDir)ModelAuto.ttinclude"	#>
+
+<# 
+    var OutputPath1 = Path.GetDirectoryName(Host.TemplateFile)+"\\work";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+	 var manager = new Manager(Host, GenerationEnvironment, true) { OutputPath = OutputPath1 }; 
+#>
+
+
+<# 
+	var tableName=config.TableName;
+ #>
+<# 
+if(tableName!="")
+{
+#>  
+<# 
+    manager.StartBlock(tableName+".cs");
+#>
+using System;
+
+namespace <#=config.ModelNameSpace#>
+{	
+	/// <summary>
+	/// <#=tableName#>
+	/// </summary>	
+	public class <#=tableName#>
+	{
+<# foreach(DbColumn column in SqlServerHelper.GetDbColumns(config.ConnectionString, config.DbDatabase, config.TableName)){#>
+		public <#= column.CSharpType#><# if(column.CommonType.IsValueType && column.IsNullable){#>?<#}#> <#=column.ColumnName#> { get; set; }
+<#}#> 
+	}
+}
+<# manager.EndBlock();
+manager.Process(true);
+}
+else
+{ 
+#>
+<# 
+    SqlConnection conn = new SqlConnection(config.ConnectionString); 
+    conn.Open(); 
+    System.Data.DataTable schema = conn.GetSchema("TABLES"); 
+ #>
+<# 
+    foreach(System.Data.DataRow row in schema.Rows) 
+    {  #>
+		<# 
+			manager.StartBlock(row["TABLE_NAME"]+".cs");
+		 #>
+using System;
+
+namespace <#=config.ModelNameSpace#>
+{	
+	/// <summary>
+	/// <#=row["TABLE_NAME"].ToString()#>
+	/// </summary>	
+	public class <#=row["TABLE_NAME"].ToString()#>
+	{
+ <# foreach(DbColumn column in SqlServerHelper.GetDbColumns(config.ConnectionString, config.DbDatabase, row["TABLE_NAME"].ToString())){ #>
+	    public <#= column.CSharpType#><# if(column.CommonType.IsValueType && column.IsNullable){#>?<#}#> <#=column.ColumnName#> { get; set; }
+ <#}#>
+	}
+}
+	<# 
+		manager.EndBlock(); 
+		}
+		manager.Process(true);
+	}
+	#> 
+

@@ -1,0 +1,111 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="System.Data.OracleClient" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Data.OracleClient" #>
+
+<#@ include file="$(ProjectDir)OracleHelper.ttinclude"  #>
+<#@ include file="$(ProjectDir)ModelAuto.ttinclude"	#>
+
+
+<# 
+    var OutputPath1 = Path.GetDirectoryName(Host.TemplateFile)+"\\work";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+	#> 
+<# var manager = new Manager(Host, GenerationEnvironment, true) { OutputPath = OutputPath1 }; #>
+
+<# 
+	var tableName=config.TableName;
+ #>
+<# 
+if(tableName!=""){
+    #> 
+<# manager.StartBlock("I"+ tableName +"Service"+".cs"); #>
+using System;
+using <#=config.ModelNameSpace#>;
+
+namespace <#=config.IServicesNameSpace#>
+{	
+	/// <summary>
+	/// I<#=tableName#>Service
+	/// </summary>	
+	public interface I<#=tableName#>Service :IBaseService<<#=tableName#>>
+    {
+
+    }
+}
+
+<# 
+  manager.EndBlock();
+  manager.Process(true);
+    } else{ 
+
+	#>
+
+<# 
+    OracleConnection conn = new OracleConnection(config.ConnectionString); 
+    conn.Open(); 
+    System.Data.DataTable schema = conn.GetSchema("TABLES", new string[]{"SCOTT"}); 
+ #>
+
+<# 
+    foreach(System.Data.DataRow row in schema.Rows) 
+    {  
+		manager.StartBlock("I"+row["TABLE_NAME"].ToString()+"Service"+".cs");
+	 #>
+using System;
+using <#=config.ModelNameSpace#>;
+
+namespace <#=config.IServicesNameSpace#>
+{	
+	/// <summary>
+	/// <#=row["TABLE_NAME"].ToString()#>Service
+	/// </summary>	
+    public interface I<#=row["TABLE_NAME"].ToString()#>Service :IBaseService<<#=row["TABLE_NAME"].ToString()#>>
+	{
+
+    }
+}
+
+	<# 
+		manager.EndBlock(); 
+		} 
+
+		{  
+		manager.StartBlock("IBaseService.cs");
+	 #>
+using System;
+using <#=config.ModelNameSpace#>;
+
+namespace <#=config.IServicesNameSpace#>
+{	
+	/// <summary>
+	/// IBaseRepository
+	/// </summary>	
+	public interface IBaseService<TEntity> where TEntity : class
+    {
+
+    }
+}
+
+	<# 
+		manager.EndBlock(); 
+		} 
+
+		manager.Process(true);
+	}
+	#> 
+

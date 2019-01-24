@@ -1,0 +1,109 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="System.Data.dll" #>
+<#@ assembly name="System.Data.DataSetExtensions.dll" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Data" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.IO" #>
+
+<#@ include file="$(ProjectDir)SqlServerHelper.ttinclude"  #>
+<#@ include file="$(ProjectDir)ModelAuto.ttinclude"	#>
+
+
+<# 
+    var OutputPath1 = Path.GetDirectoryName(Host.TemplateFile)+"\\work";
+	if (!Directory.Exists(OutputPath1))
+	{
+	    Directory.CreateDirectory(OutputPath1);
+	}
+	#> 
+<# var manager = new Manager(Host, GenerationEnvironment, true) { OutputPath = OutputPath1 }; #>
+
+<# 
+	var tableName=config.TableName;
+ #>
+<# 
+if(tableName!=""){
+    #>  
+<# manager.StartBlock(tableName +"Repository"+".cs"); #>
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+
+namespace <#=config.RepositoryNameSpace#>
+{	
+	/// <summary>
+	/// <#=tableName#>Repository
+	/// </summary>	
+	public class <#=tableName#>Repository : BaseRepository<<#=tableName#>>, I<#=tableName#>Repository
+    {
+
+    }
+}
+
+<#  manager.EndBlock();
+  manager.Process(true);
+    } else{ 
+
+	#>
+
+<# 
+    SqlConnection conn = new SqlConnection(config.ConnectionString); 
+    conn.Open(); 
+    System.Data.DataTable schema = conn.GetSchema("TABLES"); 
+ #>
+
+<# 
+    foreach(System.Data.DataRow row in schema.Rows) 
+    {  
+		manager.StartBlock(row["TABLE_NAME"].ToString()+"Repository"+".cs");
+	 #>
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+
+namespace <#=config.RepositoryNameSpace#>
+{	
+	/// <summary>
+	/// <#=row["TABLE_NAME"].ToString()#>Repository
+	/// </summary>	
+	public class <#=row["TABLE_NAME"].ToString()#>Repository : BaseRepository<<#=row["TABLE_NAME"].ToString()#>>, I<#=row["TABLE_NAME"].ToString() #>Repository
+    {
+
+    }
+}
+
+	<# 
+		manager.EndBlock(); 
+		} 
+
+		{  
+		manager.StartBlock("BaseRepository.cs");
+	 #>	
+using System;
+using <#=config.ModelNameSpace#>;
+using <#=config.IRepositoryNameSpace#>;
+
+namespace <#=config.RepositoryNameSpace#>
+{	
+	/// <summary>
+	/// IBaseRepository
+	/// </summary>	
+	 public  class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class, new()
+    {
+
+    }
+}
+	<# 
+		manager.EndBlock(); 
+		} 
+		manager.Process(true);
+	}
+	#> 
+
