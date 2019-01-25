@@ -1,4 +1,5 @@
-﻿using Blog.Common.Utils;
+﻿using System.IO;
+using Blog.Common.Utils;
 using Blog.Core;
 
 namespace Blog.SqlSugar.Generate
@@ -10,7 +11,9 @@ namespace Blog.SqlSugar.Generate
             //DbFirst dbFirst = new DbFirst();
             //dbFirst.Init();
 
-            string s = StrUtil.CamelName("TP_CMS_HTJBXX");
+            // string s = StrUtil.CamelName("TP_CMS_HTJBXX");
+
+            string path = Directory.GetCurrentDirectory();
         }
     }
 

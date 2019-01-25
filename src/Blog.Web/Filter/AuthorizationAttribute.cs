@@ -33,7 +33,7 @@ namespace Blog.Web.Filter
                 }
                 else
                 {
-                    context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/Main/Login/Index'</script>");
+                    context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/MainManage/Login/Index'</script>");
                 }
             }
             else
@@ -43,7 +43,7 @@ namespace Blog.Web.Filter
                 if (!ignore)
                 {
                     var currentUser = info.Deserialize<AuthorizationUser>();
-                    var _sysPermissionLogic = EngineContext.Current.Resolve<ISysPermissionService>();
+                    var _sysPermissionService = EngineContext.Current.Resolve<ISysPermissionService>();
                     var dic = context.ActionDescriptor.RouteValues;
                     //区域
                     string area = dic["area"];
@@ -57,7 +57,7 @@ namespace Blog.Web.Filter
                     }
                     //当前请求地址的虚拟路径
                     string currUrl = $"{area}/{controller}/{action}";
-                    bool isAuthorize = _sysPermissionLogic.CheckPermission(currentUser.RoleId, currUrl);
+                    bool isAuthorize = _sysPermissionService.CheckPermission(currentUser.RoleId, currUrl);
                     if (!isAuthorize)
                     {
                         //没有权限
@@ -68,9 +68,9 @@ namespace Blog.Web.Filter
                         }
                         else
                         {
-                            //context.Result = new RedirectToActionResult("Index", "Login", new { area = "Main" });
+                            //context.Result = new RedirectToActionResult("Index", "Login", new { area = "MainManage" });
                             //跳转到相关页面
-                            context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/Main/Login/Index'</script>");
+                            context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/MainManage/Login/Index'</script>");
                         }
                     }
                 }

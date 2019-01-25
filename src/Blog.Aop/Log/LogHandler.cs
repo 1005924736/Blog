@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System;
+using Newtonsoft.Json.Linq;
 using NLog;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 namespace Blog.Aop.Log
 {
@@ -19,8 +21,9 @@ namespace Blog.Aop.Log
             LoggerMode = logMode;
             if (factory == null)
             {
-                //加载配置
-                factory = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "/Configs/nlog.config");
+                //加载配置  
+                string currentDirectory = Directory.GetCurrentDirectory();
+                factory = LogManager.LoadConfiguration(currentDirectory + "/Configs/nlog.config");
             }
             logger = factory.GetLogger(LoggerMode.ToString());
         }

@@ -24,4 +24,21 @@
     <ProjectReference Include="..\Blog.Services\Blog.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\BlogManage\Data\" />
+    <Folder Include="Areas\BlogManage\Models\" />
+    <Folder Include="Areas\CompanyManage\Data\" />
+    <Folder Include="Areas\CompanyManage\Models\" />
+    <Folder Include="Areas\MainManage\Data\" />
+    <Folder Include="Areas\MainManage\Models\" />
+    <Folder Include="Areas\SystemManage\Data\" />
+    <Folder Include="Areas\SystemManage\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Configs\nlog.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

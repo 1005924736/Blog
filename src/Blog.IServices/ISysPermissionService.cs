@@ -1,10 +1,11 @@
 ﻿using Blog.Entities.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Blog.Entities;
 
 namespace Blog.IServices
 {
-    public interface ISysPermissionService
+    public interface ISysPermissionService : IBaseService<SysPermission>
     {
         /// <summary>
         /// 分配权限

@@ -26,7 +26,7 @@ namespace Blog.Web.Filter
             else
             {
                 //跳转至错误页
-                context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/Main/Login/Index'</script>");
+                context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/MainManage/Login/Index'</script>");
             }
         }
     }
