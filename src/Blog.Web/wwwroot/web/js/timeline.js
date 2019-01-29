@@ -25,7 +25,7 @@ layui.use(['form', 'laytpl', 'flow'], function () {
                                         tpl = monthview.innerHTML;
                                         var data = { Year: item.Year, Month: key, Items: item.Items[key] };
                                         laytpl(tpl).render(data, function (html) {
-                                            $("#m-" + item.Year).append(html);
+                                            $("#y-" + item.Year).append(html);
                                         });
                                     } else {
                                         tpl = dayview.innerHTML;

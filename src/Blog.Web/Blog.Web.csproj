@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Configs\nlog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Configs\nlog.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
@@ -33,12 +43,6 @@
     <Folder Include="Areas\MainManage\Models\" />
     <Folder Include="Areas\SystemManage\Data\" />
     <Folder Include="Areas\SystemManage\Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Update="Configs\nlog.config">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
 
 </Project>
