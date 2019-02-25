@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using System;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     /// <summary>
     /// 异常日志实体

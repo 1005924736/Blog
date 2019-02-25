@@ -3,35 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Aop", "Blog.Aop\Blog.Aop.csproj", "{851F6DB2-B6BD-48A4-B147-BDB851EA6528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Common", "Blog.Common\Blog.Common.csproj", "{AE207AFF-81D7-44B3-9277-4012C3310732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Common", "Blog.Common\Blog.Common.csproj", "{AE207AFF-81D7-44B3-9277-4012C3310732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Core", "Blog.Core\Blog.Core.csproj", "{6CE66621-C00F-4ABE-979F-A9218B667BA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Core", "Blog.Core\Blog.Core.csproj", "{6CE66621-C00F-4ABE-979F-A9218B667BA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Entities", "Blog.Entities\Blog.Entities.csproj", "{12A69250-693E-4FB8-8CE9-ED97C4304662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Entities", "Blog.Entities\Blog.Entities.csproj", "{12A69250-693E-4FB8-8CE9-ED97C4304662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.IRepository", "Blog.IRepository\Blog.IRepository.csproj", "{D6F68AE3-A9BA-4870-9114-CAC785F3B021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.IRepository", "Blog.IRepository\Blog.IRepository.csproj", "{D6F68AE3-A9BA-4870-9114-CAC785F3B021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.IServices", "Blog.IServices\Blog.IServices.csproj", "{B83AF6BE-F59A-48FD-A347-4A947EE8A7BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.IServices", "Blog.IServices\Blog.IServices.csproj", "{B83AF6BE-F59A-48FD-A347-4A947EE8A7BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Repository", "Blog.Repository\Blog.Repository.csproj", "{0E72CA73-0811-4C80-8CEE-D89605E4A02E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Repository", "Blog.Repository\Blog.Repository.csproj", "{0E72CA73-0811-4C80-8CEE-D89605E4A02E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Services", "Blog.Services\Blog.Services.csproj", "{F195BFEF-FDE4-4FC6-BCA3-81D5CE2D1332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Services", "Blog.Services\Blog.Services.csproj", "{F195BFEF-FDE4-4FC6-BCA3-81D5CE2D1332}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generate", "Generate", "{9A639179-8AC2-40E5-A97E-74AEAD3E246D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.SqlSugar.Generate", "Blog.SqlSugar.Generate\Blog.SqlSugar.Generate.csproj", "{3CFEC948-8AFF-4598-AC72-72F09F67EE1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.SqlSugar.Generate", "Blog.SqlSugar.Generate\Blog.SqlSugar.Generate.csproj", "{3CFEC948-8AFF-4598-AC72-72F09F67EE1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{6BB1DC72-3675-41DB-9AD2-06332633897A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.T4.MySql", "Blog.T4.MySql\Blog.T4.MySql.csproj", "{E014992A-5B8A-44CA-8D13-E2DCD1AC6A6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.T4.MySql", "Blog.T4.MySql\Blog.T4.MySql.csproj", "{E014992A-5B8A-44CA-8D13-E2DCD1AC6A6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.T4.Oracle", "Blog.T4.Oracle\Blog.T4.Oracle.csproj", "{A54A3B04-68E4-4EA4-A0AA-23C8908D386B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.T4.Oracle", "Blog.T4.Oracle\Blog.T4.Oracle.csproj", "{A54A3B04-68E4-4EA4-A0AA-23C8908D386B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.T4.SqlServer", "Blog.T4.SqlServer\Blog.T4.SqlServer.csproj", "{F3205466-A73C-45B3-9083-F498C6DB27F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.T4.SqlServer", "Blog.T4.SqlServer\Blog.T4.SqlServer.csproj", "{F3205466-A73C-45B3-9083-F498C6DB27F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Web", "Blog.Web\Blog.Web.csproj", "{B7648461-DB3E-4220-B047-324EDF5C765C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Web", "Blog.Web\Blog.Web.csproj", "{B7648461-DB3E-4220-B047-324EDF5C765C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{851F6DB2-B6BD-48A4-B147-BDB851EA6528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{851F6DB2-B6BD-48A4-B147-BDB851EA6528}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{851F6DB2-B6BD-48A4-B147-BDB851EA6528}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{851F6DB2-B6BD-48A4-B147-BDB851EA6528}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE207AFF-81D7-44B3-9277-4012C3310732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE207AFF-81D7-44B3-9277-4012C3310732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE207AFF-81D7-44B3-9277-4012C3310732}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     /// <summary>
     /// 通用日志记录

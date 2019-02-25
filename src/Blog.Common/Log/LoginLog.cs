@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     /// <summary>
     /// 系统用户登录日志实体

@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 using System;
 using System.Linq;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     /// <summary>
     /// 操作日志处理

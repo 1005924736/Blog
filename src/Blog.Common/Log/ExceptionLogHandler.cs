@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 using System.Web;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     /// <summary>
     /// 异常日志处理

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Converters;
 
-namespace Blog.Aop
+namespace Blog.Common.Log
 {
     public class DateTimeFormat : IsoDateTimeConverter
     {

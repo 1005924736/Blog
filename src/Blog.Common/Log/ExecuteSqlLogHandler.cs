@@ -3,7 +3,7 @@ using Blog.Common.Net;
 using System;
 using System.Diagnostics;
 
-namespace Blog.Aop.Log
+namespace Blog.Common.Log
 {
     public class ExecuteSqlLogHandler : LogHandler<ExecuteSqlLog>
     {

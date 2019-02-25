@@ -1,4 +1,4 @@
-﻿using Blog.Aop.Log;
+﻿using Blog.Common.Log;
 using Blog.Entities.Dtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

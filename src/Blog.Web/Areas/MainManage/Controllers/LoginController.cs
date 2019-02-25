@@ -1,4 +1,4 @@
-﻿using Blog.Aop.Log;
+﻿using Blog.Common.Log;
 using Blog.Common.Auth;
 using Blog.Common.Utils;
 using Blog.Entities;
