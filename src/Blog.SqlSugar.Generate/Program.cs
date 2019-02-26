@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using App.Common.Builder;
 using Blog.Common.Utils;
 using Blog.Core;
 
@@ -10,10 +11,6 @@ namespace Blog.SqlSugar.Generate
         {
             //DbFirst dbFirst = new DbFirst();
             //dbFirst.Init();
-
-            // string s = StrUtil.CamelName("TP_CMS_HTJBXX");
-
-            string path = Directory.GetCurrentDirectory();
         }
     }
 
@@ -21,7 +18,7 @@ namespace Blog.SqlSugar.Generate
     {
         public void Init()
         {
-            BlogDbContext.ConnectionString = "Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306";
+            BlogDbContext.ConnectionString = ConfigurationUtil.DBConnectionString;
             BlogDbContext.CreateClassFileByTable("C:\\Demo");
         }
     }

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using Blog.Common.Builder;
 using Blog.Common.Net;
 using Blog.Entities;
 using Blog.Entities.Dtos;
@@ -8,6 +7,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Blog.Web.Controllers
 {
@@ -30,6 +31,8 @@ namespace Blog.Web.Controllers
         /// <returns></returns>
         public IActionResult Index(string code, string state)
         {
+            CodeGenerate.Builder("sysuser", "SysUser1");
+
             List<BannerInfo> list = _bannerInfoService.Queryable(null, o => o.SortCode, false);
             return View(list);
         }
