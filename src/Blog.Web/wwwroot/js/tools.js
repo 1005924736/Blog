@@ -5,7 +5,7 @@
     axios.interceptors.response.use(function (result) {
         // 对响应数据进行处理
         if (result.data.Status == 401) {
-            top.location.href = "/MainManage/Login/Index";
+            top.location.href = "/Main/Login/Index";
         } else {
             return result;
         }

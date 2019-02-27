@@ -20,7 +20,7 @@
             var $ = layui.$, layer = layui.layer, table = layui.table, tools = layui.tools, form = layui.form;
             table.render({
                 elem: '#laytable',
-                url: '/CompanyManage/User/Index',
+                url: '/CompanyManag/User/Index',
                 method: 'post',
                 toolbar: '#toolsHead',
                 loading: true,
@@ -72,7 +72,7 @@
                 let _this = $(this), s = data.elem.checked;
                 tools.submitConfrim({
                     prompt: "您确定需要" + (s ? "启用" : "禁用") + "当前用户吗？",
-                    url: "/CompanyManage/User/Enable",
+                    url: "/CompanyManag/User/Enable",
                     data: { id: _this.attr("key"), status: s },
                     cancelCallBack: true,
                     success: function (result) {
@@ -159,7 +159,7 @@
                                     return false;
                                 }
                                 tools.submit({
-                                    url: '/CompanyManage/User/Reset?key=' + id,
+                                    url: '/CompanyManag/User/Reset?key=' + id,
                                     data: data.field,
                                     loading: "正在保存数据...",
                                     success: function () {

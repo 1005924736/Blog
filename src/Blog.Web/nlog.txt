@@ -1,0 +1,2363 @@
+2019-02-27 16:31:14.9873 Info Message Template Auto Format enabled
+2019-02-27 16:31:15.0025 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 16:31:15.0025 Debug Trace =>
+2019-02-27 16:31:15.0025 Debug Debug =>
+2019-02-27 16:31:15.0123 Debug Info =>
+2019-02-27 16:31:15.0123 Debug Warn =>
+2019-02-27 16:31:15.0123 Debug Error =>
+2019-02-27 16:31:15.0123 Debug Fatal =>
+2019-02-27 16:31:15.0123 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 16:31:15.0123 Debug Trace =>
+2019-02-27 16:31:15.0123 Debug Debug =>
+2019-02-27 16:31:15.0123 Debug Info =>
+2019-02-27 16:31:15.0123 Debug Warn =>
+2019-02-27 16:31:15.0123 Debug Error =>
+2019-02-27 16:31:15.0123 Debug Fatal =>
+2019-02-27 16:31:15.0250 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 16:31:15.0250 Debug Trace =>
+2019-02-27 16:31:15.0250 Debug Debug =>
+2019-02-27 16:31:15.0250 Debug Info =>
+2019-02-27 16:31:15.0250 Debug Warn =>
+2019-02-27 16:31:15.0250 Debug Error =>
+2019-02-27 16:31:15.0467 Debug Fatal =>
+2019-02-27 16:31:15.0467 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 16:31:15.0467 Debug Trace =>
+2019-02-27 16:31:15.0467 Debug Debug =>
+2019-02-27 16:31:15.0467 Debug Info =>
+2019-02-27 16:31:15.0636 Debug Warn =>
+2019-02-27 16:31:15.0636 Debug Error =>
+2019-02-27 16:31:15.0748 Debug Fatal =>
+2019-02-27 16:31:15.0748 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 16:31:15.0748 Debug Trace =>
+2019-02-27 16:31:15.0748 Debug Debug =>
+2019-02-27 16:31:15.0748 Debug Info =>
+2019-02-27 16:31:15.0748 Debug Warn =>
+2019-02-27 16:31:15.0911 Debug Error =>
+2019-02-27 16:31:15.0911 Debug Fatal =>
+2019-02-27 16:31:15.0911 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 16:31:15.0911 Debug Trace =>
+2019-02-27 16:31:15.0911 Debug Debug =>
+2019-02-27 16:31:15.1132 Debug Info =>
+2019-02-27 16:31:15.1324 Debug Warn =>
+2019-02-27 16:31:15.1347 Debug Error =>
+2019-02-27 16:31:15.1347 Debug Fatal =>
+2019-02-27 16:31:15.1347 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:15.1347 Debug Trace =>
+2019-02-27 16:31:15.1532 Debug Debug =>
+2019-02-27 16:31:15.1532 Debug Info =>
+2019-02-27 16:31:15.1532 Debug Warn =>
+2019-02-27 16:31:15.1532 Debug Error =>
+2019-02-27 16:31:15.1532 Debug Fatal =>
+2019-02-27 16:31:15.1532 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:15.1532 Debug Trace =>
+2019-02-27 16:31:15.1532 Debug Debug =>
+2019-02-27 16:31:15.1671 Debug Info =>
+2019-02-27 16:31:15.1671 Debug Warn =>
+2019-02-27 16:31:15.1671 Debug Error =>
+2019-02-27 16:31:15.1671 Debug Fatal =>
+2019-02-27 16:31:15.1671 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:15.1671 Debug Trace =>
+2019-02-27 16:31:15.1671 Debug Debug =>
+2019-02-27 16:31:15.1671 Debug Info =>
+2019-02-27 16:31:15.1671 Debug Warn =>
+2019-02-27 16:31:15.1841 Debug Error =>
+2019-02-27 16:31:15.1841 Debug Fatal =>
+2019-02-27 16:31:15.1841 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 16:31:15.1971 Debug Trace =>
+2019-02-27 16:31:15.1971 Debug Debug =>
+2019-02-27 16:31:15.2343 Debug Info =>
+2019-02-27 16:31:15.2343 Debug Warn =>
+2019-02-27 16:31:15.2343 Debug Error =>
+2019-02-27 16:31:15.2559 Debug Fatal =>
+2019-02-27 16:31:15.2559 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 16:31:15.2559 Debug Trace =>
+2019-02-27 16:31:15.2586 Debug Debug =>
+2019-02-27 16:31:15.2586 Debug Info =>
+2019-02-27 16:31:15.2586 Debug Warn =>
+2019-02-27 16:31:15.2586 Debug Error =>
+2019-02-27 16:31:15.2586 Debug Fatal =>
+2019-02-27 16:31:15.2586 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 16:31:15.2586 Debug Trace =>
+2019-02-27 16:31:15.2586 Debug Debug =>
+2019-02-27 16:31:15.2586 Debug Info =>
+2019-02-27 16:31:15.2586 Debug Warn =>
+2019-02-27 16:31:15.2586 Debug Error =>
+2019-02-27 16:31:15.2586 Debug Fatal =>
+2019-02-27 16:31:15.2586 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 16:31:15.2586 Debug Trace =>
+2019-02-27 16:31:15.2586 Debug Debug =>
+2019-02-27 16:31:15.2586 Debug Info =>
+2019-02-27 16:31:15.2586 Debug Warn =>
+2019-02-27 16:31:15.2586 Debug Error =>
+2019-02-27 16:31:15.2586 Debug Fatal =>
+2019-02-27 16:31:15.2586 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 16:31:15.2586 Debug Trace =>
+2019-02-27 16:31:15.2750 Debug Debug =>
+2019-02-27 16:31:15.2750 Debug Info =>
+2019-02-27 16:31:15.2750 Debug Warn =>
+2019-02-27 16:31:15.2750 Debug Error =>
+2019-02-27 16:31:15.2750 Debug Fatal =>
+2019-02-27 16:31:15.2937 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 16:31:15.2937 Debug Trace =>
+2019-02-27 16:31:15.2937 Debug Debug =>
+2019-02-27 16:31:15.3473 Debug Info =>
+2019-02-27 16:31:15.3473 Debug Warn =>
+2019-02-27 16:31:15.3527 Debug Error =>
+2019-02-27 16:31:15.3527 Debug Fatal =>
+2019-02-27 16:31:15.3988 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-02-27 16:31:15.4699 Debug Setting 'FileTarget.name' to 'file'
+2019-02-27 16:31:15.4699 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/${level}/${shortdate}.log'
+2019-02-27 16:31:15.5515 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}: ${message} ${event-context:item=exception} ${stacktrace}'
+2019-02-27 16:31:15.5515 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-02-27 16:31:15.5593 Info Adding target File Target[file]
+2019-02-27 16:31:15.5593 Debug Registered target file: NLog.Targets.FileTarget
+2019-02-27 16:31:15.5593 Debug Setting 'DatabaseTarget.name' to 'ExceptionLogDB'
+2019-02-27 16:31:15.5729 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:31:15.5729 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:31:15.5729 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexceptionlog
+        (ExceptionId,Message,StackTrace,InnerException,ExceptionType,ServerHost,ClientHost,Runtime,RequestUrl,RequestData,UserAgent,HttpMethod,CreateaAcountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExceptionId,@Message,@StackTrace,@InnerException,@ExceptionType,@ServerHost,@ClientHost,@Runtime,@RequestUrl,@RequestData,@UserAgent,@HttpMethod,@CreateaAcountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:31:15.5729 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionId'
+2019-02-27 16:31:15.5729 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionId}'
+2019-02-27 16:31:15.5729 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionId'
+2019-02-27 16:31:15.5884 Debug Setting 'DatabaseParameterInfo.name' to '@Message'
+2019-02-27 16:31:15.5884 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Message}'
+2019-02-27 16:31:15.6054 Debug Setting 'EventContextLayoutRenderer.item' to 'Message'
+2019-02-27 16:31:15.6054 Debug Setting 'DatabaseParameterInfo.name' to '@StackTrace'
+2019-02-27 16:31:15.6054 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=StackTrace}'
+2019-02-27 16:31:15.6054 Debug Setting 'EventContextLayoutRenderer.item' to 'StackTrace'
+2019-02-27 16:31:15.6054 Debug Setting 'DatabaseParameterInfo.name' to '@InnerException'
+2019-02-27 16:31:15.6192 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=InnerException}'
+2019-02-27 16:31:15.6192 Debug Setting 'EventContextLayoutRenderer.item' to 'InnerException'
+2019-02-27 16:31:15.6192 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionType'
+2019-02-27 16:31:15.6405 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionType}'
+2019-02-27 16:31:15.6405 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionType'
+2019-02-27 16:31:15.6405 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:31:15.6405 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:31:15.6405 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:31:15.6640 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:31:15.6669 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:31:15.6669 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:31:15.6669 Debug Setting 'DatabaseParameterInfo.name' to '@Runtime'
+2019-02-27 16:31:15.7060 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Runtime}'
+2019-02-27 16:31:15.7060 Debug Setting 'EventContextLayoutRenderer.item' to 'Runtime'
+2019-02-27 16:31:15.7060 Debug Setting 'DatabaseParameterInfo.name' to '@RequestUrl'
+2019-02-27 16:31:15.7060 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestUrl}'
+2019-02-27 16:31:15.7060 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestUrl'
+2019-02-27 16:31:15.7143 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 16:31:15.7143 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 16:31:15.7143 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 16:31:15.7143 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:31:15.7143 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:31:15.7143 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:31:15.7143 Debug Setting 'DatabaseParameterInfo.name' to '@HttpMethod'
+2019-02-27 16:31:15.7365 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=HttpMethod}'
+2019-02-27 16:31:15.7523 Debug Setting 'EventContextLayoutRenderer.item' to 'HttpMethod'
+2019-02-27 16:31:15.7523 Debug Setting 'DatabaseParameterInfo.name' to '@CreateaAcountId'
+2019-02-27 16:31:15.7523 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateaAcountId}'
+2019-02-27 16:31:15.7523 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateaAcountId'
+2019-02-27 16:31:15.7523 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:31:15.7523 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:31:15.7584 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:31:15.7584 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:31:15.7584 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:31:15.7584 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:31:15.7584 Info Adding target Database Target[ExceptionLogDB]
+2019-02-27 16:31:15.7584 Debug Registered target ExceptionLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:31:15.7584 Debug Setting 'DatabaseTarget.name' to 'OperateLogDB'
+2019-02-27 16:31:15.7584 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysoperatelog
+        (OperateId,ClientHost,ServerHost,RequestContentLength,RequestType,Url,UrlReferrer,RequestData,UserAgent,ControllerName,ActionName,ActionExecutionTime,ResultExecutionTime,ResponseStatus,Description,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@OperateId,@ClientHost,@ServerHost,@RequestContentLength,@RequestType,@Url,@UrlReferrer,@RequestData,@UserAgent,@ControllerName,@ActionName,@ActionExecutionTime,@ResultExecutionTime,@ResponseStatus,@Description,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseParameterInfo.name' to '@OperateId'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OperateId}'
+2019-02-27 16:31:15.7741 Debug Setting 'EventContextLayoutRenderer.item' to 'OperateId'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:31:15.7741 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:31:15.7741 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:31:15.7990 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:31:15.7990 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:31:15.7990 Debug Setting 'DatabaseParameterInfo.name' to '@RequestContentLength'
+2019-02-27 16:31:15.7990 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestContentLength}'
+2019-02-27 16:31:15.8056 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestContentLength'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.name' to '@RequestType'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestType}'
+2019-02-27 16:31:15.8056 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestType'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.name' to '@Url'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Url}'
+2019-02-27 16:31:15.8056 Debug Setting 'EventContextLayoutRenderer.item' to 'Url'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.name' to '@UrlReferrer'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UrlReferrer}'
+2019-02-27 16:31:15.8056 Debug Setting 'EventContextLayoutRenderer.item' to 'UrlReferrer'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 16:31:15.8056 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 16:31:15.8056 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:31:15.8215 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.name' to '@ControllerName'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ControllerName}'
+2019-02-27 16:31:15.8215 Debug Setting 'EventContextLayoutRenderer.item' to 'ControllerName'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.name' to '@ActionName'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionName}'
+2019-02-27 16:31:15.8215 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionName'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.name' to '@ActionExecutionTime'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionExecutionTime}'
+2019-02-27 16:31:15.8215 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionExecutionTime'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.name' to '@ResultExecutionTime'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResultExecutionTime}'
+2019-02-27 16:31:15.8215 Debug Setting 'EventContextLayoutRenderer.item' to 'ResultExecutionTime'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.name' to '@ResponseStatus'
+2019-02-27 16:31:15.8215 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResponseStatus}'
+2019-02-27 16:31:15.8373 Debug Setting 'EventContextLayoutRenderer.item' to 'ResponseStatus'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.name' to '@Description'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Description}'
+2019-02-27 16:31:15.8373 Debug Setting 'EventContextLayoutRenderer.item' to 'Description'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:31:15.8373 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:31:15.8373 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:31:15.8373 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:31:15.8373 Info Adding target Database Target[OperateLogDB]
+2019-02-27 16:31:15.8373 Debug Registered target OperateLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseTarget.name' to 'SqlLogDB'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:31:15.8373 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexecutesqllog
+        (ExecuteId,SqlCommand,Parameter,ElapsedTime,IsFail,Massage,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExecuteId,@SqlCommand,@Parameter,@ElapsedTime,@IsFail,@Massage,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@ExecuteId'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExecuteId}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'ExecuteId'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@SqlCommand'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=SqlCommand}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'SqlCommand'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@Parameter'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Parameter}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'Parameter'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@ElapsedTime'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ElapsedTime}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'ElapsedTime'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@IsFail'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IsFail}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'IsFail'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.name' to '@Massage'
+2019-02-27 16:31:15.8521 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Massage}'
+2019-02-27 16:31:15.8521 Debug Setting 'EventContextLayoutRenderer.item' to 'Massage'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:31:15.8686 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:31:15.8686 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:31:15.8686 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:31:15.8686 Info Adding target Database Target[SqlLogDB]
+2019-02-27 16:31:15.8686 Debug Registered target SqlLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:31:15.8686 Debug Setting 'DatabaseTarget.name' to 'LoginLogDB'
+2019-02-27 16:31:15.8985 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:31:15.8994 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:31:15.9214 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysloginlog
+        (LoginId,IpAddressName,ServerHost,ClientHost,UserAgent,OsVersion,LoginTime,CreateAccountId,CreatorTime)
+        VALUES
+        (@LoginId,@IpAddressName,@ServerHost,@ClientHost,@UserAgent,@OsVersion,@LoginTime,@CreateAccountId,@CreatorTime)
+      '
+2019-02-27 16:31:15.9214 Debug Setting 'DatabaseParameterInfo.name' to '@LoginId'
+2019-02-27 16:31:15.9313 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginId}'
+2019-02-27 16:31:15.9313 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginId'
+2019-02-27 16:31:15.9313 Debug Setting 'DatabaseParameterInfo.name' to '@IpAddressName'
+2019-02-27 16:31:15.9313 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IpAddressName}'
+2019-02-27 16:31:15.9313 Debug Setting 'EventContextLayoutRenderer.item' to 'IpAddressName'
+2019-02-27 16:31:15.9313 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:31:15.9313 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:31:15.9313 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:31:15.9471 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:31:15.9471 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.name' to '@OsVersion'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OsVersion}'
+2019-02-27 16:31:15.9471 Debug Setting 'EventContextLayoutRenderer.item' to 'OsVersion'
+2019-02-27 16:31:15.9471 Debug Setting 'DatabaseParameterInfo.name' to '@LoginTime'
+2019-02-27 16:31:15.9618 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginTime}'
+2019-02-27 16:31:15.9618 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginTime'
+2019-02-27 16:31:15.9618 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:31:15.9618 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:31:15.9618 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:31:15.9618 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:31:15.9618 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:31:15.9618 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:31:15.9618 Info Adding target Database Target[LoginLogDB]
+2019-02-27 16:31:15.9618 Debug Registered target LoginLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:31:16.0030 Info Configured from an XML element in C:\NetCode\Blog\src\Blog.Web\Configs/nlog.config...
+2019-02-27 16:31:16.0368 Debug Unused target checking is started... Rule Count: 5, Target Count: 5
+2019-02-27 16:31:16.0593 Debug Unused target checking is completed. Total Rule Count: 5, Total Target Count: 5, Unused Target Count: 0
+2019-02-27 16:31:16.0593 Debug --- NLog configuration dump ---
+2019-02-27 16:31:16.0593 Debug Targets:
+2019-02-27 16:31:16.0593 Debug File Target[file]
+2019-02-27 16:31:16.0796 Debug Database Target[ExceptionLogDB]
+2019-02-27 16:31:16.0908 Debug Database Target[OperateLogDB]
+2019-02-27 16:31:16.0908 Debug Database Target[SqlLogDB]
+2019-02-27 16:31:16.0908 Debug Database Target[LoginLogDB]
+2019-02-27 16:31:16.1201 Debug Rules:
+2019-02-27 16:31:16.1201 Debug logNamePattern: (FileLog:Equals) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ file ]
+2019-02-27 16:31:16.1201 Debug logNamePattern: (ExceptionLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ExceptionLogDB ]
+2019-02-27 16:31:16.1201 Debug logNamePattern: (OperateLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ OperateLogDB ]
+2019-02-27 16:31:16.1201 Debug logNamePattern: (SqlLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SqlLogDB ]
+2019-02-27 16:31:16.1201 Debug logNamePattern: (LoginLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ LoginLogDB ]
+2019-02-27 16:31:16.1201 Debug --- End of NLog configuration dump ---
+2019-02-27 16:31:16.1417 Info Found 205 configuration items
+2019-02-27 16:31:16.2289 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 16:31:16.2513 Debug Trace =>
+2019-02-27 16:31:16.2513 Debug Debug =>
+2019-02-27 16:31:16.2513 Debug Info =>
+2019-02-27 16:31:16.2513 Debug Warn =>
+2019-02-27 16:31:16.2513 Debug Error =>
+2019-02-27 16:31:16.2513 Debug Fatal =>
+2019-02-27 16:31:16.2593 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 16:31:16.2593 Debug Trace =>
+2019-02-27 16:31:16.2753 Debug Debug =>
+2019-02-27 16:31:16.2753 Debug Info =>
+2019-02-27 16:31:16.2753 Debug Warn =>
+2019-02-27 16:31:16.2753 Debug Error =>
+2019-02-27 16:31:16.2912 Debug Fatal =>
+2019-02-27 16:31:16.2912 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 16:31:16.2912 Debug Trace =>
+2019-02-27 16:31:16.2912 Debug Debug =>
+2019-02-27 16:31:16.3082 Debug Info =>
+2019-02-27 16:31:16.3082 Debug Warn =>
+2019-02-27 16:31:16.3082 Debug Error =>
+2019-02-27 16:31:16.3082 Debug Fatal =>
+2019-02-27 16:31:16.3280 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 16:31:16.3426 Debug Trace =>
+2019-02-27 16:31:16.3426 Debug Debug =>
+2019-02-27 16:31:16.3616 Debug Info =>
+2019-02-27 16:31:16.3895 Debug Warn =>
+2019-02-27 16:31:16.3895 Debug Error =>
+2019-02-27 16:31:16.3895 Debug Fatal =>
+2019-02-27 16:31:16.4055 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 16:31:16.4055 Debug Trace =>
+2019-02-27 16:31:16.4055 Debug Debug =>
+2019-02-27 16:31:16.4055 Debug Info =>
+2019-02-27 16:31:16.4055 Debug Warn =>
+2019-02-27 16:31:16.4055 Debug Error =>
+2019-02-27 16:31:16.4055 Debug Fatal =>
+2019-02-27 16:31:16.4055 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 16:31:16.4055 Debug Trace =>
+2019-02-27 16:31:16.4055 Debug Debug =>
+2019-02-27 16:31:16.4055 Debug Info =>
+2019-02-27 16:31:16.4149 Debug Warn =>
+2019-02-27 16:31:16.4149 Debug Error =>
+2019-02-27 16:31:16.4303 Debug Fatal =>
+2019-02-27 16:31:16.4303 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:16.4303 Debug Trace =>
+2019-02-27 16:31:16.4303 Debug Debug =>
+2019-02-27 16:31:16.4630 Debug Info =>
+2019-02-27 16:31:16.4802 Debug Warn =>
+2019-02-27 16:31:16.4802 Debug Error =>
+2019-02-27 16:31:16.4802 Debug Fatal =>
+2019-02-27 16:31:16.4802 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:16.4802 Debug Trace =>
+2019-02-27 16:31:16.5027 Debug Debug =>
+2019-02-27 16:31:16.5170 Debug Info =>
+2019-02-27 16:31:16.5170 Debug Warn =>
+2019-02-27 16:31:16.5339 Debug Error =>
+2019-02-27 16:31:16.5339 Debug Fatal =>
+2019-02-27 16:31:16.5417 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 16:31:16.5647 Debug Trace =>
+2019-02-27 16:31:16.5787 Debug Debug =>
+2019-02-27 16:31:16.6020 Debug Info =>
+2019-02-27 16:31:16.6020 Debug Warn =>
+2019-02-27 16:31:16.6020 Debug Error =>
+2019-02-27 16:31:16.6020 Debug Fatal =>
+2019-02-27 16:31:16.6020 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 16:31:16.6020 Debug Trace =>
+2019-02-27 16:31:16.6020 Debug Debug =>
+2019-02-27 16:31:16.6020 Debug Info =>
+2019-02-27 16:31:16.6020 Debug Warn =>
+2019-02-27 16:31:16.6020 Debug Error =>
+2019-02-27 16:31:16.6020 Debug Fatal =>
+2019-02-27 16:31:16.6020 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 16:31:16.6020 Debug Trace =>
+2019-02-27 16:31:16.6179 Debug Debug =>
+2019-02-27 16:31:16.6179 Debug Info =>
+2019-02-27 16:31:16.6339 Debug Warn =>
+2019-02-27 16:31:16.6339 Debug Error =>
+2019-02-27 16:31:16.6339 Debug Fatal =>
+2019-02-27 16:31:16.6606 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 16:31:16.6606 Debug Trace =>
+2019-02-27 16:31:16.6606 Debug Debug =>
+2019-02-27 16:31:16.6606 Debug Info =>
+2019-02-27 16:31:16.6606 Debug Warn =>
+2019-02-27 16:31:16.6606 Debug Error =>
+2019-02-27 16:31:16.6732 Debug Fatal =>
+2019-02-27 16:31:16.6883 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 16:31:16.6883 Debug Trace =>
+2019-02-27 16:31:16.6989 Debug Debug =>
+2019-02-27 16:31:16.6989 Debug Info =>
+2019-02-27 16:31:16.6989 Debug Warn =>
+2019-02-27 16:31:16.7192 Debug Error =>
+2019-02-27 16:31:16.7192 Debug Fatal =>
+2019-02-27 16:31:16.7192 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 16:31:16.7389 Debug Trace =>
+2019-02-27 16:31:16.7389 Debug Debug =>
+2019-02-27 16:31:16.7389 Debug Info =>
+2019-02-27 16:31:16.7389 Debug Warn =>
+2019-02-27 16:31:16.7389 Debug Error =>
+2019-02-27 16:31:16.7429 Debug Fatal =>
+2019-02-27 16:31:16.7429 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 16:31:16.7429 Debug Trace =>
+2019-02-27 16:31:16.7429 Debug Debug =>
+2019-02-27 16:31:16.7914 Debug Info =>
+2019-02-27 16:31:16.8148 Debug Warn =>
+2019-02-27 16:31:16.8148 Debug Error =>
+2019-02-27 16:31:16.8298 Debug Fatal =>
+2019-02-27 16:31:17.0371 Debug Targets for Microsoft.AspNetCore.Mvc.MvcJsonOptions by level:
+2019-02-27 16:31:17.0402 Debug Trace =>
+2019-02-27 16:31:17.0402 Debug Debug =>
+2019-02-27 16:31:17.0705 Debug Info =>
+2019-02-27 16:31:17.0713 Debug Warn =>
+2019-02-27 16:31:17.0713 Debug Error =>
+2019-02-27 16:31:17.0868 Debug Fatal =>
+2019-02-27 16:31:17.0868 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
+2019-02-27 16:31:17.0868 Debug Trace =>
+2019-02-27 16:31:17.1131 Debug Debug =>
+2019-02-27 16:31:17.1131 Debug Info =>
+2019-02-27 16:31:17.1332 Debug Warn =>
+2019-02-27 16:31:17.1340 Debug Error =>
+2019-02-27 16:31:17.1340 Debug Fatal =>
+2019-02-27 16:31:17.4238 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2019-02-27 16:31:17.4623 Debug Trace =>
+2019-02-27 16:31:17.4804 Debug Debug =>
+2019-02-27 16:31:17.4804 Debug Info =>
+2019-02-27 16:31:17.4804 Debug Warn =>
+2019-02-27 16:31:17.5094 Debug Error =>
+2019-02-27 16:31:17.5094 Debug Fatal =>
+2019-02-27 16:31:17.5317 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2019-02-27 16:31:17.5892 Debug Trace =>
+2019-02-27 16:31:17.5892 Debug Debug =>
+2019-02-27 16:31:17.6058 Debug Info =>
+2019-02-27 16:31:17.6058 Debug Warn =>
+2019-02-27 16:31:17.6058 Debug Error =>
+2019-02-27 16:31:17.6058 Debug Fatal =>
+2019-02-27 16:31:17.6208 Debug Targets for Microsoft.AspNetCore.Mvc.ApiBehaviorOptions by level:
+2019-02-27 16:31:17.6208 Debug Trace =>
+2019-02-27 16:31:17.6208 Debug Debug =>
+2019-02-27 16:31:17.6208 Debug Info =>
+2019-02-27 16:31:17.6208 Debug Warn =>
+2019-02-27 16:31:17.6208 Debug Error =>
+2019-02-27 16:31:17.6208 Debug Fatal =>
+2019-02-27 16:31:17.7583 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions by level:
+2019-02-27 16:31:17.7626 Debug Trace =>
+2019-02-27 16:31:17.7626 Debug Debug =>
+2019-02-27 16:31:17.7626 Debug Info =>
+2019-02-27 16:31:17.7626 Debug Warn =>
+2019-02-27 16:31:17.7626 Debug Error =>
+2019-02-27 16:31:17.7774 Debug Fatal =>
+2019-02-27 16:31:17.7774 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions by level:
+2019-02-27 16:31:17.7774 Debug Trace =>
+2019-02-27 16:31:17.8015 Debug Debug =>
+2019-02-27 16:31:17.8015 Debug Info =>
+2019-02-27 16:31:17.8015 Debug Warn =>
+2019-02-27 16:31:17.8015 Debug Error =>
+2019-02-27 16:31:17.8015 Debug Fatal =>
+2019-02-27 16:31:18.0837 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2019-02-27 16:31:18.1022 Debug Trace =>
+2019-02-27 16:31:18.1022 Debug Debug =>
+2019-02-27 16:31:18.1022 Debug Info =>
+2019-02-27 16:31:18.1022 Debug Warn =>
+2019-02-27 16:31:18.1022 Debug Error =>
+2019-02-27 16:31:18.1022 Debug Fatal =>
+2019-02-27 16:31:18.1238 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine by level:
+2019-02-27 16:31:18.1238 Debug Trace =>
+2019-02-27 16:31:18.1238 Debug Debug =>
+2019-02-27 16:31:18.1496 Debug Info =>
+2019-02-27 16:31:18.1496 Debug Warn =>
+2019-02-27 16:31:18.1674 Debug Error =>
+2019-02-27 16:31:18.1674 Debug Fatal =>
+2019-02-27 16:31:18.1674 Debug Targets for Microsoft.AspNetCore.Mvc.MvcViewOptions by level:
+2019-02-27 16:31:18.1674 Debug Trace =>
+2019-02-27 16:31:18.1808 Debug Debug =>
+2019-02-27 16:31:18.1808 Debug Info =>
+2019-02-27 16:31:18.1808 Debug Warn =>
+2019-02-27 16:31:18.1808 Debug Error =>
+2019-02-27 16:31:18.2009 Debug Fatal =>
+2019-02-27 16:31:18.2140 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2019-02-27 16:31:18.2140 Debug Trace =>
+2019-02-27 16:31:18.2344 Debug Debug =>
+2019-02-27 16:31:18.2344 Debug Info =>
+2019-02-27 16:31:18.2503 Debug Warn =>
+2019-02-27 16:31:18.2584 Debug Error =>
+2019-02-27 16:31:18.2584 Debug Fatal =>
+2019-02-27 16:31:18.2584 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.CompiledPageRouteModelProvider by level:
+2019-02-27 16:31:18.2584 Debug Trace =>
+2019-02-27 16:31:18.2584 Debug Debug =>
+2019-02-27 16:31:18.2584 Debug Info =>
+2019-02-27 16:31:18.2584 Debug Warn =>
+2019-02-27 16:31:18.2584 Debug Error =>
+2019-02-27 16:31:18.2584 Debug Fatal =>
+2019-02-27 16:31:18.3728 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2019-02-27 16:31:18.3728 Debug Trace =>
+2019-02-27 16:31:18.3728 Debug Debug =>
+2019-02-27 16:31:18.3728 Debug Info =>
+2019-02-27 16:31:18.3728 Debug Warn =>
+2019-02-27 16:31:18.3728 Debug Error =>
+2019-02-27 16:31:18.3728 Debug Fatal =>
+2019-02-27 16:31:18.4918 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2019-02-27 16:31:18.4956 Debug Trace =>
+2019-02-27 16:31:18.4956 Debug Debug =>
+2019-02-27 16:31:18.4956 Debug Info =>
+2019-02-27 16:31:18.4956 Debug Warn =>
+2019-02-27 16:31:18.4956 Debug Error =>
+2019-02-27 16:31:18.4956 Debug Fatal =>
+2019-02-27 16:31:18.4956 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2019-02-27 16:31:18.4956 Debug Trace =>
+2019-02-27 16:31:18.4956 Debug Debug =>
+2019-02-27 16:31:18.5094 Debug Info =>
+2019-02-27 16:31:18.5094 Debug Warn =>
+2019-02-27 16:31:18.5094 Debug Error =>
+2019-02-27 16:31:18.5842 Debug Fatal =>
+2019-02-27 16:31:18.5957 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2019-02-27 16:31:18.5957 Debug Trace =>
+2019-02-27 16:31:18.6300 Debug Debug =>
+2019-02-27 16:31:18.6300 Debug Info =>
+2019-02-27 16:31:18.6300 Debug Warn =>
+2019-02-27 16:31:18.6300 Debug Error =>
+2019-02-27 16:31:18.6300 Debug Fatal =>
+2019-02-27 16:31:18.6387 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2019-02-27 16:31:18.6387 Debug Trace =>
+2019-02-27 16:31:18.6387 Debug Debug =>
+2019-02-27 16:31:18.6387 Debug Info =>
+2019-02-27 16:31:18.6387 Debug Warn =>
+2019-02-27 16:31:18.6387 Debug Error =>
+2019-02-27 16:31:18.6387 Debug Fatal =>
+2019-02-27 16:31:19.0366 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2019-02-27 16:31:19.0366 Debug Trace =>
+2019-02-27 16:31:19.0366 Debug Debug =>
+2019-02-27 16:31:19.0393 Debug Info =>
+2019-02-27 16:31:19.0393 Debug Warn =>
+2019-02-27 16:31:19.0638 Debug Error =>
+2019-02-27 16:31:19.0638 Debug Fatal =>
+2019-02-27 16:31:20.0625 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2019-02-27 16:31:20.0625 Debug Trace =>
+2019-02-27 16:31:20.0625 Debug Debug =>
+2019-02-27 16:31:20.0847 Debug Info =>
+2019-02-27 16:31:20.0847 Debug Warn =>
+2019-02-27 16:31:20.1020 Debug Error =>
+2019-02-27 16:31:20.1029 Debug Fatal =>
+2019-02-27 16:31:20.1258 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2019-02-27 16:31:20.1258 Debug Trace =>
+2019-02-27 16:31:20.1258 Debug Debug =>
+2019-02-27 16:31:20.1258 Debug Info =>
+2019-02-27 16:31:20.1258 Debug Warn =>
+2019-02-27 16:31:20.1258 Debug Error =>
+2019-02-27 16:31:20.1258 Debug Fatal =>
+2019-02-27 16:31:20.1340 Debug Targets for Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware by level:
+2019-02-27 16:31:20.1340 Debug Trace =>
+2019-02-27 16:31:20.1340 Debug Debug =>
+2019-02-27 16:31:20.1558 Debug Info =>
+2019-02-27 16:31:20.1758 Debug Warn =>
+2019-02-27 16:31:20.1758 Debug Error =>
+2019-02-27 16:31:20.1863 Debug Fatal =>
+2019-02-27 16:31:20.2026 Debug Targets for Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware by level:
+2019-02-27 16:31:20.2026 Debug Trace =>
+2019-02-27 16:31:20.2026 Debug Debug =>
+2019-02-27 16:31:20.2026 Debug Info =>
+2019-02-27 16:31:20.2246 Debug Warn =>
+2019-02-27 16:31:20.2246 Debug Error =>
+2019-02-27 16:31:20.2521 Debug Fatal =>
+2019-02-27 16:31:20.2609 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2019-02-27 16:31:20.2609 Debug Trace =>
+2019-02-27 16:31:20.2609 Debug Debug =>
+2019-02-27 16:31:20.2609 Debug Info =>
+2019-02-27 16:31:20.2609 Debug Warn =>
+2019-02-27 16:31:20.2609 Debug Error =>
+2019-02-27 16:31:20.2609 Debug Fatal =>
+2019-02-27 16:31:20.2766 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2019-02-27 16:31:20.2766 Debug Trace =>
+2019-02-27 16:31:20.2766 Debug Debug =>
+2019-02-27 16:31:20.2766 Debug Info =>
+2019-02-27 16:31:20.2766 Debug Warn =>
+2019-02-27 16:31:20.2766 Debug Error =>
+2019-02-27 16:31:20.3024 Debug Fatal =>
+2019-02-27 16:31:20.3109 Debug Targets for Microsoft.AspNetCore.Session.SessionMiddleware by level:
+2019-02-27 16:31:20.3109 Debug Trace =>
+2019-02-27 16:31:20.3109 Debug Debug =>
+2019-02-27 16:31:20.3109 Debug Info =>
+2019-02-27 16:31:20.3109 Debug Warn =>
+2019-02-27 16:31:20.3109 Debug Error =>
+2019-02-27 16:31:20.3109 Debug Fatal =>
+2019-02-27 16:31:20.3218 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2019-02-27 16:31:20.3218 Debug Trace =>
+2019-02-27 16:31:20.3218 Debug Debug =>
+2019-02-27 16:31:20.3218 Debug Info =>
+2019-02-27 16:31:20.3218 Debug Warn =>
+2019-02-27 16:31:20.3218 Debug Error =>
+2019-02-27 16:31:20.3218 Debug Fatal =>
+2019-02-27 16:31:20.3465 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2019-02-27 16:31:20.3465 Debug Trace =>
+2019-02-27 16:31:20.3465 Debug Debug =>
+2019-02-27 16:31:20.3465 Debug Info =>
+2019-02-27 16:31:20.3465 Debug Warn =>
+2019-02-27 16:31:20.3465 Debug Error =>
+2019-02-27 16:31:20.3465 Debug Fatal =>
+2019-02-27 16:31:20.3618 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2019-02-27 16:31:20.3618 Debug Trace =>
+2019-02-27 16:31:20.3618 Debug Debug =>
+2019-02-27 16:31:20.3618 Debug Info =>
+2019-02-27 16:31:20.3618 Debug Warn =>
+2019-02-27 16:31:20.3618 Debug Error =>
+2019-02-27 16:31:20.4045 Debug Fatal =>
+2019-02-27 16:31:20.4192 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2019-02-27 16:31:20.4192 Debug Trace =>
+2019-02-27 16:31:20.4192 Debug Debug =>
+2019-02-27 16:31:20.4192 Debug Info =>
+2019-02-27 16:31:20.4192 Debug Warn =>
+2019-02-27 16:31:20.4192 Debug Error =>
+2019-02-27 16:31:20.4192 Debug Fatal =>
+2019-02-27 16:31:21.0587 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter by level:
+2019-02-27 16:31:21.0587 Debug Trace =>
+2019-02-27 16:31:21.0944 Debug Debug =>
+2019-02-27 16:31:21.0944 Debug Info =>
+2019-02-27 16:31:21.1465 Debug Warn =>
+2019-02-27 16:31:21.1543 Debug Error =>
+2019-02-27 16:31:21.1543 Debug Fatal =>
+2019-02-27 16:31:27.4757 Debug Targets for Microsoft.AspNetCore.Session.DistributedSession by level:
+2019-02-27 16:31:27.4781 Debug Trace =>
+2019-02-27 16:31:27.4781 Debug Debug =>
+2019-02-27 16:31:27.4781 Debug Info =>
+2019-02-27 16:31:27.4781 Debug Warn =>
+2019-02-27 16:31:27.4781 Debug Error =>
+2019-02-27 16:31:27.4781 Debug Fatal =>
+2019-02-27 16:31:27.5492 Debug Targets for Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler by level:
+2019-02-27 16:31:27.5492 Debug Trace =>
+2019-02-27 16:31:27.5557 Debug Debug =>
+2019-02-27 16:31:27.5557 Debug Info =>
+2019-02-27 16:31:27.5557 Debug Warn =>
+2019-02-27 16:31:27.5557 Debug Error =>
+2019-02-27 16:31:27.5557 Debug Fatal =>
+2019-02-27 16:31:27.6869 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2019-02-27 16:31:27.6869 Debug Trace =>
+2019-02-27 16:31:27.6869 Debug Debug =>
+2019-02-27 16:31:27.6869 Debug Info =>
+2019-02-27 16:31:27.6869 Debug Warn =>
+2019-02-27 16:31:27.6869 Debug Error =>
+2019-02-27 16:31:27.6869 Debug Fatal =>
+2019-02-27 16:31:27.7324 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder by level:
+2019-02-27 16:31:27.7324 Debug Trace =>
+2019-02-27 16:31:27.7324 Debug Debug =>
+2019-02-27 16:31:27.7324 Debug Info =>
+2019-02-27 16:31:27.7701 Debug Warn =>
+2019-02-27 16:31:27.7701 Debug Error =>
+2019-02-27 16:31:27.7701 Debug Fatal =>
+2019-02-27 16:31:48.6614 Debug Targets for Blog.Common.Log.LogHandler`1 by level:
+2019-02-27 16:31:48.6614 Debug Trace =>
+2019-02-27 16:31:48.6755 Debug Debug =>
+2019-02-27 16:31:48.6861 Debug Info =>
+2019-02-27 16:31:48.6993 Debug Warn =>
+2019-02-27 16:31:48.6993 Debug Error =>
+2019-02-27 16:31:48.6993 Debug Fatal =>
+2019-02-27 16:31:48.6993 Debug Targets for ExceptionLog by level:
+2019-02-27 16:31:48.6993 Debug Trace =>
+2019-02-27 16:31:48.6993 Debug Debug => ExceptionLogDB
+2019-02-27 16:31:48.6993 Debug Info => ExceptionLogDB
+2019-02-27 16:31:48.6993 Debug Warn => ExceptionLogDB
+2019-02-27 16:31:48.7119 Debug Error => ExceptionLogDB
+2019-02-27 16:31:48.7119 Debug Fatal => ExceptionLogDB
+2019-02-27 16:31:48.7572 Debug Targets for Blog.Common.Log.NLogger by level:
+2019-02-27 16:31:48.7572 Debug Trace =>
+2019-02-27 16:31:48.7595 Debug Debug =>
+2019-02-27 16:31:48.7595 Debug Info =>
+2019-02-27 16:31:48.7825 Debug Warn =>
+2019-02-27 16:31:48.7825 Debug Error =>
+2019-02-27 16:31:48.7825 Debug Fatal =>
+2019-02-27 16:31:48.7825 Debug Targets for FileLog by level:
+2019-02-27 16:31:48.8030 Debug Trace => file
+2019-02-27 16:31:48.8030 Debug Debug => file
+2019-02-27 16:31:48.8030 Debug Info => file
+2019-02-27 16:31:48.8061 Debug Warn => file
+2019-02-27 16:31:48.8061 Debug Error => file
+2019-02-27 16:31:48.8061 Debug Fatal => file
+2019-02-27 16:31:49.6277 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor by level:
+2019-02-27 16:31:49.6277 Debug Trace =>
+2019-02-27 16:31:49.6277 Debug Debug =>
+2019-02-27 16:31:49.6343 Debug Info =>
+2019-02-27 16:31:49.6343 Debug Warn =>
+2019-02-27 16:31:49.6343 Debug Error =>
+2019-02-27 16:31:49.6343 Debug Fatal =>
+2019-02-27 16:31:49.7320 Debug Targets for Microsoft.AspNetCore.Routing.DefaultLinkGenerator by level:
+2019-02-27 16:31:49.7320 Debug Trace =>
+2019-02-27 16:31:49.7320 Debug Debug =>
+2019-02-27 16:31:49.7320 Debug Info =>
+2019-02-27 16:31:49.7320 Debug Warn =>
+2019-02-27 16:31:49.7320 Debug Error =>
+2019-02-27 16:31:49.7320 Debug Fatal =>
+2019-02-27 16:31:49.7459 Debug Targets for Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper by level:
+2019-02-27 16:31:49.7637 Debug Trace =>
+2019-02-27 16:31:49.7637 Debug Debug =>
+2019-02-27 16:31:49.7637 Debug Info =>
+2019-02-27 16:31:49.7637 Debug Warn =>
+2019-02-27 16:31:49.7637 Debug Error =>
+2019-02-27 16:31:49.7637 Debug Fatal =>
+2019-02-27 16:31:49.7930 Debug Targets for Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker by level:
+2019-02-27 16:31:49.7930 Debug Trace =>
+2019-02-27 16:31:49.7930 Debug Debug =>
+2019-02-27 16:31:49.7930 Debug Info =>
+2019-02-27 16:31:49.7930 Debug Warn =>
+2019-02-27 16:31:49.7930 Debug Error =>
+2019-02-27 16:31:49.8120 Debug Fatal =>
+2019-02-27 16:31:49.8308 Debug Targets for Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery by level:
+2019-02-27 16:31:49.8308 Debug Trace =>
+2019-02-27 16:31:49.8308 Debug Debug =>
+2019-02-27 16:31:49.8308 Debug Info =>
+2019-02-27 16:31:49.8308 Debug Warn =>
+2019-02-27 16:31:49.8308 Debug Error =>
+2019-02-27 16:31:49.8308 Debug Fatal =>
+2019-02-27 16:31:49.8853 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper by level:
+2019-02-27 16:31:49.8853 Debug Trace =>
+2019-02-27 16:31:49.8853 Debug Debug =>
+2019-02-27 16:31:49.8853 Debug Info =>
+2019-02-27 16:31:49.8853 Debug Warn =>
+2019-02-27 16:31:49.8853 Debug Error =>
+2019-02-27 16:31:49.9102 Debug Fatal =>
+2019-02-27 16:31:50.0687 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper by level:
+2019-02-27 16:31:50.0687 Debug Trace =>
+2019-02-27 16:31:50.0712 Debug Debug =>
+2019-02-27 16:31:50.0712 Debug Info =>
+2019-02-27 16:31:50.0948 Debug Warn =>
+2019-02-27 16:31:50.0948 Debug Error =>
+2019-02-27 16:31:50.1136 Debug Fatal =>
+2019-02-27 16:31:51.0931 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor by level:
+2019-02-27 16:31:51.0931 Debug Trace =>
+2019-02-27 16:31:51.0931 Debug Debug =>
+2019-02-27 16:31:51.1211 Debug Info =>
+2019-02-27 16:31:51.1211 Debug Warn =>
+2019-02-27 16:31:51.1211 Debug Error =>
+2019-02-27 16:31:51.1211 Debug Fatal =>
+2019-02-27 16:32:10.1996 Debug Targets for SqlLog by level:
+2019-02-27 16:32:10.1996 Debug Trace =>
+2019-02-27 16:32:10.1996 Debug Debug => SqlLogDB
+2019-02-27 16:32:10.2168 Debug Info => SqlLogDB
+2019-02-27 16:32:10.2313 Debug Warn => SqlLogDB
+2019-02-27 16:32:10.2434 Debug Error => SqlLogDB
+2019-02-27 16:32:10.2434 Debug Fatal => SqlLogDB
+2019-02-27 16:32:14.2961 Debug Targets for LoginLog by level:
+2019-02-27 16:32:14.2961 Debug Trace =>
+2019-02-27 16:32:14.2961 Debug Debug => LoginLogDB
+2019-02-27 16:32:14.2961 Debug Info => LoginLogDB
+2019-02-27 16:32:14.2961 Debug Warn => LoginLogDB
+2019-02-27 16:32:14.2961 Debug Error => LoginLogDB
+2019-02-27 16:32:14.3065 Debug Fatal => LoginLogDB
+2019-02-27 16:32:14.3364 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor by level:
+2019-02-27 16:32:14.3364 Debug Trace =>
+2019-02-27 16:32:14.3364 Debug Debug =>
+2019-02-27 16:32:14.3364 Debug Info =>
+2019-02-27 16:32:14.3364 Debug Warn =>
+2019-02-27 16:32:14.3364 Debug Error =>
+2019-02-27 16:32:14.3364 Debug Fatal =>
+2019-02-27 16:32:14.4353 Debug Targets for OperateLog by level:
+2019-02-27 16:32:14.4353 Debug Trace =>
+2019-02-27 16:32:14.4353 Debug Debug => OperateLogDB
+2019-02-27 16:32:14.4353 Debug Info => OperateLogDB
+2019-02-27 16:32:14.4641 Debug Warn => OperateLogDB
+2019-02-27 16:32:14.4641 Debug Error => OperateLogDB
+2019-02-27 16:32:14.4641 Debug Fatal => OperateLogDB
+2019-02-27 16:48:04.7662 Info Message Template Auto Format enabled
+2019-02-27 16:48:04.7979 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 16:48:04.8059 Debug Trace =>
+2019-02-27 16:48:04.8059 Debug Debug =>
+2019-02-27 16:48:04.8424 Debug Info =>
+2019-02-27 16:48:04.8424 Debug Warn =>
+2019-02-27 16:48:04.8424 Debug Error =>
+2019-02-27 16:48:04.8424 Debug Fatal =>
+2019-02-27 16:48:04.8424 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 16:48:04.8424 Debug Trace =>
+2019-02-27 16:48:04.8424 Debug Debug =>
+2019-02-27 16:48:04.8526 Debug Info =>
+2019-02-27 16:48:04.8807 Debug Warn =>
+2019-02-27 16:48:04.8807 Debug Error =>
+2019-02-27 16:48:04.8834 Debug Fatal =>
+2019-02-27 16:48:04.8834 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 16:48:04.8834 Debug Trace =>
+2019-02-27 16:48:04.8834 Debug Debug =>
+2019-02-27 16:48:04.8834 Debug Info =>
+2019-02-27 16:48:04.8834 Debug Warn =>
+2019-02-27 16:48:04.8834 Debug Error =>
+2019-02-27 16:48:04.8834 Debug Fatal =>
+2019-02-27 16:48:04.8834 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 16:48:04.8834 Debug Trace =>
+2019-02-27 16:48:04.8834 Debug Debug =>
+2019-02-27 16:48:04.8834 Debug Info =>
+2019-02-27 16:48:04.8834 Debug Warn =>
+2019-02-27 16:48:04.9001 Debug Error =>
+2019-02-27 16:48:04.9001 Debug Fatal =>
+2019-02-27 16:48:04.9001 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 16:48:04.9246 Debug Trace =>
+2019-02-27 16:48:04.9246 Debug Debug =>
+2019-02-27 16:48:04.9246 Debug Info =>
+2019-02-27 16:48:04.9306 Debug Warn =>
+2019-02-27 16:48:04.9306 Debug Error =>
+2019-02-27 16:48:04.9306 Debug Fatal =>
+2019-02-27 16:48:04.9518 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 16:48:04.9518 Debug Trace =>
+2019-02-27 16:48:04.9518 Debug Debug =>
+2019-02-27 16:48:04.9518 Debug Info =>
+2019-02-27 16:48:04.9518 Debug Warn =>
+2019-02-27 16:48:04.9518 Debug Error =>
+2019-02-27 16:48:04.9518 Debug Fatal =>
+2019-02-27 16:48:04.9518 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:04.9518 Debug Trace =>
+2019-02-27 16:48:04.9518 Debug Debug =>
+2019-02-27 16:48:04.9795 Debug Info =>
+2019-02-27 16:48:04.9795 Debug Warn =>
+2019-02-27 16:48:04.9795 Debug Error =>
+2019-02-27 16:48:04.9795 Debug Fatal =>
+2019-02-27 16:48:05.0026 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:05.0026 Debug Trace =>
+2019-02-27 16:48:05.0026 Debug Debug =>
+2019-02-27 16:48:05.0026 Debug Info =>
+2019-02-27 16:48:05.0217 Debug Warn =>
+2019-02-27 16:48:05.0217 Debug Error =>
+2019-02-27 16:48:05.0217 Debug Fatal =>
+2019-02-27 16:48:05.0217 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:05.0245 Debug Trace =>
+2019-02-27 16:48:05.0467 Debug Debug =>
+2019-02-27 16:48:05.0467 Debug Info =>
+2019-02-27 16:48:05.0644 Debug Warn =>
+2019-02-27 16:48:05.0644 Debug Error =>
+2019-02-27 16:48:05.0644 Debug Fatal =>
+2019-02-27 16:48:05.0644 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 16:48:05.0715 Debug Trace =>
+2019-02-27 16:48:05.0715 Debug Debug =>
+2019-02-27 16:48:05.0715 Debug Info =>
+2019-02-27 16:48:05.0715 Debug Warn =>
+2019-02-27 16:48:05.0715 Debug Error =>
+2019-02-27 16:48:05.0715 Debug Fatal =>
+2019-02-27 16:48:05.0715 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 16:48:05.0715 Debug Trace =>
+2019-02-27 16:48:05.0715 Debug Debug =>
+2019-02-27 16:48:05.0715 Debug Info =>
+2019-02-27 16:48:05.0715 Debug Warn =>
+2019-02-27 16:48:05.0715 Debug Error =>
+2019-02-27 16:48:05.0872 Debug Fatal =>
+2019-02-27 16:48:05.1059 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 16:48:05.1059 Debug Trace =>
+2019-02-27 16:48:05.1294 Debug Debug =>
+2019-02-27 16:48:05.1294 Debug Info =>
+2019-02-27 16:48:05.1294 Debug Warn =>
+2019-02-27 16:48:05.1294 Debug Error =>
+2019-02-27 16:48:05.1294 Debug Fatal =>
+2019-02-27 16:48:05.1354 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 16:48:05.1354 Debug Trace =>
+2019-02-27 16:48:05.1354 Debug Debug =>
+2019-02-27 16:48:05.1354 Debug Info =>
+2019-02-27 16:48:05.1594 Debug Warn =>
+2019-02-27 16:48:05.1594 Debug Error =>
+2019-02-27 16:48:05.1594 Debug Fatal =>
+2019-02-27 16:48:05.1805 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 16:48:05.2007 Debug Trace =>
+2019-02-27 16:48:05.2007 Debug Debug =>
+2019-02-27 16:48:05.2007 Debug Info =>
+2019-02-27 16:48:05.2244 Debug Warn =>
+2019-02-27 16:48:05.2244 Debug Error =>
+2019-02-27 16:48:05.2244 Debug Fatal =>
+2019-02-27 16:48:05.2244 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 16:48:05.2301 Debug Trace =>
+2019-02-27 16:48:05.2301 Debug Debug =>
+2019-02-27 16:48:05.2301 Debug Info =>
+2019-02-27 16:48:05.2301 Debug Warn =>
+2019-02-27 16:48:05.2301 Debug Error =>
+2019-02-27 16:48:05.2301 Debug Fatal =>
+2019-02-27 16:48:05.2718 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-02-27 16:48:05.3128 Debug Setting 'FileTarget.name' to 'file'
+2019-02-27 16:48:05.3128 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/${level}/${shortdate}.log'
+2019-02-27 16:48:05.3339 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}: ${message} ${event-context:item=exception} ${stacktrace}'
+2019-02-27 16:48:05.3339 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-02-27 16:48:05.3383 Info Adding target File Target[file]
+2019-02-27 16:48:05.3383 Debug Registered target file: NLog.Targets.FileTarget
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseTarget.name' to 'ExceptionLogDB'
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexceptionlog
+        (ExceptionId,Message,StackTrace,InnerException,ExceptionType,ServerHost,ClientHost,Runtime,RequestUrl,RequestData,UserAgent,HttpMethod,CreateaAcountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExceptionId,@Message,@StackTrace,@InnerException,@ExceptionType,@ServerHost,@ClientHost,@Runtime,@RequestUrl,@RequestData,@UserAgent,@HttpMethod,@CreateaAcountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionId'
+2019-02-27 16:48:05.3383 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionId}'
+2019-02-27 16:48:05.3524 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionId'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.name' to '@Message'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Message}'
+2019-02-27 16:48:05.3524 Debug Setting 'EventContextLayoutRenderer.item' to 'Message'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.name' to '@StackTrace'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=StackTrace}'
+2019-02-27 16:48:05.3524 Debug Setting 'EventContextLayoutRenderer.item' to 'StackTrace'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.name' to '@InnerException'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=InnerException}'
+2019-02-27 16:48:05.3524 Debug Setting 'EventContextLayoutRenderer.item' to 'InnerException'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionType'
+2019-02-27 16:48:05.3524 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionType}'
+2019-02-27 16:48:05.3524 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionType'
+2019-02-27 16:48:05.3818 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:48:05.3818 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:48:05.3842 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:48:05.3842 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.name' to '@Runtime'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Runtime}'
+2019-02-27 16:48:05.3842 Debug Setting 'EventContextLayoutRenderer.item' to 'Runtime'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.name' to '@RequestUrl'
+2019-02-27 16:48:05.3842 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestUrl}'
+2019-02-27 16:48:05.3842 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestUrl'
+2019-02-27 16:48:05.4086 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 16:48:05.4086 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 16:48:05.4086 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 16:48:05.4086 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:48:05.4086 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:48:05.4086 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:48:05.4086 Debug Setting 'DatabaseParameterInfo.name' to '@HttpMethod'
+2019-02-27 16:48:05.4155 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=HttpMethod}'
+2019-02-27 16:48:05.4155 Debug Setting 'EventContextLayoutRenderer.item' to 'HttpMethod'
+2019-02-27 16:48:05.4155 Debug Setting 'DatabaseParameterInfo.name' to '@CreateaAcountId'
+2019-02-27 16:48:05.4335 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateaAcountId}'
+2019-02-27 16:48:05.4335 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateaAcountId'
+2019-02-27 16:48:05.4494 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:48:05.4494 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:48:05.4494 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:48:05.4494 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:48:05.4666 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:48:05.4666 Info Adding target Database Target[ExceptionLogDB]
+2019-02-27 16:48:05.4666 Debug Registered target ExceptionLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseTarget.name' to 'OperateLogDB'
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysoperatelog
+        (OperateId,ClientHost,ServerHost,RequestContentLength,RequestType,Url,UrlReferrer,RequestData,UserAgent,ControllerName,ActionName,ActionExecutionTime,ResultExecutionTime,ResponseStatus,Description,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@OperateId,@ClientHost,@ServerHost,@RequestContentLength,@RequestType,@Url,@UrlReferrer,@RequestData,@UserAgent,@ControllerName,@ActionName,@ActionExecutionTime,@ResultExecutionTime,@ResponseStatus,@Description,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:48:05.4666 Debug Setting 'DatabaseParameterInfo.name' to '@OperateId'
+2019-02-27 16:48:05.4913 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OperateId}'
+2019-02-27 16:48:05.5079 Debug Setting 'EventContextLayoutRenderer.item' to 'OperateId'
+2019-02-27 16:48:05.5108 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:48:05.5108 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:48:05.5108 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:48:05.5108 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:48:05.5291 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.name' to '@RequestContentLength'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestContentLength}'
+2019-02-27 16:48:05.5291 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestContentLength'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.name' to '@RequestType'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestType}'
+2019-02-27 16:48:05.5291 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestType'
+2019-02-27 16:48:05.5291 Debug Setting 'DatabaseParameterInfo.name' to '@Url'
+2019-02-27 16:48:05.5531 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Url}'
+2019-02-27 16:48:05.5531 Debug Setting 'EventContextLayoutRenderer.item' to 'Url'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.name' to '@UrlReferrer'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UrlReferrer}'
+2019-02-27 16:48:05.5882 Debug Setting 'EventContextLayoutRenderer.item' to 'UrlReferrer'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 16:48:05.5882 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:48:05.5882 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:48:05.5882 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:48:05.6027 Debug Setting 'DatabaseParameterInfo.name' to '@ControllerName'
+2019-02-27 16:48:05.6027 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ControllerName}'
+2019-02-27 16:48:05.6027 Debug Setting 'EventContextLayoutRenderer.item' to 'ControllerName'
+2019-02-27 16:48:05.6027 Debug Setting 'DatabaseParameterInfo.name' to '@ActionName'
+2019-02-27 16:48:05.6027 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionName}'
+2019-02-27 16:48:05.6027 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionName'
+2019-02-27 16:48:05.6296 Debug Setting 'DatabaseParameterInfo.name' to '@ActionExecutionTime'
+2019-02-27 16:48:05.6296 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionExecutionTime}'
+2019-02-27 16:48:05.6296 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionExecutionTime'
+2019-02-27 16:48:05.6296 Debug Setting 'DatabaseParameterInfo.name' to '@ResultExecutionTime'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResultExecutionTime}'
+2019-02-27 16:48:05.6340 Debug Setting 'EventContextLayoutRenderer.item' to 'ResultExecutionTime'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.name' to '@ResponseStatus'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResponseStatus}'
+2019-02-27 16:48:05.6340 Debug Setting 'EventContextLayoutRenderer.item' to 'ResponseStatus'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.name' to '@Description'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Description}'
+2019-02-27 16:48:05.6340 Debug Setting 'EventContextLayoutRenderer.item' to 'Description'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:48:05.6340 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:48:05.6340 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:48:05.6499 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:48:05.6499 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:48:05.6499 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:48:05.6712 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:48:05.6712 Info Adding target Database Target[OperateLogDB]
+2019-02-27 16:48:05.6712 Debug Registered target OperateLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseTarget.name' to 'SqlLogDB'
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexecutesqllog
+        (ExecuteId,SqlCommand,Parameter,ElapsedTime,IsFail,Massage,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExecuteId,@SqlCommand,@Parameter,@ElapsedTime,@IsFail,@Massage,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 16:48:05.6712 Debug Setting 'DatabaseParameterInfo.name' to '@ExecuteId'
+2019-02-27 16:48:05.6805 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExecuteId}'
+2019-02-27 16:48:05.7024 Debug Setting 'EventContextLayoutRenderer.item' to 'ExecuteId'
+2019-02-27 16:48:05.7024 Debug Setting 'DatabaseParameterInfo.name' to '@SqlCommand'
+2019-02-27 16:48:05.7024 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=SqlCommand}'
+2019-02-27 16:48:05.7024 Debug Setting 'EventContextLayoutRenderer.item' to 'SqlCommand'
+2019-02-27 16:48:05.7024 Debug Setting 'DatabaseParameterInfo.name' to '@Parameter'
+2019-02-27 16:48:05.7024 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Parameter}'
+2019-02-27 16:48:05.7024 Debug Setting 'EventContextLayoutRenderer.item' to 'Parameter'
+2019-02-27 16:48:05.7363 Debug Setting 'DatabaseParameterInfo.name' to '@ElapsedTime'
+2019-02-27 16:48:05.7363 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ElapsedTime}'
+2019-02-27 16:48:05.7363 Debug Setting 'EventContextLayoutRenderer.item' to 'ElapsedTime'
+2019-02-27 16:48:05.7363 Debug Setting 'DatabaseParameterInfo.name' to '@IsFail'
+2019-02-27 16:48:05.7663 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IsFail}'
+2019-02-27 16:48:05.7663 Debug Setting 'EventContextLayoutRenderer.item' to 'IsFail'
+2019-02-27 16:48:05.7663 Debug Setting 'DatabaseParameterInfo.name' to '@Massage'
+2019-02-27 16:48:05.7663 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Massage}'
+2019-02-27 16:48:05.7663 Debug Setting 'EventContextLayoutRenderer.item' to 'Massage'
+2019-02-27 16:48:05.7663 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:48:05.8029 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:48:05.8029 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:48:05.8054 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 16:48:05.8054 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 16:48:05.8054 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 16:48:05.8054 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:48:05.8054 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:48:05.8054 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:48:05.8363 Info Adding target Database Target[SqlLogDB]
+2019-02-27 16:48:05.8371 Debug Registered target SqlLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:48:05.8371 Debug Setting 'DatabaseTarget.name' to 'LoginLogDB'
+2019-02-27 16:48:05.8371 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 16:48:05.8371 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 16:48:05.8761 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysloginlog
+        (LoginId,IpAddressName,ServerHost,ClientHost,UserAgent,OsVersion,LoginTime,CreateAccountId,CreatorTime)
+        VALUES
+        (@LoginId,@IpAddressName,@ServerHost,@ClientHost,@UserAgent,@OsVersion,@LoginTime,@CreateAccountId,@CreatorTime)
+      '
+2019-02-27 16:48:05.8761 Debug Setting 'DatabaseParameterInfo.name' to '@LoginId'
+2019-02-27 16:48:05.8761 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginId}'
+2019-02-27 16:48:05.8761 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginId'
+2019-02-27 16:48:05.8761 Debug Setting 'DatabaseParameterInfo.name' to '@IpAddressName'
+2019-02-27 16:48:05.9095 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IpAddressName}'
+2019-02-27 16:48:05.9095 Debug Setting 'EventContextLayoutRenderer.item' to 'IpAddressName'
+2019-02-27 16:48:05.9095 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 16:48:05.9095 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 16:48:05.9145 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 16:48:05.9145 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 16:48:05.9145 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.name' to '@OsVersion'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OsVersion}'
+2019-02-27 16:48:05.9145 Debug Setting 'EventContextLayoutRenderer.item' to 'OsVersion'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.name' to '@LoginTime'
+2019-02-27 16:48:05.9145 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginTime}'
+2019-02-27 16:48:05.9304 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginTime'
+2019-02-27 16:48:05.9304 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 16:48:05.9304 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 16:48:05.9304 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 16:48:05.9304 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 16:48:05.9584 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 16:48:05.9584 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 16:48:05.9584 Info Adding target Database Target[LoginLogDB]
+2019-02-27 16:48:05.9619 Debug Registered target LoginLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 16:48:05.9619 Info Configured from an XML element in C:\NetCode\Blog\src\Blog.Web\Configs/nlog.config...
+2019-02-27 16:48:05.9854 Debug Unused target checking is started... Rule Count: 5, Target Count: 5
+2019-02-27 16:48:05.9940 Debug Unused target checking is completed. Total Rule Count: 5, Total Target Count: 5, Unused Target Count: 0
+2019-02-27 16:48:05.9940 Debug --- NLog configuration dump ---
+2019-02-27 16:48:05.9940 Debug Targets:
+2019-02-27 16:48:05.9940 Debug File Target[file]
+2019-02-27 16:48:05.9940 Debug Database Target[ExceptionLogDB]
+2019-02-27 16:48:05.9940 Debug Database Target[OperateLogDB]
+2019-02-27 16:48:05.9940 Debug Database Target[SqlLogDB]
+2019-02-27 16:48:06.0271 Debug Database Target[LoginLogDB]
+2019-02-27 16:48:06.0271 Debug Rules:
+2019-02-27 16:48:06.0271 Debug logNamePattern: (FileLog:Equals) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ file ]
+2019-02-27 16:48:06.0546 Debug logNamePattern: (ExceptionLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ExceptionLogDB ]
+2019-02-27 16:48:06.0555 Debug logNamePattern: (OperateLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ OperateLogDB ]
+2019-02-27 16:48:06.0555 Debug logNamePattern: (SqlLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SqlLogDB ]
+2019-02-27 16:48:06.0815 Debug logNamePattern: (LoginLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ LoginLogDB ]
+2019-02-27 16:48:06.0815 Debug --- End of NLog configuration dump ---
+2019-02-27 16:48:06.0924 Info Found 205 configuration items
+2019-02-27 16:48:06.1516 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 16:48:06.1516 Debug Trace =>
+2019-02-27 16:48:06.1516 Debug Debug =>
+2019-02-27 16:48:06.1516 Debug Info =>
+2019-02-27 16:48:06.1755 Debug Warn =>
+2019-02-27 16:48:06.1755 Debug Error =>
+2019-02-27 16:48:06.1755 Debug Fatal =>
+2019-02-27 16:48:06.1755 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 16:48:06.1755 Debug Trace =>
+2019-02-27 16:48:06.1802 Debug Debug =>
+2019-02-27 16:48:06.1802 Debug Info =>
+2019-02-27 16:48:06.1802 Debug Warn =>
+2019-02-27 16:48:06.1990 Debug Error =>
+2019-02-27 16:48:06.1990 Debug Fatal =>
+2019-02-27 16:48:06.1990 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 16:48:06.1990 Debug Trace =>
+2019-02-27 16:48:06.1990 Debug Debug =>
+2019-02-27 16:48:06.2201 Debug Info =>
+2019-02-27 16:48:06.2201 Debug Warn =>
+2019-02-27 16:48:06.2388 Debug Error =>
+2019-02-27 16:48:06.2388 Debug Fatal =>
+2019-02-27 16:48:06.2388 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 16:48:06.2388 Debug Trace =>
+2019-02-27 16:48:06.2388 Debug Debug =>
+2019-02-27 16:48:06.2436 Debug Info =>
+2019-02-27 16:48:06.2436 Debug Warn =>
+2019-02-27 16:48:06.2436 Debug Error =>
+2019-02-27 16:48:06.2676 Debug Fatal =>
+2019-02-27 16:48:06.2676 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 16:48:06.2676 Debug Trace =>
+2019-02-27 16:48:06.2676 Debug Debug =>
+2019-02-27 16:48:06.2676 Debug Info =>
+2019-02-27 16:48:06.2676 Debug Warn =>
+2019-02-27 16:48:06.2964 Debug Error =>
+2019-02-27 16:48:06.2964 Debug Fatal =>
+2019-02-27 16:48:06.2964 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 16:48:06.2964 Debug Trace =>
+2019-02-27 16:48:06.2964 Debug Debug =>
+2019-02-27 16:48:06.3056 Debug Info =>
+2019-02-27 16:48:06.3056 Debug Warn =>
+2019-02-27 16:48:06.3056 Debug Error =>
+2019-02-27 16:48:06.3056 Debug Fatal =>
+2019-02-27 16:48:06.3371 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:06.3371 Debug Trace =>
+2019-02-27 16:48:06.3371 Debug Debug =>
+2019-02-27 16:48:06.3371 Debug Info =>
+2019-02-27 16:48:06.3371 Debug Warn =>
+2019-02-27 16:48:06.3371 Debug Error =>
+2019-02-27 16:48:06.3371 Debug Fatal =>
+2019-02-27 16:48:06.3371 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:06.3371 Debug Trace =>
+2019-02-27 16:48:06.3371 Debug Debug =>
+2019-02-27 16:48:06.3523 Debug Info =>
+2019-02-27 16:48:06.3523 Debug Warn =>
+2019-02-27 16:48:06.3523 Debug Error =>
+2019-02-27 16:48:06.3523 Debug Fatal =>
+2019-02-27 16:48:06.3523 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 16:48:06.3523 Debug Trace =>
+2019-02-27 16:48:06.3523 Debug Debug =>
+2019-02-27 16:48:06.3945 Debug Info =>
+2019-02-27 16:48:06.3945 Debug Warn =>
+2019-02-27 16:48:06.3945 Debug Error =>
+2019-02-27 16:48:06.3945 Debug Fatal =>
+2019-02-27 16:48:06.3945 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 16:48:06.3945 Debug Trace =>
+2019-02-27 16:48:06.3997 Debug Debug =>
+2019-02-27 16:48:06.3997 Debug Info =>
+2019-02-27 16:48:06.3997 Debug Warn =>
+2019-02-27 16:48:06.3997 Debug Error =>
+2019-02-27 16:48:06.3997 Debug Fatal =>
+2019-02-27 16:48:06.3997 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 16:48:06.3997 Debug Trace =>
+2019-02-27 16:48:06.3997 Debug Debug =>
+2019-02-27 16:48:06.3997 Debug Info =>
+2019-02-27 16:48:06.3997 Debug Warn =>
+2019-02-27 16:48:06.3997 Debug Error =>
+2019-02-27 16:48:06.3997 Debug Fatal =>
+2019-02-27 16:48:06.3997 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 16:48:06.4365 Debug Trace =>
+2019-02-27 16:48:06.4365 Debug Debug =>
+2019-02-27 16:48:06.4365 Debug Info =>
+2019-02-27 16:48:06.4365 Debug Warn =>
+2019-02-27 16:48:06.4365 Debug Error =>
+2019-02-27 16:48:06.4365 Debug Fatal =>
+2019-02-27 16:48:06.4621 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 16:48:06.4621 Debug Trace =>
+2019-02-27 16:48:06.4621 Debug Debug =>
+2019-02-27 16:48:06.4621 Debug Info =>
+2019-02-27 16:48:06.4621 Debug Warn =>
+2019-02-27 16:48:06.4621 Debug Error =>
+2019-02-27 16:48:06.4910 Debug Fatal =>
+2019-02-27 16:48:06.5149 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 16:48:06.5367 Debug Trace =>
+2019-02-27 16:48:06.5619 Debug Debug =>
+2019-02-27 16:48:06.5619 Debug Info =>
+2019-02-27 16:48:06.5831 Debug Warn =>
+2019-02-27 16:48:06.5831 Debug Error =>
+2019-02-27 16:48:06.5831 Debug Fatal =>
+2019-02-27 16:48:06.6099 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 16:48:06.6099 Debug Trace =>
+2019-02-27 16:48:06.6099 Debug Debug =>
+2019-02-27 16:48:06.6402 Debug Info =>
+2019-02-27 16:48:06.6402 Debug Warn =>
+2019-02-27 16:48:06.6402 Debug Error =>
+2019-02-27 16:48:06.6402 Debug Fatal =>
+2019-02-27 16:48:06.7023 Debug Targets for Microsoft.AspNetCore.Mvc.MvcJsonOptions by level:
+2019-02-27 16:48:06.7023 Debug Trace =>
+2019-02-27 16:48:06.7023 Debug Debug =>
+2019-02-27 16:48:06.7023 Debug Info =>
+2019-02-27 16:48:06.7373 Debug Warn =>
+2019-02-27 16:48:06.7373 Debug Error =>
+2019-02-27 16:48:06.7373 Debug Fatal =>
+2019-02-27 16:48:06.7529 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
+2019-02-27 16:48:06.7529 Debug Trace =>
+2019-02-27 16:48:06.7529 Debug Debug =>
+2019-02-27 16:48:06.7529 Debug Info =>
+2019-02-27 16:48:06.7529 Debug Warn =>
+2019-02-27 16:48:06.7587 Debug Error =>
+2019-02-27 16:48:06.7822 Debug Fatal =>
+2019-02-27 16:48:06.8375 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2019-02-27 16:48:06.8375 Debug Trace =>
+2019-02-27 16:48:06.8375 Debug Debug =>
+2019-02-27 16:48:06.8375 Debug Info =>
+2019-02-27 16:48:06.8375 Debug Warn =>
+2019-02-27 16:48:06.8375 Debug Error =>
+2019-02-27 16:48:06.8375 Debug Fatal =>
+2019-02-27 16:48:06.8375 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2019-02-27 16:48:06.8375 Debug Trace =>
+2019-02-27 16:48:06.8375 Debug Debug =>
+2019-02-27 16:48:06.8375 Debug Info =>
+2019-02-27 16:48:06.8375 Debug Warn =>
+2019-02-27 16:48:06.8375 Debug Error =>
+2019-02-27 16:48:06.8375 Debug Fatal =>
+2019-02-27 16:48:06.8615 Debug Targets for Microsoft.AspNetCore.Mvc.ApiBehaviorOptions by level:
+2019-02-27 16:48:06.8615 Debug Trace =>
+2019-02-27 16:48:06.8615 Debug Debug =>
+2019-02-27 16:48:06.8615 Debug Info =>
+2019-02-27 16:48:06.8615 Debug Warn =>
+2019-02-27 16:48:06.8615 Debug Error =>
+2019-02-27 16:48:06.8615 Debug Fatal =>
+2019-02-27 16:48:06.8838 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions by level:
+2019-02-27 16:48:06.8838 Debug Trace =>
+2019-02-27 16:48:06.8838 Debug Debug =>
+2019-02-27 16:48:06.8838 Debug Info =>
+2019-02-27 16:48:06.8838 Debug Warn =>
+2019-02-27 16:48:06.8838 Debug Error =>
+2019-02-27 16:48:06.8838 Debug Fatal =>
+2019-02-27 16:48:06.8838 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions by level:
+2019-02-27 16:48:06.8838 Debug Trace =>
+2019-02-27 16:48:06.8838 Debug Debug =>
+2019-02-27 16:48:06.8838 Debug Info =>
+2019-02-27 16:48:06.9120 Debug Warn =>
+2019-02-27 16:48:06.9120 Debug Error =>
+2019-02-27 16:48:06.9120 Debug Fatal =>
+2019-02-27 16:48:06.9636 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2019-02-27 16:48:06.9636 Debug Trace =>
+2019-02-27 16:48:06.9636 Debug Debug =>
+2019-02-27 16:48:06.9636 Debug Info =>
+2019-02-27 16:48:06.9636 Debug Warn =>
+2019-02-27 16:48:06.9636 Debug Error =>
+2019-02-27 16:48:06.9636 Debug Fatal =>
+2019-02-27 16:48:06.9797 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine by level:
+2019-02-27 16:48:06.9797 Debug Trace =>
+2019-02-27 16:48:06.9797 Debug Debug =>
+2019-02-27 16:48:06.9797 Debug Info =>
+2019-02-27 16:48:06.9797 Debug Warn =>
+2019-02-27 16:48:06.9797 Debug Error =>
+2019-02-27 16:48:07.0055 Debug Fatal =>
+2019-02-27 16:48:07.0055 Debug Targets for Microsoft.AspNetCore.Mvc.MvcViewOptions by level:
+2019-02-27 16:48:07.0092 Debug Trace =>
+2019-02-27 16:48:07.0092 Debug Debug =>
+2019-02-27 16:48:07.0092 Debug Info =>
+2019-02-27 16:48:07.0092 Debug Warn =>
+2019-02-27 16:48:07.0092 Debug Error =>
+2019-02-27 16:48:07.0092 Debug Fatal =>
+2019-02-27 16:48:07.0092 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2019-02-27 16:48:07.0240 Debug Trace =>
+2019-02-27 16:48:07.0240 Debug Debug =>
+2019-02-27 16:48:07.0485 Debug Info =>
+2019-02-27 16:48:07.0485 Debug Warn =>
+2019-02-27 16:48:07.0485 Debug Error =>
+2019-02-27 16:48:07.0485 Debug Fatal =>
+2019-02-27 16:48:07.0485 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.CompiledPageRouteModelProvider by level:
+2019-02-27 16:48:07.0485 Debug Trace =>
+2019-02-27 16:48:07.0485 Debug Debug =>
+2019-02-27 16:48:07.0559 Debug Info =>
+2019-02-27 16:48:07.0559 Debug Warn =>
+2019-02-27 16:48:07.0559 Debug Error =>
+2019-02-27 16:48:07.0559 Debug Fatal =>
+2019-02-27 16:48:07.1006 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2019-02-27 16:48:07.1006 Debug Trace =>
+2019-02-27 16:48:07.1025 Debug Debug =>
+2019-02-27 16:48:07.1025 Debug Info =>
+2019-02-27 16:48:07.1228 Debug Warn =>
+2019-02-27 16:48:07.1228 Debug Error =>
+2019-02-27 16:48:07.1228 Debug Fatal =>
+2019-02-27 16:48:07.1416 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2019-02-27 16:48:07.1416 Debug Trace =>
+2019-02-27 16:48:07.1416 Debug Debug =>
+2019-02-27 16:48:07.1416 Debug Info =>
+2019-02-27 16:48:07.1416 Debug Warn =>
+2019-02-27 16:48:07.1416 Debug Error =>
+2019-02-27 16:48:07.1416 Debug Fatal =>
+2019-02-27 16:48:07.1563 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2019-02-27 16:48:07.1811 Debug Trace =>
+2019-02-27 16:48:07.1811 Debug Debug =>
+2019-02-27 16:48:07.1811 Debug Info =>
+2019-02-27 16:48:07.2022 Debug Warn =>
+2019-02-27 16:48:07.2022 Debug Error =>
+2019-02-27 16:48:07.2022 Debug Fatal =>
+2019-02-27 16:48:07.2161 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2019-02-27 16:48:07.2161 Debug Trace =>
+2019-02-27 16:48:07.2161 Debug Debug =>
+2019-02-27 16:48:07.2161 Debug Info =>
+2019-02-27 16:48:07.2161 Debug Warn =>
+2019-02-27 16:48:07.2161 Debug Error =>
+2019-02-27 16:48:07.2161 Debug Fatal =>
+2019-02-27 16:48:07.2161 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2019-02-27 16:48:07.2161 Debug Trace =>
+2019-02-27 16:48:07.2275 Debug Debug =>
+2019-02-27 16:48:07.2275 Debug Info =>
+2019-02-27 16:48:07.2275 Debug Warn =>
+2019-02-27 16:48:07.2275 Debug Error =>
+2019-02-27 16:48:07.2275 Debug Fatal =>
+2019-02-27 16:48:07.2703 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2019-02-27 16:48:07.2703 Debug Trace =>
+2019-02-27 16:48:07.2703 Debug Debug =>
+2019-02-27 16:48:07.2740 Debug Info =>
+2019-02-27 16:48:07.3046 Debug Warn =>
+2019-02-27 16:48:07.3059 Debug Error =>
+2019-02-27 16:48:07.3334 Debug Fatal =>
+2019-02-27 16:48:07.6204 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2019-02-27 16:48:07.6204 Debug Trace =>
+2019-02-27 16:48:07.6204 Debug Debug =>
+2019-02-27 16:48:07.6204 Debug Info =>
+2019-02-27 16:48:07.6440 Debug Warn =>
+2019-02-27 16:48:07.6440 Debug Error =>
+2019-02-27 16:48:07.6440 Debug Fatal =>
+2019-02-27 16:48:07.6511 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2019-02-27 16:48:07.6511 Debug Trace =>
+2019-02-27 16:48:07.6511 Debug Debug =>
+2019-02-27 16:48:07.6511 Debug Info =>
+2019-02-27 16:48:07.6511 Debug Warn =>
+2019-02-27 16:48:07.6811 Debug Error =>
+2019-02-27 16:48:07.6811 Debug Fatal =>
+2019-02-27 16:48:07.6811 Debug Targets for Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware by level:
+2019-02-27 16:48:07.7235 Debug Trace =>
+2019-02-27 16:48:07.7235 Debug Debug =>
+2019-02-27 16:48:07.7235 Debug Info =>
+2019-02-27 16:48:07.7550 Debug Warn =>
+2019-02-27 16:48:07.7550 Debug Error =>
+2019-02-27 16:48:07.7550 Debug Fatal =>
+2019-02-27 16:48:07.7698 Debug Targets for Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware by level:
+2019-02-27 16:48:07.7698 Debug Trace =>
+2019-02-27 16:48:07.7698 Debug Debug =>
+2019-02-27 16:48:07.7698 Debug Info =>
+2019-02-27 16:48:07.7755 Debug Warn =>
+2019-02-27 16:48:07.7755 Debug Error =>
+2019-02-27 16:48:07.7755 Debug Fatal =>
+2019-02-27 16:48:07.7755 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2019-02-27 16:48:07.7755 Debug Trace =>
+2019-02-27 16:48:07.7755 Debug Debug =>
+2019-02-27 16:48:07.7755 Debug Info =>
+2019-02-27 16:48:07.7755 Debug Warn =>
+2019-02-27 16:48:07.7924 Debug Error =>
+2019-02-27 16:48:07.7924 Debug Fatal =>
+2019-02-27 16:48:07.7924 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2019-02-27 16:48:07.7924 Debug Trace =>
+2019-02-27 16:48:07.7924 Debug Debug =>
+2019-02-27 16:48:07.7924 Debug Info =>
+2019-02-27 16:48:07.8056 Debug Warn =>
+2019-02-27 16:48:07.8576 Debug Error =>
+2019-02-27 16:48:07.8576 Debug Fatal =>
+2019-02-27 16:48:07.8576 Debug Targets for Microsoft.AspNetCore.Session.SessionMiddleware by level:
+2019-02-27 16:48:07.8576 Debug Trace =>
+2019-02-27 16:48:07.8576 Debug Debug =>
+2019-02-27 16:48:07.8576 Debug Info =>
+2019-02-27 16:48:07.8680 Debug Warn =>
+2019-02-27 16:48:07.9005 Debug Error =>
+2019-02-27 16:48:07.9005 Debug Fatal =>
+2019-02-27 16:48:07.9005 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2019-02-27 16:48:07.9153 Debug Trace =>
+2019-02-27 16:48:07.9153 Debug Debug =>
+2019-02-27 16:48:07.9153 Debug Info =>
+2019-02-27 16:48:07.9629 Debug Warn =>
+2019-02-27 16:48:07.9629 Debug Error =>
+2019-02-27 16:48:07.9629 Debug Fatal =>
+2019-02-27 16:48:07.9629 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2019-02-27 16:48:07.9629 Debug Trace =>
+2019-02-27 16:48:07.9629 Debug Debug =>
+2019-02-27 16:48:07.9974 Debug Info =>
+2019-02-27 16:48:07.9974 Debug Warn =>
+2019-02-27 16:48:07.9974 Debug Error =>
+2019-02-27 16:48:07.9974 Debug Fatal =>
+2019-02-27 16:48:08.0086 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2019-02-27 16:48:08.0086 Debug Trace =>
+2019-02-27 16:48:08.0086 Debug Debug =>
+2019-02-27 16:48:08.0405 Debug Info =>
+2019-02-27 16:48:08.0405 Debug Warn =>
+2019-02-27 16:48:08.0664 Debug Error =>
+2019-02-27 16:48:08.0664 Debug Fatal =>
+2019-02-27 16:48:08.0788 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2019-02-27 16:48:08.0788 Debug Trace =>
+2019-02-27 16:48:08.0788 Debug Debug =>
+2019-02-27 16:48:08.0788 Debug Info =>
+2019-02-27 16:48:08.0788 Debug Warn =>
+2019-02-27 16:48:08.1132 Debug Error =>
+2019-02-27 16:48:08.1132 Debug Fatal =>
+2019-02-27 16:48:08.2159 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter by level:
+2019-02-27 16:48:08.2159 Debug Trace =>
+2019-02-27 16:48:08.2159 Debug Debug =>
+2019-02-27 16:48:08.2159 Debug Info =>
+2019-02-27 16:48:08.2159 Debug Warn =>
+2019-02-27 16:48:08.2159 Debug Error =>
+2019-02-27 16:48:08.2430 Debug Fatal =>
+2019-02-27 16:48:09.9091 Debug Targets for Microsoft.AspNetCore.Session.DistributedSession by level:
+2019-02-27 16:48:09.9091 Debug Trace =>
+2019-02-27 16:48:09.9091 Debug Debug =>
+2019-02-27 16:48:09.9091 Debug Info =>
+2019-02-27 16:48:09.9172 Debug Warn =>
+2019-02-27 16:48:09.9172 Debug Error =>
+2019-02-27 16:48:09.9172 Debug Fatal =>
+2019-02-27 16:48:10.0249 Debug Targets for Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler by level:
+2019-02-27 16:48:10.0249 Debug Trace =>
+2019-02-27 16:48:10.0249 Debug Debug =>
+2019-02-27 16:48:10.0249 Debug Info =>
+2019-02-27 16:48:10.0249 Debug Warn =>
+2019-02-27 16:48:10.0758 Debug Error =>
+2019-02-27 16:48:10.0758 Debug Fatal =>
+2019-02-27 16:48:10.1899 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2019-02-27 16:48:10.1899 Debug Trace =>
+2019-02-27 16:48:10.2418 Debug Debug =>
+2019-02-27 16:48:10.2418 Debug Info =>
+2019-02-27 16:48:10.2441 Debug Warn =>
+2019-02-27 16:48:10.2441 Debug Error =>
+2019-02-27 16:48:10.2441 Debug Fatal =>
+2019-02-27 16:48:10.2879 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder by level:
+2019-02-27 16:48:10.2879 Debug Trace =>
+2019-02-27 16:48:10.2901 Debug Debug =>
+2019-02-27 16:48:10.2901 Debug Info =>
+2019-02-27 16:48:10.3296 Debug Warn =>
+2019-02-27 16:48:10.3296 Debug Error =>
+2019-02-27 16:48:10.3296 Debug Fatal =>
+2019-02-27 16:48:22.4553 Debug Targets for Blog.Common.Log.LogHandler`1 by level:
+2019-02-27 16:48:22.4553 Debug Trace =>
+2019-02-27 16:48:22.5025 Debug Debug =>
+2019-02-27 16:48:22.5025 Debug Info =>
+2019-02-27 16:48:22.5025 Debug Warn =>
+2019-02-27 16:48:22.5025 Debug Error =>
+2019-02-27 16:48:22.5025 Debug Fatal =>
+2019-02-27 16:48:22.5156 Debug Targets for ExceptionLog by level:
+2019-02-27 16:48:22.5156 Debug Trace =>
+2019-02-27 16:48:22.5156 Debug Debug => ExceptionLogDB
+2019-02-27 16:48:22.5156 Debug Info => ExceptionLogDB
+2019-02-27 16:48:22.5156 Debug Warn => ExceptionLogDB
+2019-02-27 16:48:22.5824 Debug Error => ExceptionLogDB
+2019-02-27 16:48:22.5824 Debug Fatal => ExceptionLogDB
+2019-02-27 16:48:22.6333 Debug Targets for Blog.Common.Log.NLogger by level:
+2019-02-27 16:48:22.6398 Debug Trace =>
+2019-02-27 16:48:22.7021 Debug Debug =>
+2019-02-27 16:48:22.7021 Debug Info =>
+2019-02-27 16:48:22.7021 Debug Warn =>
+2019-02-27 16:48:22.7475 Debug Error =>
+2019-02-27 16:48:22.7475 Debug Fatal =>
+2019-02-27 16:48:22.7475 Debug Targets for FileLog by level:
+2019-02-27 16:48:22.7475 Debug Trace => file
+2019-02-27 16:48:22.7475 Debug Debug => file
+2019-02-27 16:48:22.7475 Debug Info => file
+2019-02-27 16:48:22.7475 Debug Warn => file
+2019-02-27 16:48:22.7475 Debug Error => file
+2019-02-27 16:48:22.7475 Debug Fatal => file
+2019-02-27 16:48:23.6370 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor by level:
+2019-02-27 16:48:23.6370 Debug Trace =>
+2019-02-27 16:48:23.6370 Debug Debug =>
+2019-02-27 16:48:23.6370 Debug Info =>
+2019-02-27 16:48:23.6370 Debug Warn =>
+2019-02-27 16:48:23.6814 Debug Error =>
+2019-02-27 16:48:23.6814 Debug Fatal =>
+2019-02-27 16:48:23.7441 Debug Targets for Microsoft.AspNetCore.Routing.DefaultLinkGenerator by level:
+2019-02-27 16:48:23.7441 Debug Trace =>
+2019-02-27 16:48:23.7441 Debug Debug =>
+2019-02-27 16:48:23.7913 Debug Info =>
+2019-02-27 16:48:23.7913 Debug Warn =>
+2019-02-27 16:48:23.7913 Debug Error =>
+2019-02-27 16:48:23.8291 Debug Fatal =>
+2019-02-27 16:48:23.8291 Debug Targets for Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper by level:
+2019-02-27 16:48:23.8291 Debug Trace =>
+2019-02-27 16:48:23.8291 Debug Debug =>
+2019-02-27 16:48:23.8291 Debug Info =>
+2019-02-27 16:48:23.8374 Debug Warn =>
+2019-02-27 16:48:23.8374 Debug Error =>
+2019-02-27 16:48:23.8374 Debug Fatal =>
+2019-02-27 16:48:23.8374 Debug Targets for Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker by level:
+2019-02-27 16:48:23.8374 Debug Trace =>
+2019-02-27 16:48:23.8522 Debug Debug =>
+2019-02-27 16:48:23.8522 Debug Info =>
+2019-02-27 16:48:23.8522 Debug Warn =>
+2019-02-27 16:48:23.8522 Debug Error =>
+2019-02-27 16:48:23.8522 Debug Fatal =>
+2019-02-27 16:48:23.8801 Debug Targets for Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery by level:
+2019-02-27 16:48:23.8801 Debug Trace =>
+2019-02-27 16:48:23.9292 Debug Debug =>
+2019-02-27 16:48:23.9309 Debug Info =>
+2019-02-27 16:48:24.0008 Debug Warn =>
+2019-02-27 16:48:24.0123 Debug Error =>
+2019-02-27 16:48:24.0123 Debug Fatal =>
+2019-02-27 16:48:24.0804 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper by level:
+2019-02-27 16:48:24.0870 Debug Trace =>
+2019-02-27 16:48:24.0870 Debug Debug =>
+2019-02-27 16:48:24.0870 Debug Info =>
+2019-02-27 16:48:24.1469 Debug Warn =>
+2019-02-27 16:48:24.1469 Debug Error =>
+2019-02-27 16:48:24.1530 Debug Fatal =>
+2019-02-27 16:48:24.3965 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper by level:
+2019-02-27 16:48:24.3965 Debug Trace =>
+2019-02-27 16:48:24.4405 Debug Debug =>
+2019-02-27 16:48:24.4405 Debug Info =>
+2019-02-27 16:48:24.4886 Debug Warn =>
+2019-02-27 16:48:24.4886 Debug Error =>
+2019-02-27 16:48:24.4935 Debug Fatal =>
+2019-02-27 16:48:25.6519 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor by level:
+2019-02-27 16:48:25.6519 Debug Trace =>
+2019-02-27 16:48:25.6519 Debug Debug =>
+2019-02-27 16:48:25.6519 Debug Info =>
+2019-02-27 16:48:25.6519 Debug Warn =>
+2019-02-27 16:48:25.6519 Debug Error =>
+2019-02-27 16:48:25.6670 Debug Fatal =>
+2019-02-27 16:49:01.5486 Debug Targets for SqlLog by level:
+2019-02-27 16:49:01.5598 Debug Trace =>
+2019-02-27 16:49:01.5598 Debug Debug => SqlLogDB
+2019-02-27 16:49:01.5722 Debug Info => SqlLogDB
+2019-02-27 16:49:01.5722 Debug Warn => SqlLogDB
+2019-02-27 16:49:01.5722 Debug Error => SqlLogDB
+2019-02-27 16:49:01.5722 Debug Fatal => SqlLogDB
+2019-02-27 16:49:02.0646 Debug Targets for LoginLog by level:
+2019-02-27 16:49:02.0646 Debug Trace =>
+2019-02-27 16:49:02.0646 Debug Debug => LoginLogDB
+2019-02-27 16:49:02.0646 Debug Info => LoginLogDB
+2019-02-27 16:49:02.0646 Debug Warn => LoginLogDB
+2019-02-27 16:49:02.0646 Debug Error => LoginLogDB
+2019-02-27 16:49:02.0720 Debug Fatal => LoginLogDB
+2019-02-27 16:49:02.1010 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor by level:
+2019-02-27 16:49:02.1035 Debug Trace =>
+2019-02-27 16:49:02.1035 Debug Debug =>
+2019-02-27 16:49:02.1035 Debug Info =>
+2019-02-27 16:49:02.1035 Debug Warn =>
+2019-02-27 16:49:02.1035 Debug Error =>
+2019-02-27 16:49:02.1035 Debug Fatal =>
+2019-02-27 16:49:02.1790 Debug Targets for OperateLog by level:
+2019-02-27 16:49:02.1790 Debug Trace =>
+2019-02-27 16:49:02.1813 Debug Debug => OperateLogDB
+2019-02-27 16:49:02.2152 Debug Info => OperateLogDB
+2019-02-27 16:49:02.2152 Debug Warn => OperateLogDB
+2019-02-27 16:49:02.2152 Debug Error => OperateLogDB
+2019-02-27 16:49:02.2152 Debug Fatal => OperateLogDB
+2019-02-27 17:21:35.8193 Info Message Template Auto Format enabled
+2019-02-27 17:21:35.8309 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 17:21:35.8430 Debug Trace =>
+2019-02-27 17:21:35.8430 Debug Debug =>
+2019-02-27 17:21:35.8430 Debug Info =>
+2019-02-27 17:21:35.8430 Debug Warn =>
+2019-02-27 17:21:35.8829 Debug Error =>
+2019-02-27 17:21:35.8829 Debug Fatal =>
+2019-02-27 17:21:35.8829 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 17:21:35.9344 Debug Trace =>
+2019-02-27 17:21:35.9344 Debug Debug =>
+2019-02-27 17:21:35.9344 Debug Info =>
+2019-02-27 17:21:35.9344 Debug Warn =>
+2019-02-27 17:21:35.9344 Debug Error =>
+2019-02-27 17:21:35.9344 Debug Fatal =>
+2019-02-27 17:21:35.9344 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 17:21:35.9344 Debug Trace =>
+2019-02-27 17:21:35.9344 Debug Debug =>
+2019-02-27 17:21:35.9461 Debug Info =>
+2019-02-27 17:21:35.9461 Debug Warn =>
+2019-02-27 17:21:35.9461 Debug Error =>
+2019-02-27 17:21:35.9461 Debug Fatal =>
+2019-02-27 17:21:35.9461 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 17:21:35.9461 Debug Trace =>
+2019-02-27 17:21:35.9461 Debug Debug =>
+2019-02-27 17:21:35.9839 Debug Info =>
+2019-02-27 17:21:35.9839 Debug Warn =>
+2019-02-27 17:21:35.9839 Debug Error =>
+2019-02-27 17:21:35.9839 Debug Fatal =>
+2019-02-27 17:21:35.9839 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 17:21:35.9839 Debug Trace =>
+2019-02-27 17:21:35.9839 Debug Debug =>
+2019-02-27 17:21:35.9839 Debug Info =>
+2019-02-27 17:21:35.9929 Debug Warn =>
+2019-02-27 17:21:35.9929 Debug Error =>
+2019-02-27 17:21:35.9929 Debug Fatal =>
+2019-02-27 17:21:35.9929 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 17:21:35.9929 Debug Trace =>
+2019-02-27 17:21:35.9929 Debug Debug =>
+2019-02-27 17:21:36.0347 Debug Info =>
+2019-02-27 17:21:36.0347 Debug Warn =>
+2019-02-27 17:21:36.0347 Debug Error =>
+2019-02-27 17:21:36.0347 Debug Fatal =>
+2019-02-27 17:21:36.0704 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:36.0704 Debug Trace =>
+2019-02-27 17:21:36.1222 Debug Debug =>
+2019-02-27 17:21:36.1222 Debug Info =>
+2019-02-27 17:21:36.1222 Debug Warn =>
+2019-02-27 17:21:36.1222 Debug Error =>
+2019-02-27 17:21:36.1222 Debug Fatal =>
+2019-02-27 17:21:36.1222 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:36.1222 Debug Trace =>
+2019-02-27 17:21:36.1222 Debug Debug =>
+2019-02-27 17:21:36.1222 Debug Info =>
+2019-02-27 17:21:36.1222 Debug Warn =>
+2019-02-27 17:21:36.1337 Debug Error =>
+2019-02-27 17:21:36.1337 Debug Fatal =>
+2019-02-27 17:21:36.1337 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:36.1337 Debug Trace =>
+2019-02-27 17:21:36.1337 Debug Debug =>
+2019-02-27 17:21:36.1337 Debug Info =>
+2019-02-27 17:21:36.1337 Debug Warn =>
+2019-02-27 17:21:36.1337 Debug Error =>
+2019-02-27 17:21:36.1337 Debug Fatal =>
+2019-02-27 17:21:36.1843 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 17:21:36.1843 Debug Trace =>
+2019-02-27 17:21:36.1843 Debug Debug =>
+2019-02-27 17:21:36.1843 Debug Info =>
+2019-02-27 17:21:36.1843 Debug Warn =>
+2019-02-27 17:21:36.1843 Debug Error =>
+2019-02-27 17:21:36.2239 Debug Fatal =>
+2019-02-27 17:21:36.2239 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 17:21:36.2239 Debug Trace =>
+2019-02-27 17:21:36.2271 Debug Debug =>
+2019-02-27 17:21:36.2271 Debug Info =>
+2019-02-27 17:21:36.2271 Debug Warn =>
+2019-02-27 17:21:36.2271 Debug Error =>
+2019-02-27 17:21:36.2271 Debug Fatal =>
+2019-02-27 17:21:36.2271 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 17:21:36.2271 Debug Trace =>
+2019-02-27 17:21:36.2271 Debug Debug =>
+2019-02-27 17:21:36.2271 Debug Info =>
+2019-02-27 17:21:36.2271 Debug Warn =>
+2019-02-27 17:21:36.2271 Debug Error =>
+2019-02-27 17:21:36.2271 Debug Fatal =>
+2019-02-27 17:21:36.2271 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 17:21:36.2271 Debug Trace =>
+2019-02-27 17:21:36.2431 Debug Debug =>
+2019-02-27 17:21:36.2431 Debug Info =>
+2019-02-27 17:21:36.2431 Debug Warn =>
+2019-02-27 17:21:36.2431 Debug Error =>
+2019-02-27 17:21:36.2431 Debug Fatal =>
+2019-02-27 17:21:36.2431 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 17:21:36.2431 Debug Trace =>
+2019-02-27 17:21:36.2431 Debug Debug =>
+2019-02-27 17:21:36.2431 Debug Info =>
+2019-02-27 17:21:36.2431 Debug Warn =>
+2019-02-27 17:21:36.2431 Debug Error =>
+2019-02-27 17:21:36.2431 Debug Fatal =>
+2019-02-27 17:21:36.2431 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 17:21:36.2865 Debug Trace =>
+2019-02-27 17:21:36.2865 Debug Debug =>
+2019-02-27 17:21:36.2865 Debug Info =>
+2019-02-27 17:21:36.2865 Debug Warn =>
+2019-02-27 17:21:36.2903 Debug Error =>
+2019-02-27 17:21:36.2903 Debug Fatal =>
+2019-02-27 17:21:36.3266 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-02-27 17:21:36.3591 Debug Setting 'FileTarget.name' to 'file'
+2019-02-27 17:21:36.3591 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/${level}/${shortdate}.log'
+2019-02-27 17:21:36.3813 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}: ${message} ${event-context:item=exception} ${stacktrace}'
+2019-02-27 17:21:36.3813 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-02-27 17:21:36.3853 Info Adding target File Target[file]
+2019-02-27 17:21:36.3853 Debug Registered target file: NLog.Targets.FileTarget
+2019-02-27 17:21:36.3853 Debug Setting 'DatabaseTarget.name' to 'ExceptionLogDB'
+2019-02-27 17:21:36.3853 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 17:21:36.3853 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 17:21:36.3853 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexceptionlog
+        (ExceptionId,Message,StackTrace,InnerException,ExceptionType,ServerHost,ClientHost,Runtime,RequestUrl,RequestData,UserAgent,HttpMethod,CreateaAcountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExceptionId,@Message,@StackTrace,@InnerException,@ExceptionType,@ServerHost,@ClientHost,@Runtime,@RequestUrl,@RequestData,@UserAgent,@HttpMethod,@CreateaAcountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 17:21:36.3853 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionId'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionId}'
+2019-02-27 17:21:36.3992 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionId'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.name' to '@Message'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Message}'
+2019-02-27 17:21:36.3992 Debug Setting 'EventContextLayoutRenderer.item' to 'Message'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.name' to '@StackTrace'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=StackTrace}'
+2019-02-27 17:21:36.3992 Debug Setting 'EventContextLayoutRenderer.item' to 'StackTrace'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.name' to '@InnerException'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=InnerException}'
+2019-02-27 17:21:36.3992 Debug Setting 'EventContextLayoutRenderer.item' to 'InnerException'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.name' to '@ExceptionType'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExceptionType}'
+2019-02-27 17:21:36.3992 Debug Setting 'EventContextLayoutRenderer.item' to 'ExceptionType'
+2019-02-27 17:21:36.3992 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 17:21:36.4149 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 17:21:36.4149 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.name' to '@Runtime'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Runtime}'
+2019-02-27 17:21:36.4149 Debug Setting 'EventContextLayoutRenderer.item' to 'Runtime'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.name' to '@RequestUrl'
+2019-02-27 17:21:36.4149 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestUrl}'
+2019-02-27 17:21:36.4149 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestUrl'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 17:21:36.4508 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 17:21:36.4508 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.name' to '@HttpMethod'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=HttpMethod}'
+2019-02-27 17:21:36.4508 Debug Setting 'EventContextLayoutRenderer.item' to 'HttpMethod'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.name' to '@CreateaAcountId'
+2019-02-27 17:21:36.4508 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateaAcountId}'
+2019-02-27 17:21:36.4508 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateaAcountId'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 17:21:36.4623 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 17:21:36.4623 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 17:21:36.4623 Info Adding target Database Target[ExceptionLogDB]
+2019-02-27 17:21:36.4623 Debug Registered target ExceptionLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseTarget.name' to 'OperateLogDB'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysoperatelog
+        (OperateId,ClientHost,ServerHost,RequestContentLength,RequestType,Url,UrlReferrer,RequestData,UserAgent,ControllerName,ActionName,ActionExecutionTime,ResultExecutionTime,ResponseStatus,Description,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@OperateId,@ClientHost,@ServerHost,@RequestContentLength,@RequestType,@Url,@UrlReferrer,@RequestData,@UserAgent,@ControllerName,@ActionName,@ActionExecutionTime,@ResultExecutionTime,@ResponseStatus,@Description,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.name' to '@OperateId'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OperateId}'
+2019-02-27 17:21:36.4623 Debug Setting 'EventContextLayoutRenderer.item' to 'OperateId'
+2019-02-27 17:21:36.4623 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 17:21:36.4778 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 17:21:36.4778 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.name' to '@RequestContentLength'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestContentLength}'
+2019-02-27 17:21:36.4778 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestContentLength'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.name' to '@RequestType'
+2019-02-27 17:21:36.4778 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestType}'
+2019-02-27 17:21:36.5203 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestType'
+2019-02-27 17:21:36.5203 Debug Setting 'DatabaseParameterInfo.name' to '@Url'
+2019-02-27 17:21:36.5203 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Url}'
+2019-02-27 17:21:36.5203 Debug Setting 'EventContextLayoutRenderer.item' to 'Url'
+2019-02-27 17:21:36.5245 Debug Setting 'DatabaseParameterInfo.name' to '@UrlReferrer'
+2019-02-27 17:21:36.5245 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UrlReferrer}'
+2019-02-27 17:21:36.5245 Debug Setting 'EventContextLayoutRenderer.item' to 'UrlReferrer'
+2019-02-27 17:21:36.5245 Debug Setting 'DatabaseParameterInfo.name' to '@RequestData'
+2019-02-27 17:21:36.5245 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=RequestData}'
+2019-02-27 17:21:36.5245 Debug Setting 'EventContextLayoutRenderer.item' to 'RequestData'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 17:21:36.5606 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.name' to '@ControllerName'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ControllerName}'
+2019-02-27 17:21:36.5606 Debug Setting 'EventContextLayoutRenderer.item' to 'ControllerName'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.name' to '@ActionName'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionName}'
+2019-02-27 17:21:36.5606 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionName'
+2019-02-27 17:21:36.5606 Debug Setting 'DatabaseParameterInfo.name' to '@ActionExecutionTime'
+2019-02-27 17:21:36.5973 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ActionExecutionTime}'
+2019-02-27 17:21:36.5973 Debug Setting 'EventContextLayoutRenderer.item' to 'ActionExecutionTime'
+2019-02-27 17:21:36.5973 Debug Setting 'DatabaseParameterInfo.name' to '@ResultExecutionTime'
+2019-02-27 17:21:36.6265 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResultExecutionTime}'
+2019-02-27 17:21:36.6265 Debug Setting 'EventContextLayoutRenderer.item' to 'ResultExecutionTime'
+2019-02-27 17:21:36.6265 Debug Setting 'DatabaseParameterInfo.name' to '@ResponseStatus'
+2019-02-27 17:21:36.6265 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ResponseStatus}'
+2019-02-27 17:21:36.6381 Debug Setting 'EventContextLayoutRenderer.item' to 'ResponseStatus'
+2019-02-27 17:21:36.6381 Debug Setting 'DatabaseParameterInfo.name' to '@Description'
+2019-02-27 17:21:36.6381 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Description}'
+2019-02-27 17:21:36.6854 Debug Setting 'EventContextLayoutRenderer.item' to 'Description'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 17:21:36.6854 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 17:21:36.6854 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 17:21:36.6854 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 17:21:36.6966 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 17:21:36.6966 Info Adding target Database Target[OperateLogDB]
+2019-02-27 17:21:36.6966 Debug Registered target OperateLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseTarget.name' to 'SqlLogDB'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysexecutesqllog
+        (ExecuteId,SqlCommand,Parameter,ElapsedTime,IsFail,Massage,CreateAccountId,CreateUserName,CreatorTime)
+        VALUES
+        (@ExecuteId,@SqlCommand,@Parameter,@ElapsedTime,@IsFail,@Massage,@CreateAccountId,@CreateUserName,@CreatorTime)
+      '
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseParameterInfo.name' to '@ExecuteId'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ExecuteId}'
+2019-02-27 17:21:36.6966 Debug Setting 'EventContextLayoutRenderer.item' to 'ExecuteId'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseParameterInfo.name' to '@SqlCommand'
+2019-02-27 17:21:36.6966 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=SqlCommand}'
+2019-02-27 17:21:36.7470 Debug Setting 'EventContextLayoutRenderer.item' to 'SqlCommand'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.name' to '@Parameter'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Parameter}'
+2019-02-27 17:21:36.7470 Debug Setting 'EventContextLayoutRenderer.item' to 'Parameter'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.name' to '@ElapsedTime'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ElapsedTime}'
+2019-02-27 17:21:36.7470 Debug Setting 'EventContextLayoutRenderer.item' to 'ElapsedTime'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.name' to '@IsFail'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IsFail}'
+2019-02-27 17:21:36.7470 Debug Setting 'EventContextLayoutRenderer.item' to 'IsFail'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.name' to '@Massage'
+2019-02-27 17:21:36.7470 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=Massage}'
+2019-02-27 17:21:36.7470 Debug Setting 'EventContextLayoutRenderer.item' to 'Massage'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 17:21:36.7956 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.name' to '@CreateUserName'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateUserName}'
+2019-02-27 17:21:36.7956 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateUserName'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 17:21:36.7956 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 17:21:36.7956 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 17:21:36.7956 Info Adding target Database Target[SqlLogDB]
+2019-02-27 17:21:36.8059 Debug Registered target SqlLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseTarget.name' to 'LoginLogDB'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseTarget.dbProvider' to 'MySql.Data.MySqlClient.MySqlConnection, MySql.Data'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseTarget.connectionstring' to 'Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseTarget.commandText' to '
+        INSERT INTO sysloginlog
+        (LoginId,IpAddressName,ServerHost,ClientHost,UserAgent,OsVersion,LoginTime,CreateAccountId,CreatorTime)
+        VALUES
+        (@LoginId,@IpAddressName,@ServerHost,@ClientHost,@UserAgent,@OsVersion,@LoginTime,@CreateAccountId,@CreatorTime)
+      '
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.name' to '@LoginId'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginId}'
+2019-02-27 17:21:36.8059 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginId'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.name' to '@IpAddressName'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=IpAddressName}'
+2019-02-27 17:21:36.8059 Debug Setting 'EventContextLayoutRenderer.item' to 'IpAddressName'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.name' to '@ServerHost'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ServerHost}'
+2019-02-27 17:21:36.8059 Debug Setting 'EventContextLayoutRenderer.item' to 'ServerHost'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.name' to '@ClientHost'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=ClientHost}'
+2019-02-27 17:21:36.8059 Debug Setting 'EventContextLayoutRenderer.item' to 'ClientHost'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.name' to '@UserAgent'
+2019-02-27 17:21:36.8059 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=UserAgent}'
+2019-02-27 17:21:36.8211 Debug Setting 'EventContextLayoutRenderer.item' to 'UserAgent'
+2019-02-27 17:21:36.8211 Debug Setting 'DatabaseParameterInfo.name' to '@OsVersion'
+2019-02-27 17:21:36.8211 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=OsVersion}'
+2019-02-27 17:21:36.8211 Debug Setting 'EventContextLayoutRenderer.item' to 'OsVersion'
+2019-02-27 17:21:36.8622 Debug Setting 'DatabaseParameterInfo.name' to '@LoginTime'
+2019-02-27 17:21:36.8622 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=LoginTime}'
+2019-02-27 17:21:36.8622 Debug Setting 'EventContextLayoutRenderer.item' to 'LoginTime'
+2019-02-27 17:21:36.8622 Debug Setting 'DatabaseParameterInfo.name' to '@CreateAccountId'
+2019-02-27 17:21:36.8622 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreateAccountId}'
+2019-02-27 17:21:36.9087 Debug Setting 'EventContextLayoutRenderer.item' to 'CreateAccountId'
+2019-02-27 17:21:36.9087 Debug Setting 'DatabaseParameterInfo.name' to '@CreatorTime'
+2019-02-27 17:21:36.9087 Debug Setting 'DatabaseParameterInfo.layout' to '${event-context:item=CreatorTime}'
+2019-02-27 17:21:36.9087 Debug Setting 'EventContextLayoutRenderer.item' to 'CreatorTime'
+2019-02-27 17:21:36.9087 Info Adding target Database Target[LoginLogDB]
+2019-02-27 17:21:36.9087 Debug Registered target LoginLogDB: NLog.Targets.DatabaseTarget
+2019-02-27 17:21:36.9313 Info Configured from an XML element in C:\NetCode\Blog\src\Blog.Web\Configs/nlog.config...
+2019-02-27 17:21:36.9313 Debug Unused target checking is started... Rule Count: 5, Target Count: 5
+2019-02-27 17:21:36.9538 Debug Unused target checking is completed. Total Rule Count: 5, Total Target Count: 5, Unused Target Count: 0
+2019-02-27 17:21:36.9538 Debug --- NLog configuration dump ---
+2019-02-27 17:21:36.9538 Debug Targets:
+2019-02-27 17:21:36.9538 Debug File Target[file]
+2019-02-27 17:21:36.9619 Debug Database Target[ExceptionLogDB]
+2019-02-27 17:21:36.9619 Debug Database Target[OperateLogDB]
+2019-02-27 17:21:36.9998 Debug Database Target[SqlLogDB]
+2019-02-27 17:21:36.9998 Debug Database Target[LoginLogDB]
+2019-02-27 17:21:36.9998 Debug Rules:
+2019-02-27 17:21:36.9998 Debug logNamePattern: (FileLog:Equals) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ file ]
+2019-02-27 17:21:36.9998 Debug logNamePattern: (ExceptionLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ExceptionLogDB ]
+2019-02-27 17:21:36.9998 Debug logNamePattern: (OperateLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ OperateLogDB ]
+2019-02-27 17:21:37.0085 Debug logNamePattern: (SqlLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SqlLogDB ]
+2019-02-27 17:21:37.0085 Debug logNamePattern: (LoginLog:Equals) levels: [ Debug Info Warn Error Fatal ] appendTo: [ LoginLogDB ]
+2019-02-27 17:21:37.0085 Debug --- End of NLog configuration dump ---
+2019-02-27 17:21:37.0085 Info Found 205 configuration items
+2019-02-27 17:21:37.0565 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.WebHost by level:
+2019-02-27 17:21:37.0565 Debug Trace =>
+2019-02-27 17:21:37.0565 Debug Debug =>
+2019-02-27 17:21:37.0565 Debug Info =>
+2019-02-27 17:21:37.0964 Debug Warn =>
+2019-02-27 17:21:37.0964 Debug Error =>
+2019-02-27 17:21:37.0964 Debug Fatal =>
+2019-02-27 17:21:37.0964 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.ApplicationLifetime by level:
+2019-02-27 17:21:37.0964 Debug Trace =>
+2019-02-27 17:21:37.1330 Debug Debug =>
+2019-02-27 17:21:37.1368 Debug Info =>
+2019-02-27 17:21:37.1368 Debug Warn =>
+2019-02-27 17:21:37.1368 Debug Error =>
+2019-02-27 17:21:37.1368 Debug Fatal =>
+2019-02-27 17:21:37.1368 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2019-02-27 17:21:37.1807 Debug Trace =>
+2019-02-27 17:21:37.1807 Debug Debug =>
+2019-02-27 17:21:37.1807 Debug Info =>
+2019-02-27 17:21:37.1807 Debug Warn =>
+2019-02-27 17:21:37.1807 Debug Error =>
+2019-02-27 17:21:37.1807 Debug Fatal =>
+2019-02-27 17:21:37.1807 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2019-02-27 17:21:37.2174 Debug Trace =>
+2019-02-27 17:21:37.2174 Debug Debug =>
+2019-02-27 17:21:37.2174 Debug Info =>
+2019-02-27 17:21:37.2174 Debug Warn =>
+2019-02-27 17:21:37.2174 Debug Error =>
+2019-02-27 17:21:37.2174 Debug Fatal =>
+2019-02-27 17:21:37.2174 Debug Targets for Microsoft.AspNetCore.DataProtection.TypeForwardingActivator by level:
+2019-02-27 17:21:37.2174 Debug Trace =>
+2019-02-27 17:21:37.2174 Debug Debug =>
+2019-02-27 17:21:37.2174 Debug Info =>
+2019-02-27 17:21:37.2174 Debug Warn =>
+2019-02-27 17:21:37.2174 Debug Error =>
+2019-02-27 17:21:37.2273 Debug Fatal =>
+2019-02-27 17:21:37.2617 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager by level:
+2019-02-27 17:21:37.2617 Debug Trace =>
+2019-02-27 17:21:37.2617 Debug Debug =>
+2019-02-27 17:21:37.2617 Debug Info =>
+2019-02-27 17:21:37.2617 Debug Warn =>
+2019-02-27 17:21:37.2617 Debug Error =>
+2019-02-27 17:21:37.2617 Debug Fatal =>
+2019-02-27 17:21:37.2617 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngGcmAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:37.2617 Debug Trace =>
+2019-02-27 17:21:37.2617 Debug Debug =>
+2019-02-27 17:21:37.2617 Debug Info =>
+2019-02-27 17:21:37.2617 Debug Warn =>
+2019-02-27 17:21:37.2617 Debug Error =>
+2019-02-27 17:21:37.2617 Debug Fatal =>
+2019-02-27 17:21:37.2617 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:37.3122 Debug Trace =>
+2019-02-27 17:21:37.3122 Debug Debug =>
+2019-02-27 17:21:37.3122 Debug Info =>
+2019-02-27 17:21:37.3122 Debug Warn =>
+2019-02-27 17:21:37.3122 Debug Error =>
+2019-02-27 17:21:37.3122 Debug Fatal =>
+2019-02-27 17:21:37.3593 Debug Targets for Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory by level:
+2019-02-27 17:21:37.3593 Debug Trace =>
+2019-02-27 17:21:37.3593 Debug Debug =>
+2019-02-27 17:21:37.3593 Debug Info =>
+2019-02-27 17:21:37.3593 Debug Warn =>
+2019-02-27 17:21:37.3593 Debug Error =>
+2019-02-27 17:21:37.3593 Debug Fatal =>
+2019-02-27 17:21:37.3593 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlEncryptor by level:
+2019-02-27 17:21:37.3693 Debug Trace =>
+2019-02-27 17:21:37.3693 Debug Debug =>
+2019-02-27 17:21:37.3693 Debug Info =>
+2019-02-27 17:21:37.3693 Debug Warn =>
+2019-02-27 17:21:37.3693 Debug Error =>
+2019-02-27 17:21:37.3693 Debug Fatal =>
+2019-02-27 17:21:37.3693 Debug Targets for Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository by level:
+2019-02-27 17:21:37.4152 Debug Trace =>
+2019-02-27 17:21:37.4152 Debug Debug =>
+2019-02-27 17:21:37.4516 Debug Info =>
+2019-02-27 17:21:37.4516 Debug Warn =>
+2019-02-27 17:21:37.4516 Debug Error =>
+2019-02-27 17:21:37.4516 Debug Fatal =>
+2019-02-27 17:21:37.4516 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver by level:
+2019-02-27 17:21:37.5009 Debug Trace =>
+2019-02-27 17:21:37.5009 Debug Debug =>
+2019-02-27 17:21:37.5009 Debug Info =>
+2019-02-27 17:21:37.5620 Debug Warn =>
+2019-02-27 17:21:37.5620 Debug Error =>
+2019-02-27 17:21:37.5620 Debug Fatal =>
+2019-02-27 17:21:37.5620 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider by level:
+2019-02-27 17:21:37.5620 Debug Trace =>
+2019-02-27 17:21:37.5620 Debug Debug =>
+2019-02-27 17:21:37.5620 Debug Info =>
+2019-02-27 17:21:37.5620 Debug Warn =>
+2019-02-27 17:21:37.5620 Debug Error =>
+2019-02-27 17:21:37.5620 Debug Fatal =>
+2019-02-27 17:21:37.5620 Debug Targets for Microsoft.AspNetCore.DataProtection.Internal.DataProtectionStartupFilter by level:
+2019-02-27 17:21:37.5620 Debug Trace =>
+2019-02-27 17:21:37.5705 Debug Debug =>
+2019-02-27 17:21:37.5705 Debug Info =>
+2019-02-27 17:21:37.5705 Debug Warn =>
+2019-02-27 17:21:37.5705 Debug Error =>
+2019-02-27 17:21:37.5705 Debug Fatal =>
+2019-02-27 17:21:37.5705 Debug Targets for Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor by level:
+2019-02-27 17:21:37.5705 Debug Trace =>
+2019-02-27 17:21:37.5705 Debug Debug =>
+2019-02-27 17:21:37.5705 Debug Info =>
+2019-02-27 17:21:37.5705 Debug Warn =>
+2019-02-27 17:21:37.5705 Debug Error =>
+2019-02-27 17:21:37.5705 Debug Fatal =>
+2019-02-27 17:21:37.6620 Debug Targets for Microsoft.AspNetCore.Mvc.MvcJsonOptions by level:
+2019-02-27 17:21:37.6620 Debug Trace =>
+2019-02-27 17:21:37.6620 Debug Debug =>
+2019-02-27 17:21:37.6662 Debug Info =>
+2019-02-27 17:21:37.6662 Debug Warn =>
+2019-02-27 17:21:37.6662 Debug Error =>
+2019-02-27 17:21:37.6662 Debug Fatal =>
+2019-02-27 17:21:37.6803 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
+2019-02-27 17:21:37.6803 Debug Trace =>
+2019-02-27 17:21:37.6803 Debug Debug =>
+2019-02-27 17:21:37.6803 Debug Info =>
+2019-02-27 17:21:37.6803 Debug Warn =>
+2019-02-27 17:21:37.6803 Debug Error =>
+2019-02-27 17:21:37.6803 Debug Fatal =>
+2019-02-27 17:21:37.7235 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonPatchInputFormatter by level:
+2019-02-27 17:21:37.7235 Debug Trace =>
+2019-02-27 17:21:37.7235 Debug Debug =>
+2019-02-27 17:21:37.7688 Debug Info =>
+2019-02-27 17:21:37.8073 Debug Warn =>
+2019-02-27 17:21:37.8073 Debug Error =>
+2019-02-27 17:21:37.8073 Debug Fatal =>
+2019-02-27 17:21:37.8073 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter by level:
+2019-02-27 17:21:37.8073 Debug Trace =>
+2019-02-27 17:21:37.8073 Debug Debug =>
+2019-02-27 17:21:37.8073 Debug Info =>
+2019-02-27 17:21:37.8073 Debug Warn =>
+2019-02-27 17:21:37.8485 Debug Error =>
+2019-02-27 17:21:37.8485 Debug Fatal =>
+2019-02-27 17:21:37.8597 Debug Targets for Microsoft.AspNetCore.Mvc.ApiBehaviorOptions by level:
+2019-02-27 17:21:37.8597 Debug Trace =>
+2019-02-27 17:21:37.8597 Debug Debug =>
+2019-02-27 17:21:37.8597 Debug Info =>
+2019-02-27 17:21:37.8597 Debug Warn =>
+2019-02-27 17:21:37.8954 Debug Error =>
+2019-02-27 17:21:37.8954 Debug Fatal =>
+2019-02-27 17:21:37.9454 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions by level:
+2019-02-27 17:21:37.9454 Debug Trace =>
+2019-02-27 17:21:37.9454 Debug Debug =>
+2019-02-27 17:21:37.9454 Debug Info =>
+2019-02-27 17:21:37.9855 Debug Warn =>
+2019-02-27 17:21:38.0206 Debug Error =>
+2019-02-27 17:21:38.0206 Debug Fatal =>
+2019-02-27 17:21:38.0206 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions by level:
+2019-02-27 17:21:38.0245 Debug Trace =>
+2019-02-27 17:21:38.0245 Debug Debug =>
+2019-02-27 17:21:38.0245 Debug Info =>
+2019-02-27 17:21:38.0245 Debug Warn =>
+2019-02-27 17:21:38.0245 Debug Error =>
+2019-02-27 17:21:38.0245 Debug Fatal =>
+2019-02-27 17:21:38.0806 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler by level:
+2019-02-27 17:21:38.0806 Debug Trace =>
+2019-02-27 17:21:38.1139 Debug Debug =>
+2019-02-27 17:21:38.1139 Debug Info =>
+2019-02-27 17:21:38.1139 Debug Warn =>
+2019-02-27 17:21:38.1139 Debug Error =>
+2019-02-27 17:21:38.1485 Debug Fatal =>
+2019-02-27 17:21:38.1582 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine by level:
+2019-02-27 17:21:38.1582 Debug Trace =>
+2019-02-27 17:21:38.1582 Debug Debug =>
+2019-02-27 17:21:38.1582 Debug Info =>
+2019-02-27 17:21:38.1582 Debug Warn =>
+2019-02-27 17:21:38.1582 Debug Error =>
+2019-02-27 17:21:38.2069 Debug Fatal =>
+2019-02-27 17:21:38.2069 Debug Targets for Microsoft.AspNetCore.Mvc.MvcViewOptions by level:
+2019-02-27 17:21:38.2497 Debug Trace =>
+2019-02-27 17:21:38.2497 Debug Debug =>
+2019-02-27 17:21:38.2497 Debug Info =>
+2019-02-27 17:21:38.2497 Debug Warn =>
+2019-02-27 17:21:38.2965 Debug Error =>
+2019-02-27 17:21:38.2965 Debug Fatal =>
+2019-02-27 17:21:38.2965 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.RazorProjectPageRouteModelProvider by level:
+2019-02-27 17:21:38.2965 Debug Trace =>
+2019-02-27 17:21:38.3057 Debug Debug =>
+2019-02-27 17:21:38.3057 Debug Info =>
+2019-02-27 17:21:38.3057 Debug Warn =>
+2019-02-27 17:21:38.3057 Debug Error =>
+2019-02-27 17:21:38.3533 Debug Fatal =>
+2019-02-27 17:21:38.3533 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.CompiledPageRouteModelProvider by level:
+2019-02-27 17:21:38.3533 Debug Trace =>
+2019-02-27 17:21:38.3533 Debug Debug =>
+2019-02-27 17:21:38.3533 Debug Info =>
+2019-02-27 17:21:38.4083 Debug Warn =>
+2019-02-27 17:21:38.4083 Debug Error =>
+2019-02-27 17:21:38.4083 Debug Fatal =>
+2019-02-27 17:21:38.4343 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2019-02-27 17:21:38.4343 Debug Trace =>
+2019-02-27 17:21:38.4343 Debug Debug =>
+2019-02-27 17:21:38.4343 Debug Info =>
+2019-02-27 17:21:38.4343 Debug Warn =>
+2019-02-27 17:21:38.4343 Debug Error =>
+2019-02-27 17:21:38.4343 Debug Fatal =>
+2019-02-27 17:21:38.4612 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2019-02-27 17:21:38.4612 Debug Trace =>
+2019-02-27 17:21:38.4612 Debug Debug =>
+2019-02-27 17:21:38.4612 Debug Info =>
+2019-02-27 17:21:38.4612 Debug Warn =>
+2019-02-27 17:21:38.4612 Debug Error =>
+2019-02-27 17:21:38.4612 Debug Fatal =>
+2019-02-27 17:21:38.4612 Debug Targets for Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker by level:
+2019-02-27 17:21:38.4612 Debug Trace =>
+2019-02-27 17:21:38.4779 Debug Debug =>
+2019-02-27 17:21:38.4779 Debug Info =>
+2019-02-27 17:21:38.4779 Debug Warn =>
+2019-02-27 17:21:38.4779 Debug Error =>
+2019-02-27 17:21:38.5144 Debug Fatal =>
+2019-02-27 17:21:38.5144 Debug Targets for Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector by level:
+2019-02-27 17:21:38.5144 Debug Trace =>
+2019-02-27 17:21:38.5240 Debug Debug =>
+2019-02-27 17:21:38.5240 Debug Info =>
+2019-02-27 17:21:38.5240 Debug Warn =>
+2019-02-27 17:21:38.5240 Debug Error =>
+2019-02-27 17:21:38.5240 Debug Fatal =>
+2019-02-27 17:21:38.5240 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.CookieTempDataProvider by level:
+2019-02-27 17:21:38.5240 Debug Trace =>
+2019-02-27 17:21:38.5240 Debug Debug =>
+2019-02-27 17:21:38.5240 Debug Info =>
+2019-02-27 17:21:38.5240 Debug Warn =>
+2019-02-27 17:21:38.5240 Debug Error =>
+2019-02-27 17:21:38.5403 Debug Fatal =>
+2019-02-27 17:21:38.5632 Debug Targets for Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker by level:
+2019-02-27 17:21:38.5632 Debug Trace =>
+2019-02-27 17:21:38.5632 Debug Debug =>
+2019-02-27 17:21:38.5632 Debug Info =>
+2019-02-27 17:21:38.5632 Debug Warn =>
+2019-02-27 17:21:38.5632 Debug Error =>
+2019-02-27 17:21:38.5632 Debug Fatal =>
+2019-02-27 17:21:38.9099 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2019-02-27 17:21:38.9099 Debug Trace =>
+2019-02-27 17:21:38.9099 Debug Debug =>
+2019-02-27 17:21:38.9099 Debug Info =>
+2019-02-27 17:21:38.9150 Debug Warn =>
+2019-02-27 17:21:38.9150 Debug Error =>
+2019-02-27 17:21:38.9150 Debug Fatal =>
+2019-02-27 17:21:38.9150 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2019-02-27 17:21:38.9150 Debug Trace =>
+2019-02-27 17:21:38.9150 Debug Debug =>
+2019-02-27 17:21:38.9150 Debug Info =>
+2019-02-27 17:21:38.9150 Debug Warn =>
+2019-02-27 17:21:38.9150 Debug Error =>
+2019-02-27 17:21:38.9302 Debug Fatal =>
+2019-02-27 17:21:38.9302 Debug Targets for Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware by level:
+2019-02-27 17:21:38.9302 Debug Trace =>
+2019-02-27 17:21:38.9302 Debug Debug =>
+2019-02-27 17:21:38.9302 Debug Info =>
+2019-02-27 17:21:38.9302 Debug Warn =>
+2019-02-27 17:21:38.9302 Debug Error =>
+2019-02-27 17:21:38.9302 Debug Fatal =>
+2019-02-27 17:21:38.9901 Debug Targets for Microsoft.AspNetCore.CookiePolicy.CookiePolicyMiddleware by level:
+2019-02-27 17:21:38.9901 Debug Trace =>
+2019-02-27 17:21:38.9901 Debug Debug =>
+2019-02-27 17:21:38.9925 Debug Info =>
+2019-02-27 17:21:38.9925 Debug Warn =>
+2019-02-27 17:21:38.9925 Debug Error =>
+2019-02-27 17:21:38.9925 Debug Fatal =>
+2019-02-27 17:21:38.9925 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2019-02-27 17:21:39.0518 Debug Trace =>
+2019-02-27 17:21:39.0518 Debug Debug =>
+2019-02-27 17:21:39.0518 Debug Info =>
+2019-02-27 17:21:39.0518 Debug Warn =>
+2019-02-27 17:21:39.0518 Debug Error =>
+2019-02-27 17:21:39.0518 Debug Fatal =>
+2019-02-27 17:21:39.0591 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2019-02-27 17:21:39.0591 Debug Trace =>
+2019-02-27 17:21:39.0591 Debug Debug =>
+2019-02-27 17:21:39.0591 Debug Info =>
+2019-02-27 17:21:39.1305 Debug Warn =>
+2019-02-27 17:21:39.1305 Debug Error =>
+2019-02-27 17:21:39.1305 Debug Fatal =>
+2019-02-27 17:21:39.1397 Debug Targets for Microsoft.AspNetCore.Session.SessionMiddleware by level:
+2019-02-27 17:21:39.1397 Debug Trace =>
+2019-02-27 17:21:39.1397 Debug Debug =>
+2019-02-27 17:21:39.1397 Debug Info =>
+2019-02-27 17:21:39.1813 Debug Warn =>
+2019-02-27 17:21:39.1813 Debug Error =>
+2019-02-27 17:21:39.1813 Debug Fatal =>
+2019-02-27 17:21:39.1813 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2019-02-27 17:21:39.1813 Debug Trace =>
+2019-02-27 17:21:39.1813 Debug Debug =>
+2019-02-27 17:21:39.1813 Debug Info =>
+2019-02-27 17:21:39.1813 Debug Warn =>
+2019-02-27 17:21:39.1813 Debug Error =>
+2019-02-27 17:21:39.1813 Debug Fatal =>
+2019-02-27 17:21:39.1813 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2019-02-27 17:21:39.1813 Debug Trace =>
+2019-02-27 17:21:39.1970 Debug Debug =>
+2019-02-27 17:21:39.1970 Debug Info =>
+2019-02-27 17:21:39.1970 Debug Warn =>
+2019-02-27 17:21:39.1970 Debug Error =>
+2019-02-27 17:21:39.1970 Debug Fatal =>
+2019-02-27 17:21:39.1970 Debug Targets for Microsoft.AspNetCore.Hosting.Internal.HostedServiceExecutor by level:
+2019-02-27 17:21:39.1970 Debug Trace =>
+2019-02-27 17:21:39.1970 Debug Debug =>
+2019-02-27 17:21:39.1970 Debug Info =>
+2019-02-27 17:21:39.1970 Debug Warn =>
+2019-02-27 17:21:39.1970 Debug Error =>
+2019-02-27 17:21:39.2118 Debug Fatal =>
+2019-02-27 17:21:39.2118 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2019-02-27 17:21:39.2118 Debug Trace =>
+2019-02-27 17:21:39.2118 Debug Debug =>
+2019-02-27 17:21:39.2118 Debug Info =>
+2019-02-27 17:21:39.2278 Debug Warn =>
+2019-02-27 17:21:39.2278 Debug Error =>
+2019-02-27 17:21:39.2278 Debug Fatal =>
+2019-02-27 17:21:39.3061 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionAdapter by level:
+2019-02-27 17:21:39.3061 Debug Trace =>
+2019-02-27 17:21:39.3061 Debug Debug =>
+2019-02-27 17:21:39.3061 Debug Info =>
+2019-02-27 17:21:39.3061 Debug Warn =>
+2019-02-27 17:21:39.3061 Debug Error =>
+2019-02-27 17:21:39.3061 Debug Fatal =>
+2019-02-27 17:21:41.3829 Debug Targets for Microsoft.AspNetCore.Session.DistributedSession by level:
+2019-02-27 17:21:41.3848 Debug Trace =>
+2019-02-27 17:21:41.3848 Debug Debug =>
+2019-02-27 17:21:41.3848 Debug Info =>
+2019-02-27 17:21:41.4770 Debug Warn =>
+2019-02-27 17:21:41.4770 Debug Error =>
+2019-02-27 17:21:41.5632 Debug Fatal =>
+2019-02-27 17:21:41.6071 Debug Targets for Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler by level:
+2019-02-27 17:21:41.6071 Debug Trace =>
+2019-02-27 17:21:41.6071 Debug Debug =>
+2019-02-27 17:21:41.6071 Debug Info =>
+2019-02-27 17:21:41.6071 Debug Warn =>
+2019-02-27 17:21:41.6071 Debug Error =>
+2019-02-27 17:21:41.6071 Debug Fatal =>
+2019-02-27 17:21:41.7503 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2019-02-27 17:21:41.7503 Debug Trace =>
+2019-02-27 17:21:41.8257 Debug Debug =>
+2019-02-27 17:21:41.8257 Debug Info =>
+2019-02-27 17:21:41.8924 Debug Warn =>
+2019-02-27 17:21:41.8924 Debug Error =>
+2019-02-27 17:21:41.8924 Debug Fatal =>
+2019-02-27 17:21:41.9393 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder by level:
+2019-02-27 17:21:41.9393 Debug Trace =>
+2019-02-27 17:21:41.9393 Debug Debug =>
+2019-02-27 17:21:41.9393 Debug Info =>
+2019-02-27 17:21:41.9393 Debug Warn =>
+2019-02-27 17:21:41.9393 Debug Error =>
+2019-02-27 17:21:41.9456 Debug Fatal =>
+2019-02-27 17:21:42.7033 Debug Targets for Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor by level:
+2019-02-27 17:21:42.7033 Debug Trace =>
+2019-02-27 17:21:42.7490 Debug Debug =>
+2019-02-27 17:21:42.7490 Debug Info =>
+2019-02-27 17:21:42.7490 Debug Warn =>
+2019-02-27 17:21:42.7490 Debug Error =>
+2019-02-27 17:21:42.7490 Debug Fatal =>
+2019-02-27 17:21:42.8140 Debug Targets for Microsoft.AspNetCore.Routing.DefaultLinkGenerator by level:
+2019-02-27 17:21:42.8140 Debug Trace =>
+2019-02-27 17:21:42.8140 Debug Debug =>
+2019-02-27 17:21:42.8140 Debug Info =>
+2019-02-27 17:21:42.8140 Debug Warn =>
+2019-02-27 17:21:42.8140 Debug Error =>
+2019-02-27 17:21:42.8217 Debug Fatal =>
+2019-02-27 17:21:42.8217 Debug Targets for Microsoft.AspNetCore.Mvc.Routing.EndpointRoutingUrlHelper by level:
+2019-02-27 17:21:42.8217 Debug Trace =>
+2019-02-27 17:21:42.8217 Debug Debug =>
+2019-02-27 17:21:42.8217 Debug Info =>
+2019-02-27 17:21:42.8217 Debug Warn =>
+2019-02-27 17:21:42.8760 Debug Error =>
+2019-02-27 17:21:42.8760 Debug Fatal =>
+2019-02-27 17:21:42.8760 Debug Targets for Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker by level:
+2019-02-27 17:21:42.8760 Debug Trace =>
+2019-02-27 17:21:42.8760 Debug Debug =>
+2019-02-27 17:21:42.8837 Debug Info =>
+2019-02-27 17:21:42.8837 Debug Warn =>
+2019-02-27 17:21:42.8837 Debug Error =>
+2019-02-27 17:21:42.9305 Debug Fatal =>
+2019-02-27 17:21:42.9305 Debug Targets for Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery by level:
+2019-02-27 17:21:42.9305 Debug Trace =>
+2019-02-27 17:21:42.9305 Debug Debug =>
+2019-02-27 17:21:42.9465 Debug Info =>
+2019-02-27 17:21:42.9465 Debug Warn =>
+2019-02-27 17:21:42.9465 Debug Error =>
+2019-02-27 17:21:42.9465 Debug Fatal =>
+2019-02-27 17:21:43.1575 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper by level:
+2019-02-27 17:21:43.1575 Debug Trace =>
+2019-02-27 17:21:43.1575 Debug Debug =>
+2019-02-27 17:21:43.1575 Debug Info =>
+2019-02-27 17:21:43.1575 Debug Warn =>
+2019-02-27 17:21:43.2394 Debug Error =>
+2019-02-27 17:21:43.2394 Debug Fatal =>
+2019-02-27 17:21:43.3208 Debug Targets for Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper by level:
+2019-02-27 17:21:43.3223 Debug Trace =>
+2019-02-27 17:21:43.3223 Debug Debug =>
+2019-02-27 17:21:43.3223 Debug Info =>
+2019-02-27 17:21:43.3223 Debug Warn =>
+2019-02-27 17:21:43.3756 Debug Error =>
+2019-02-27 17:21:43.3756 Debug Fatal =>
+2019-02-27 17:21:45.0629 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor by level:
+2019-02-27 17:21:45.0916 Debug Trace =>
+2019-02-27 17:21:45.0916 Debug Debug =>
+2019-02-27 17:21:45.0916 Debug Info =>
+2019-02-27 17:21:45.1023 Debug Warn =>
+2019-02-27 17:21:45.1023 Debug Error =>
+2019-02-27 17:21:45.1023 Debug Fatal =>
+2019-02-27 17:21:45.2178 Debug Targets for Blog.Common.Log.LogHandler`1 by level:
+2019-02-27 17:21:45.2178 Debug Trace =>
+2019-02-27 17:21:45.2178 Debug Debug =>
+2019-02-27 17:21:45.2178 Debug Info =>
+2019-02-27 17:21:45.2278 Debug Warn =>
+2019-02-27 17:21:45.2278 Debug Error =>
+2019-02-27 17:21:45.2278 Debug Fatal =>
+2019-02-27 17:21:45.2278 Debug Targets for SqlLog by level:
+2019-02-27 17:21:45.2473 Debug Trace =>
+2019-02-27 17:21:45.2473 Debug Debug => SqlLogDB
+2019-02-27 17:21:45.3654 Debug Info => SqlLogDB
+2019-02-27 17:21:45.3687 Debug Warn => SqlLogDB
+2019-02-27 17:21:45.3687 Debug Error => SqlLogDB
+2019-02-27 17:21:45.3687 Debug Fatal => SqlLogDB
+2019-02-27 17:21:51.9615 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.FileContentResultExecutor by level:
+2019-02-27 17:21:51.9615 Debug Trace =>
+2019-02-27 17:21:51.9615 Debug Debug =>
+2019-02-27 17:21:51.9615 Debug Info =>
+2019-02-27 17:21:51.9615 Debug Warn =>
+2019-02-27 17:21:51.9615 Debug Error =>
+2019-02-27 17:21:51.9615 Debug Fatal =>
+2019-02-27 17:22:08.1950 Debug Targets for LoginLog by level:
+2019-02-27 17:22:08.1966 Debug Trace =>
+2019-02-27 17:22:08.1966 Debug Debug => LoginLogDB
+2019-02-27 17:22:08.2122 Debug Info => LoginLogDB
+2019-02-27 17:22:08.2122 Debug Warn => LoginLogDB
+2019-02-27 17:22:08.2122 Debug Error => LoginLogDB
+2019-02-27 17:22:08.2122 Debug Fatal => LoginLogDB
+2019-02-27 17:22:08.3221 Debug Targets for OperateLog by level:
+2019-02-27 17:22:08.3221 Debug Trace =>
+2019-02-27 17:22:08.3221 Debug Debug => OperateLogDB
+2019-02-27 17:22:08.3221 Debug Info => OperateLogDB
+2019-02-27 17:22:08.3221 Debug Warn => OperateLogDB
+2019-02-27 17:22:08.3221 Debug Error => OperateLogDB
+2019-02-27 17:22:08.3221 Debug Fatal => OperateLogDB
+2019-02-27 17:22:14.5020 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinder by level:
+2019-02-27 17:22:14.5020 Debug Trace =>
+2019-02-27 17:22:14.5020 Debug Debug =>
+2019-02-27 17:22:14.5020 Debug Info =>
+2019-02-27 17:22:14.5121 Debug Warn =>
+2019-02-27 17:22:14.5121 Debug Error =>
+2019-02-27 17:22:14.5121 Debug Fatal =>
+2019-02-27 17:22:14.5121 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinder by level:
+2019-02-27 17:22:14.5121 Debug Trace =>
+2019-02-27 17:22:14.6078 Debug Debug =>
+2019-02-27 17:22:14.6078 Debug Info =>
+2019-02-27 17:22:14.6078 Debug Warn =>
+2019-02-27 17:22:14.6078 Debug Error =>
+2019-02-27 17:22:14.6078 Debug Fatal =>
+2019-02-27 17:22:20.5244 Debug Targets for ExceptionLog by level:
+2019-02-27 17:22:20.5244 Debug Trace =>
+2019-02-27 17:22:20.5244 Debug Debug => ExceptionLogDB
+2019-02-27 17:22:20.5244 Debug Info => ExceptionLogDB
+2019-02-27 17:22:20.5439 Debug Warn => ExceptionLogDB
+2019-02-27 17:22:20.5439 Debug Error => ExceptionLogDB
+2019-02-27 17:22:20.5439 Debug Fatal => ExceptionLogDB
+2019-02-27 17:22:20.6415 Debug Targets for Blog.Common.Log.NLogger by level:
+2019-02-27 17:22:20.6415 Debug Trace =>
+2019-02-27 17:22:20.6415 Debug Debug =>
+2019-02-27 17:22:20.6415 Debug Info =>
+2019-02-27 17:22:20.6415 Debug Warn =>
+2019-02-27 17:22:20.6494 Debug Error =>
+2019-02-27 17:22:20.6494 Debug Fatal =>
+2019-02-27 17:22:20.6494 Debug Targets for FileLog by level:
+2019-02-27 17:22:20.6494 Debug Trace => file
+2019-02-27 17:22:20.6494 Debug Debug => file
+2019-02-27 17:22:20.6494 Debug Info => file
+2019-02-27 17:22:20.6494 Debug Warn => file
+2019-02-27 17:22:20.6494 Debug Error => file
+2019-02-27 17:22:20.6494 Debug Fatal => file

@@ -1,13 +1,12 @@
 ﻿using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
 using System.Linq;
 
-namespace AppSoft.Areas.SystemManage.Controllers
+namespace Blog.Web.Areas.SystemManage.Controllers
 {
     [Area("SystemManage")]
     public class RoleController : BaseControler

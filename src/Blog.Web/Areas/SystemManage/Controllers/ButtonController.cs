@@ -1,11 +1,10 @@
 ﻿using Blog.Entities;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
 
-namespace AppSoft.Areas.SystemManage.Controllers
+namespace Blog.Web.Areas.SystemManage.Controllers
 {
     [Area("SystemManage")]
     public class ButtonController : BaseControler
@@ -44,7 +43,7 @@ namespace AppSoft.Areas.SystemManage.Controllers
         [Description("删除按钮")]
         public IActionResult Delete(string key)
         {
-            return Json(_sysButtonService.Delete(key));
+            return Json(_sysButtonService.DeleteRemoveCache(key));
         }
     }
 }

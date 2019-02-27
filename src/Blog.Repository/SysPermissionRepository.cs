@@ -1,6 +1,6 @@
-﻿using Blog.IRepository;
+﻿using Blog.Core;
 using Blog.Entities;
-using Blog.Core;
+using Blog.IRepository;
 
 namespace Blog.Repository
 {

@@ -1,8 +1,6 @@
-﻿using Blog.Common.Extensions;
-using Blog.Core;
-using Blog.Web.Filter;
-using Autofac;
+﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Blog.Common.Extensions;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,9 +9,13 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using NLog.Extensions.Logging;
+using NLog.Web;
 using System;
 using System.Reflection;
+using Blog.Common.Cache;
 
 namespace Blog.Web
 {
@@ -65,6 +67,9 @@ namespace Blog.Web
                 options.SlidingExpiration = true;// 是否在过期时间过半的时候，自动延期
             });
 
+            //初始化Redis
+            Redis.Initialization();
+
             #region Autofac注入
             //实例化一个autofac的创建容器
             var builder = new ContainerBuilder();
@@ -81,8 +86,11 @@ namespace Blog.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            //配置nlog
+            loggerFactory.AddNLog();
+            env.ConfigureNLog("Configs/nlog.config");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

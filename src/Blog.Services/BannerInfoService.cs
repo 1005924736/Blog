@@ -24,11 +24,11 @@ namespace Blog.Services
             if (string.IsNullOrWhiteSpace(banner.BannerId))
             {
                 banner.BannerId = SnowflakeUtil.NextStringId();
-                return Insert(banner);
+                return InsertRemoveCache(banner);
             }
             else
             {
-                return Update(banner, i => new { i.CreatorTime, i.DeleteMark });
+                return UpdateRemoveCache(banner, i => new { i.CreatorTime, i.DeleteMark });
             }
         }
     }

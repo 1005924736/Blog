@@ -27,6 +27,8 @@ namespace Blog.Entities.Dtos
 
         public int ReadTimes { get; set; }
 
+        public int MsgTimes { get; set; }
+
         public string TagsId { get; set; }
 
         public List<TagDto> Tags { get; set; }

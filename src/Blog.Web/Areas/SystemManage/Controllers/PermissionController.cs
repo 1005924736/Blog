@@ -1,5 +1,4 @@
 ﻿using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AppSoft.Areas.SystemManage.Controllers
+namespace Blog.Web.Areas.SystemManage.Controllers
 {
     [Area("SystemManage")]
     public class PermissionController : BaseControler

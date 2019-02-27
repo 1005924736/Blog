@@ -1,5 +1,4 @@
-﻿using System.IO;
-using App.Common.Builder;
+﻿using Blog.Common.Builder;
 using Blog.Common.Utils;
 using Blog.Core;
 
@@ -11,6 +10,8 @@ namespace Blog.SqlSugar.Generate
         {
             //DbFirst dbFirst = new DbFirst();
             //dbFirst.Init();
+
+            CodeGenerate.Builder("sysuser", "SysUser");
         }
     }
 

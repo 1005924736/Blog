@@ -3,7 +3,6 @@ using Blog.Common.Extensions;
 using Blog.Common.Net;
 using System;
 using System.IO;
-using System.Text;
 using System.Web;
 
 namespace Blog.Common.Log
@@ -51,28 +50,7 @@ namespace Blog.Common.Log
             //读取完数据流后重置当前流的位置（很重要）
             //request.Body.Position = 0;
             LogInfo.RequestData = requestData;
-            LogInfo.InnerException = GetExceptionFullMessage(exception.InnerException);
-        }
-
-        /// <summary>
-        /// 获取完整的异常消息，包括内部异常消息
-        /// </summary>
-        /// <returns></returns>
-        private static string GetExceptionFullMessage(Exception exception)
-        {
-            if (exception == null)
-            {
-                return null;
-            }
-            var message = new StringBuilder(exception.Message);
-            var innerException = exception.InnerException;
-            while (innerException != null)
-            {
-                message.Append("--->");
-                message.Append(innerException.Message);
-                innerException = innerException.InnerException;
-            }
-            return message.ToString();
+            LogInfo.InnerException = NLogger.GetExceptionFullMessage(exception.InnerException);
         }
     }
 }

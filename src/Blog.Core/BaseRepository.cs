@@ -24,6 +24,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 插入数据（适用于id自动增长）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>返回主键ID</returns>
+        public int InsertScalarRemoveCache(TEntity entity)
+        {
+            return Db.Insertable(entity).RemoveDataCache().ExecuteReturnIdentity();
+        }
+
+        /// <summary>
         /// 插入数据（适用于id自动增长）
         /// </summary>
         /// <param name="entity"></param>
@@ -31,6 +41,16 @@ namespace Blog.Core
         public Task<int> InsertScalarAsync(TEntity entity)
         {
             return Db.Insertable(entity).ExecuteReturnIdentityAsync();
+        }
+
+        /// <summary>
+        /// 插入数据（适用于id自动增长）
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public Task<int> InsertScalarRemoveCacheAsync(TEntity entity)
+        {
+            return Db.Insertable(entity).RemoveDataCache().ExecuteReturnIdentityAsync();
         }
 
         /// <summary>
@@ -44,6 +64,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 插入数据并清除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns></returns>
+        public bool InsertRemoveCache(TEntity entity)
+        {
+            return Db.Insertable(entity).RemoveDataCache().ExecuteCommand() > 0;
+        }
+
+        /// <summary>
         /// 插入数据（异步）
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -51,6 +81,16 @@ namespace Blog.Core
         public Task<int> InsertAsync(TEntity entity)
         {
             return Db.Insertable(entity).ExecuteCommandAsync();
+        }
+
+        /// <summary>
+        /// 插入数据（异步）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>返回受影响行数</returns>
+        public Task<int> InsertRemoveCacheAsync(TEntity entity)
+        {
+            return Db.Insertable(entity).RemoveDataCache().ExecuteCommandAsync();
         }
 
         /// <summary>
@@ -64,6 +104,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 批量添加并删除缓存
+        /// </summary>
+        /// <param name="entities">实体对象集合</param>
+        /// <returns></returns>
+        public bool InsertRemoveCache(List<TEntity> entities)
+        {
+            return Db.Insertable(entities).RemoveDataCache().ExecuteCommand() > 0;
+        }
+
+        /// <summary>
         /// 批量添加（异步）
         /// </summary>
         /// <param name="entities">实体对象集合</param>
@@ -71,6 +121,16 @@ namespace Blog.Core
         public Task<int> InsertAsync(List<TEntity> entities)
         {
             return Db.Insertable(entities).ExecuteCommandAsync();
+        }
+
+        /// <summary>
+        /// 批量添加（异步）并删除缓存
+        /// </summary>
+        /// <param name="entities">实体对象集合</param>
+        /// <returns>受影响的行数</returns>
+        public Task<int> InsertRemoveCacheAsync(List<TEntity> entities)
+        {
+            return Db.Insertable(entities).RemoveDataCache().ExecuteCommandAsync();
         }
 
         /// <summary>
@@ -85,6 +145,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 通过主键修改（包含是否需要将null值字段提交到数据库）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="isNoUpdateNull">是否排除NULL值字段更新</param>
+        /// <returns></returns>
+        public bool UpdateRemoveCache(TEntity entity, bool isNoUpdateNull = false)
+        {
+            return Db.Updateable(entity).IgnoreColumns(isNoUpdateNull).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 通过主键修改（包含是否需要将null值字段提交到数据库）
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -93,6 +164,17 @@ namespace Blog.Core
         public Task<bool> UpdateAsync(TEntity entity, bool isNoUpdateNull = false)
         {
             return Db.Updateable(entity).IgnoreColumns(isNoUpdateNull).ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
+        /// 通过主键修改（包含是否需要将null值字段提交到数据库）异步，并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="isNoUpdateNull">是否排除NULL值字段更新</param>
+        /// <returns></returns>
+        public Task<bool> UpdateRemoveCacheAsync(TEntity entity, bool isNoUpdateNull = false)
+        {
+            return Db.Updateable(entity).IgnoreColumns(isNoUpdateNull).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         /// <summary>
@@ -107,6 +189,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 通过主键修改（更新实体部分字段）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="ignoreColumns">忽略字段（不更新字段）</param>
+        /// <returns></returns>
+        public bool UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            return Db.Updateable(entity).IgnoreColumns(ignoreColumns).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 通过主键修改（更新实体部分字段）异步
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -115,6 +208,17 @@ namespace Blog.Core
         public Task<bool> UpdateAsync(TEntity entity, Expression<Func<TEntity, object>> ignoreColumns)
         {
             return Db.Updateable(entity).IgnoreColumns(ignoreColumns).ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
+        /// 通过主键修改（更新实体部分字段）异步,并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="ignoreColumns">忽略字段（不更新字段）</param>
+        /// <returns></returns>
+        public Task<bool> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            return Db.Updateable(entity).IgnoreColumns(ignoreColumns).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         /// <summary>
@@ -130,6 +234,18 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 通过条件更新(不更新忽略字段),并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <param name="ignoreColumns">忽略更新的字段</param>
+        /// <returns></returns>
+        public bool UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            return Db.Updateable(entity).Where(expression).IgnoreColumns(ignoreColumns).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 通过条件更新(不更新忽略字段)异步
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -139,6 +255,18 @@ namespace Blog.Core
         public Task<bool> UpdateAsync(TEntity entity, Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> ignoreColumns)
         {
             return Db.Updateable(entity).Where(expression).IgnoreColumns(ignoreColumns).ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
+        /// 通过条件更新(不更新忽略字段)异步,并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <param name="ignoreColumns">忽略更新的字段</param>
+        /// <returns></returns>
+        public Task<bool> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            return Db.Updateable(entity).Where(expression).IgnoreColumns(ignoreColumns).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         /// <summary>
@@ -153,6 +281,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 通过条件修改，并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">Lambda表达式</param>
+        /// <returns>是否成功</returns>
+        public bool UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, bool>> expression)
+        {
+            return Db.Updateable(entity).Where(expression).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 通过条件修改（异步）
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -161,6 +300,17 @@ namespace Blog.Core
         public Task<bool> UpdateAsync(TEntity entity, Expression<Func<TEntity, bool>> expression)
         {
             return Db.Updateable(entity).Where(expression).ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
+        /// 通过条件修改（异步）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">Lambda表达式</param>
+        /// <returns>是否成功</returns>
+        public Task<bool> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, bool>> expression)
+        {
+            return Db.Updateable(entity).Where(expression).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         /// <summary>
@@ -175,6 +325,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 修改（指定字段）,并删除缓存
+        /// </summary>
+        /// <param name="expression">需要修改的字段</param>
+        /// <param name="condition">Lambda表达式条件</param>
+        /// <returns>是否修改成功</returns>
+        public bool UpdateRemoveCache(Expression<Func<TEntity, TEntity>> expression, Expression<Func<TEntity, bool>> condition)
+        {
+            return Db.Updateable<TEntity>().UpdateColumns(expression).Where(condition).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 修改（指定字段）异步
         /// </summary>
         /// <param name="expression">需要修改的字段</param>
@@ -186,6 +347,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 修改（指定字段）异步,并删除缓存
+        /// </summary>
+        /// <param name="expression">需要修改的字段</param>
+        /// <param name="condition">Lambda表达式条件</param>
+        /// <returns>是否修改成功</returns>
+        public Task<bool> UpdateRemoveCacheAsync(Expression<Func<TEntity, TEntity>> expression, Expression<Func<TEntity, bool>> condition)
+        {
+            return Db.Updateable<TEntity>().UpdateColumns(expression).Where(condition).RemoveDataCache().ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
         /// 删除
         /// </summary>
         /// <param name="keyValue">主键</param>
@@ -193,6 +365,16 @@ namespace Blog.Core
         public bool Delete(dynamic keyValue)
         {
             return Db.Deleteable<TEntity>(keyValue).ExecuteCommandHasChange();
+        }
+
+        /// <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="keyValue">主键</param>
+        /// <returns>是否删除成功</returns>
+        public bool DeleteRemoveCache(dynamic keyValue)
+        {
+            return Db.Deleteable<TEntity>(keyValue).RemoveDataCache().ExecuteCommandHasChange();
         }
 
 
@@ -207,6 +389,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 删除(异步)并删除缓存
+        /// </summary>
+        /// <param name="keyValue">主键</param>
+        /// <returns>是否删除成功</returns>
+        public Task<bool> DeleteRemoveCacheAsync(dynamic keyValue)
+        {
+            return Db.Deleteable<TEntity>(keyValue).RemoveDataCache().ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
         /// 删除
         /// </summary>
         /// <param name="entity">实体对象</param>
@@ -214,6 +406,16 @@ namespace Blog.Core
         public bool Delete(TEntity entity)
         {
             return Db.Deleteable(entity).ExecuteCommandHasChange();
+        }
+
+        /// <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>是否删除成功</returns>
+        public bool DeleteRemoveCache(TEntity entity)
+        {
+            return Db.Deleteable(entity).RemoveDataCache().ExecuteCommandHasChange();
         }
 
         /// <summary>
@@ -227,6 +429,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 删除(异步)并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>是否删除成功</returns>
+        public Task<bool> DeleteRemoveCacheAsync(TEntity entity)
+        {
+            return Db.Deleteable(entity).RemoveDataCache().ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
         /// 删除
         /// </summary>
         /// <param name="expression">条件</param>
@@ -237,6 +449,16 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="expression">条件</param>
+        /// <returns>是否删除成功</returns>
+        public bool DeleteRemoveCache(Expression<Func<TEntity, bool>> expression)
+        {
+            return Db.Deleteable<TEntity>().Where(expression).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        /// <summary>
         /// 删除
         /// </summary>
         /// <param name="expression">条件</param>
@@ -244,6 +466,16 @@ namespace Blog.Core
         public Task<bool> DeleteAsync(Expression<Func<TEntity, bool>> expression)
         {
             return Db.Deleteable<TEntity>().Where(expression).ExecuteCommandHasChangeAsync();
+        }
+
+        /// <summary>
+        /// 删除（异步）并删除缓存
+        /// </summary>
+        /// <param name="expression">条件</param>
+        /// <returns>是否删除成功</returns>
+        public Task<bool> DeleteRemoveCacheAsync(Expression<Func<TEntity, bool>> expression)
+        {
+            return Db.Deleteable<TEntity>().Where(expression).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         // <summary>
@@ -257,6 +489,16 @@ namespace Blog.Core
         }
 
         // <summary>
+        /// 批量删除并删除缓存
+        /// </summary>
+        /// <param name="keys">主键集合</param>
+        /// <returns>是否删除成功</returns>
+        public bool DeleteRemoveCache(List<dynamic> keys)
+        {
+            return Db.Deleteable<TEntity>(keys).RemoveDataCache().ExecuteCommandHasChange();
+        }
+
+        // <summary>
         /// 批量删除
         /// </summary>
         /// <param name="keys">主键集合</param>
@@ -264,6 +506,16 @@ namespace Blog.Core
         public Task<bool> DeleteAsync(List<dynamic> keys)
         {
             return Db.Deleteable<TEntity>(keys).ExecuteCommandHasChangeAsync();
+        }
+
+        // <summary>
+        /// 批量删除（异步）并删除缓存
+        /// </summary>
+        /// <param name="keys">主键集合</param>
+        /// <returns>是否删除成功</returns>
+        public Task<bool> DeleteRemoveCacheAsync(List<dynamic> keys)
+        {
+            return Db.Deleteable<TEntity>(keys).RemoveDataCache().ExecuteCommandHasChangeAsync();
         }
 
         /// <summary>
@@ -306,12 +558,32 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 获取所有集合(缓存)
+        /// </summary>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public List<TEntity> QueryableCache(int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WithCache(s).ToList();
+        }
+
+        /// <summary>
         /// 获取所有集合
         /// </summary>
         /// <returns>集合</returns>
         public Task<List<TEntity>> QueryableAsync()
         {
             return Db.Queryable<TEntity>().ToListAsync();
+        }
+
+        /// <summary>
+        /// 获取所有集合(缓存)
+        /// </summary>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public Task<List<TEntity>> QueryableCacheAsync(int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WithCache(s).ToListAsync();
         }
 
         /// <summary>
@@ -353,6 +625,17 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 根据条件获取集合并加入缓存
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).WithCache(s).ToList();
+        }
+
+        /// <summary>
         /// 根据条件获取集合
         /// </summary>
         /// <param name="expression">Lambda表达式</param>
@@ -360,6 +643,17 @@ namespace Blog.Core
         public Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression)
         {
             return Db.Queryable<TEntity>().WhereIF(expression != null, expression).ToListAsync();
+        }
+
+        /// <summary>
+        /// 根据条件获取集合
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).WithCache(s).ToListAsync();
         }
 
         /// <summary>
@@ -375,6 +669,19 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 根据条件获取集合(缓存)
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).WithCache(s).ToList();
+        }
+
+        /// <summary>
         /// 根据条件获取集合
         /// </summary>
         /// <param name="expression">Lambda表达式</param>
@@ -384,6 +691,19 @@ namespace Blog.Core
         public Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc)
         {
             return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).ToListAsync();
+        }
+
+        /// <summary>
+        /// 根据条件获取集合(缓存)异步
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).WithCache(s).ToListAsync();
         }
 
         /// <summary>
@@ -400,6 +720,20 @@ namespace Blog.Core
         }
 
         /// <summary>
+        /// 根据条件获取指定条数集合(缓存)
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="top">前N条数据</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).Take(top).WithCache(s).ToList();
+        }
+
+        /// <summary>
         /// 根据条件获取指定条数集合
         /// </summary>
         /// <param name="expression">Lambda表达式</param>
@@ -410,6 +744,20 @@ namespace Blog.Core
         public Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top)
         {
             return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).Take(top).ToListAsync();
+        }
+
+        /// <summary>
+        /// 根据条件获取指定条数集合异步(缓存)
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="top">前N条数据</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top, int s = int.MaxValue)
+        {
+            return Db.Queryable<TEntity>().WhereIF(expression != null, expression).OrderByIF(orderby != null, orderby, isDesc ? OrderByType.Desc : OrderByType.Asc).Take(top).WithCache(s).ToListAsync();
         }
 
         /// <summary>

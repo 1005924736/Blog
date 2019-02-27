@@ -1,5 +1,5 @@
-﻿using Blog.Core;
-using Blog.Entities;
+﻿using Blog.Entities;
+using Blog.Core;
 
 namespace Blog.IRepository
 {

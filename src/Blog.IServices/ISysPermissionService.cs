@@ -1,7 +1,7 @@
-﻿using Blog.Entities.Dtos;
+﻿using Blog.Entities;
+using Blog.Entities.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Blog.Entities;
 
 namespace Blog.IServices
 {

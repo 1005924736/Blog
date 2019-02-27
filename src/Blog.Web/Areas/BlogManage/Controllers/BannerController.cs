@@ -1,7 +1,6 @@
 ﻿using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -87,7 +86,7 @@ namespace Blog.Web.Areas.BlogManage.Controllers
         [Description("删除轮播图")]
         public IActionResult Delete(string key)
         {
-            return Json(_bannerInfoService.Update(b => new BannerInfo() { DeleteMark = true }, c => c.BannerId == key));
+            return Json(_bannerInfoService.UpdateRemoveCache(b => new BannerInfo() { DeleteMark = true }, c => c.BannerId == key));
         }
     }
 }

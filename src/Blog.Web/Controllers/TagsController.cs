@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace Blog.Web.Controllers
 {
-    public class TagsController : Controller
+    public class TagsController : BaseWebController
     {
         private readonly ITagsInfoService _tagsInfoService;
         public TagsController(ITagsInfoService tagsInfoService)

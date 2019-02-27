@@ -1,15 +1,17 @@
-﻿using Blog.Common.Auth;
-using Blog.Common.Extensions;
-using Blog.Entities.Dtos;
-using Blog.Web.Autofac;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Authorization;
-using Microsoft.AspNetCore.Mvc.Controllers;
+﻿using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Blog.Entities.Dtos;
+using Blog.Common.Extensions;
+using Blog.Common.Auth;
+using Blog.Web.Autofac;
 using Blog.IServices;
+using Microsoft.AspNetCore.Mvc.Controllers;
 
 namespace Blog.Web.Filter
 {
@@ -33,7 +35,7 @@ namespace Blog.Web.Filter
                 }
                 else
                 {
-                    context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/MainManage/Login/Index'</script>");
+                    context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/Main/Login/Index'</script>");
                 }
             }
             else
@@ -68,9 +70,9 @@ namespace Blog.Web.Filter
                         }
                         else
                         {
-                            //context.Result = new RedirectToActionResult("Index", "Login", new { area = "MainManage" });
+                            //context.Result = new RedirectToActionResult("Index", "Login", new { area = "Main" });
                             //跳转到相关页面
-                            context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/MainManage/Login/Index'</script>");
+                            context.HttpContext.Response.WriteAsync("<script type=\"text/javascript\">top.location.href = '/Main/Login/Index'</script>");
                         }
                     }
                 }

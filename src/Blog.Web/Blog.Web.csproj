@@ -3,20 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <ApplicationIcon />
-    <OutputType>Exe</OutputType>
-    <StartupObject />
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Remove="Configs\nlog.config" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Configs\nlog.config">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.8.1" />
@@ -26,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,19 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\BlogManage\Data\" />
-    <Folder Include="Areas\BlogManage\Models\" />
-    <Folder Include="Areas\CompanyManage\Data\" />
-    <Folder Include="Areas\CompanyManage\Models\" />
-    <Folder Include="Areas\MainManage\Data\" />
-    <Folder Include="Areas\MainManage\Models\" />
-    <Folder Include="Areas\SystemManage\Data\" />
-    <Folder Include="Areas\SystemManage\Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="appsettings.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

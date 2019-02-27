@@ -1,4 +1,5 @@
-﻿using Blog.Core;
+﻿using Blog.Common.Log;
+using Blog.Core;
 using Blog.Entities.Dtos;
 using Blog.IServices;
 using SqlSugar;
@@ -12,7 +13,6 @@ namespace Blog.Services
     public class BaseService<TEntity> : IBaseService<TEntity> where TEntity : class, new()
     {
         private IBaseRepository<TEntity> _repository;
-
         public BaseService(IBaseRepository<TEntity> repository)
         {
             _repository = repository;
@@ -33,6 +33,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 插入数据（适用于id自动增长）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>返回主键ID</returns>
+        public virtual OperateResult InsertScalarRemoveCache(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.InsertScalarRemoveCache(entity) > 0 ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
 
             return result;
@@ -53,6 +75,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 插入数据（适用于id自动增长）并删除缓存
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> InsertScalarRemoveCacheAsync(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.InsertScalarRemoveCacheAsync(entity) > 0 ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -72,6 +115,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 插入数据并清除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>返回是否插入成功</returns>
+        public virtual OperateResult InsertRemoveCache(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.InsertRemoveCache(entity) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -91,6 +155,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 插入数据
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>返回是否插入成功</returns>
+        public virtual async Task<OperateResult> InsertRemoveCacheAsync(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.InsertRemoveCacheAsync(entity) > 0 ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -110,6 +195,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 批量添加
+        /// </summary>
+        /// <param name="entities">实体对象集合</param>
+        /// <returns></returns>
+        public virtual OperateResult InsertRemoveCache(List<TEntity> entities)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.InsertRemoveCache(entities) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -129,6 +235,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 批量添加（异步）并删除缓存
+        /// </summary>
+        /// <param name="entities">实体对象集合</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> InsertRemoveCacheAsync(List<TEntity> entities)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.InsertRemoveCacheAsync(entities) > 0 ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -149,6 +276,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 通过主键修改（包含是否需要将null值字段提交到数据库）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="isNoUpdateNull">是否排除NULL值字段更新</param>
+        /// <returns></returns>
+        public virtual OperateResult UpdateRemoveCache(TEntity entity, bool isNoUpdateNull = false)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.UpdateRemoveCache(entity, isNoUpdateNull) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -169,6 +318,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 通过主键修改（包含是否需要将null值字段提交到数据库）异步，并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="isNoUpdateNull">是否排除NULL值字段更新</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> UpdateRemoveCacheAsync(TEntity entity, bool isNoUpdateNull = false)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.UpdateRemoveCacheAsync(entity, isNoUpdateNull) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -189,6 +360,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 修改（更新实体部分字段）并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="ignoreColumns">忽略字段（不更新字段）</param>
+        /// <returns></returns>
+        public virtual OperateResult UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.UpdateRemoveCache(entity, ignoreColumns) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -209,6 +402,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 修改（更新实体部分字段）异步，并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="ignoreColumns">忽略字段（不更新字段）</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.UpdateRemoveCacheAsync(entity, ignoreColumns) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -230,6 +445,29 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 通过条件更新(不更新忽略字段),并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <param name="ignoreColumns">忽略更新的字段</param>
+        /// <returns></returns>
+        public virtual OperateResult UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.UpdateRemoveCache(entity, expression, ignoreColumns) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -251,6 +489,29 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 通过条件更新(不更新忽略字段)异步,并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <param name="ignoreColumns">忽略更新的字段</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> ignoreColumns)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.UpdateRemoveCacheAsync(entity, expression, ignoreColumns) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -271,6 +532,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 通过条件修改，并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <returns></returns>
+        public virtual OperateResult UpdateRemoveCache(TEntity entity, Expression<Func<TEntity, bool>> expression)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.UpdateRemoveCache(entity, expression) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -291,6 +574,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 修改
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <param name="expression">条件</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> UpdateRemoveCacheAsync(TEntity entity, Expression<Func<TEntity, bool>> expression)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.UpdateRemoveCacheAsync(entity, expression) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -311,12 +616,34 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
 
         /// <summary>
         /// 修改
+        /// </summary>
+        /// <param name="expression">条件对象</param>
+        /// <param name="condition">条件条件</param>
+        /// <returns></returns>
+        public virtual OperateResult UpdateRemoveCache(Expression<Func<TEntity, TEntity>> expression, Expression<Func<TEntity, bool>> condition)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.UpdateRemoveCache(expression, condition) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 修改指定字段
         /// </summary>
         /// <param name="expression">条件对象</param>
         /// <param name="condition">条件条件</param>
@@ -331,6 +658,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 修改指定字段并删除缓存
+        /// </summary>
+        /// <param name="expression">条件对象</param>
+        /// <param name="condition">条件条件</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> UpdateRemoveCacheAsync(Expression<Func<TEntity, TEntity>> expression, Expression<Func<TEntity, bool>> condition)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.UpdateRemoveCacheAsync(expression, condition) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -350,6 +699,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="keyValue">主键</param>
+        /// <returns></returns>
+        public virtual OperateResult DeleteRemoveCache(dynamic keyValue)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.DeleteRemoveCache(keyValue) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -369,6 +739,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 删除(异步)并删除缓存
+        /// </summary>
+        /// <param name="keyValue">主键</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> DeleteRemoveCacheAsync(dynamic keyValue)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.DeleteRemoveCacheAsync(keyValue) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -388,6 +779,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        // <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>是否删除成功</returns>
+        public virtual OperateResult DeleteRemoveCache(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.DeleteRemoveCache(entity) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -407,6 +819,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        // <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="entity">实体对象</param>
+        /// <returns>是否删除成功</returns>
+        public virtual async Task<OperateResult> DeleteRemoveCacheAsync(TEntity entity)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.DeleteRemoveCacheAsync(entity) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -426,6 +859,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 删除并删除缓存
+        /// </summary>
+        /// <param name="expression">条件</param>
+        /// <returns></returns>
+        public virtual OperateResult DeleteRemoveCache(Expression<Func<TEntity, bool>> expression)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.DeleteRemoveCache(expression) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -445,6 +899,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 删除（异步）并删除缓存
+        /// </summary>
+        /// <param name="expression">条件</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> DeleteRemoveCacheAsync(Expression<Func<TEntity, bool>> expression)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = await _repository.DeleteRemoveCacheAsync(expression) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -464,6 +939,27 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 批量删除并删除缓存
+        /// </summary>
+        /// <param name="keys">主键集合</param>
+        /// <returns></returns>
+        public virtual OperateResult DeleteRemoveCache(List<dynamic> keys)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+                result.Status = _repository.DeleteRemoveCache(keys) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -484,6 +980,28 @@ namespace Blog.Services
             catch (Exception ex)
             {
                 result.Message = ex.Message;
+                NLogger.Error(ex);
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 批量删除（异步）并删除缓存
+        /// </summary>
+        /// <param name="keys">主键集合</param>
+        /// <returns></returns>
+        public virtual async Task<OperateResult> DeleteRemoveCacheAsync(List<dynamic> keys)
+        {
+            OperateResult result = new OperateResult();
+            try
+            {
+
+                result.Status = await _repository.DeleteRemoveCacheAsync(keys) ? ResultStatus.Success : ResultStatus.Error;
+            }
+            catch (Exception ex)
+            {
+                result.Message = ex.Message;
+                NLogger.Error(ex);
             }
             return result;
         }
@@ -528,6 +1046,16 @@ namespace Blog.Services
         }
 
         /// <summary>
+        /// 获取所有集合(缓存)
+        /// </summary>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public virtual List<TEntity> QueryableCache(int s = int.MaxValue)
+        {
+            return _repository.QueryableCache(s);
+        }
+
+        /// <summary>
         /// 检查信息总条数
         /// </summary>
         /// <param name="expression">条件</param>
@@ -557,6 +1085,16 @@ namespace Blog.Services
         }
 
         /// <summary>
+        /// 获取所有集合(缓存)
+        /// </summary>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public virtual async Task<List<TEntity>> QueryableCacheAsync(int s = int.MaxValue)
+        {
+            return await _repository.QueryableCacheAsync(s);
+        }
+
+        /// <summary>
         /// 根据条件获取集合
         /// </summary>
         /// <param name="expression">条件</param>
@@ -566,12 +1104,34 @@ namespace Blog.Services
         }
 
         /// <summary>
+        /// 根据条件获取集合并加入缓存
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns></returns>
+        public List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, int s = int.MaxValue)
+        {
+            return _repository.QueryableCache(expression, s);
+        }
+
+        /// <summary>
         /// 根据条件获取集合
         /// </summary>
         /// <param name="expression">条件</param>
         public virtual async Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression)
         {
             return await _repository.QueryableAsync(expression);
+        }
+
+        /// <summary>
+        /// 根据条件获取集合(缓存)
+        /// </summary>
+        /// <param name="expression">条件Lambda表达式</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public virtual async Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, int s = int.MaxValue)
+        {
+            return await _repository.QueryableCacheAsync(expression, s);
         }
 
         /// <summary>
@@ -587,15 +1147,41 @@ namespace Blog.Services
         }
 
         /// <summary>
+        /// 根据条件获取集合(缓存)
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public virtual List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int s = int.MaxValue)
+        {
+            return _repository.QueryableCache(expression, orderby, isDesc, s);
+        }
+
+        /// <summary>
         /// 根据条件获取集合
         /// </summary>
         /// <param name="expression">条件</param>
         /// <param name="orderby">排序</param>
         /// <param name="isDesc">是否降序排列</param>
         /// <returns>集合</returns>
-        public virtual Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc)
+        public virtual async Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc)
         {
-            return _repository.QueryableAsync(expression, orderby, isDesc);
+            return await _repository.QueryableAsync(expression, orderby, isDesc);
+        }
+
+        /// <summary>
+        /// 根据条件获取集合(缓存)异步
+        /// </summary>
+        /// <param name="expression">条件Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public virtual async Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int s = int.MaxValue)
+        {
+            return await _repository.QueryableCacheAsync(expression, orderby, isDesc, s);
         }
 
         /// <summary>
@@ -606,12 +1192,26 @@ namespace Blog.Services
         /// <param name="isDesc">是否降序排列</param>
         /// <param name="top">前N条数据</param>
         /// <returns>集合</returns>
-        public List<TEntity> Queryable(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top)
+        public virtual List<TEntity> Queryable(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top)
         {
             return _repository.Queryable(expression, orderby, isDesc, top);
         }
 
         /// <summary>
+        /// 根据条件获取指定条数集合(缓存)
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="top">前N条数据</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public virtual List<TEntity> QueryableCache(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top, int s = int.MaxValue)
+        {
+            return _repository.QueryableCache(expression, orderby, isDesc, top, s);
+        }
+
+        /// <summary>
         /// 根据条件获取指定条数集合
         /// </summary>
         /// <param name="expression">Lambda表达式</param>
@@ -619,9 +1219,23 @@ namespace Blog.Services
         /// <param name="isDesc">是否降序排列</param>
         /// <param name="top">前N条数据</param>
         /// <returns>集合</returns>
-        public Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top)
+        public virtual async Task<List<TEntity>> QueryableAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top)
         {
-            return _repository.QueryableAsync(expression, orderby, isDesc, top);
+            return await _repository.QueryableAsync(expression, orderby, isDesc, top);
+        }
+
+        /// <summary>
+        /// 根据条件获取指定条数集合(缓存)异步
+        /// </summary>
+        /// <param name="expression">Lambda表达式</param>
+        /// <param name="orderby">排序</param>
+        /// <param name="isDesc">是否降序排列</param>
+        /// <param name="top">前N条数据</param>
+        /// <param name="s">缓存时间：秒</param>
+        /// <returns>集合</returns>
+        public virtual async Task<List<TEntity>> QueryableCacheAsync(Expression<Func<TEntity, bool>> expression, Expression<Func<TEntity, object>> orderby, bool isDesc, int top, int s = int.MaxValue)
+        {
+            return await _repository.QueryableCacheAsync(expression, orderby, isDesc, top, s);
         }
 
         /// <summary>

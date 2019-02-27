@@ -1,9 +1,7 @@
-﻿using System;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using NLog;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 
 namespace Blog.Common.Log
 {
@@ -14,18 +12,17 @@ namespace Blog.Common.Log
     public class LogHandler<TLog>
     {
         private Logger logger;
-        private static LogFactory factory;
-        // public static ILoggerRepository _repository = LogManager.CreateRepository("NETCoreRepository");
+       // private static LogFactory factory;
         protected LogHandler(LogMode logMode)
         {
+            logger = LogManager.GetCurrentClassLogger();
             LoggerMode = logMode;
-            if (factory == null)
-            {
-                //加载配置  
-                string currentDirectory = Directory.GetCurrentDirectory();
-                factory = LogManager.LoadConfiguration(currentDirectory + "/Configs/nlog.config");
-            }
-            logger = factory.GetLogger(LoggerMode.ToString());
+            //if (factory == null)
+            //{
+            //    //加载配置
+            //    factory = LogManager.LoadConfiguration(Directory.GetCurrentDirectory() + "/Configs/nlog.config");
+            //}
+            logger = logger.Factory.GetLogger(LoggerMode.ToString());
         }
 
         /// <summary>

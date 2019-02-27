@@ -1,13 +1,12 @@
 ﻿using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
 
-namespace Blog.Web.Areas.MainManage.Controllers
+namespace Blog.Web.Areas.Main.Controllers
 {
-    [Area("MainManage")]
+    [Area("Main")]
     public class HomeController : BaseControler
     {
         private readonly ISysAccountService _sysAccountService;

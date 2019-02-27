@@ -1,11 +1,11 @@
-﻿using System;
-using Blog.Common.Utils;
-using SqlSugar;
+﻿using SqlSugar;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Blog.Common.Utils;
 
 namespace Blog.Common.Builder
 {
@@ -18,7 +18,7 @@ namespace Blog.Common.Builder
         /// <summary>
         /// 作者
         /// </summary>
-        const string Author = "jamee1696";
+        const string Author = "blog1696";
         /// <summary>
         /// 版本
         /// </summary>
@@ -89,11 +89,9 @@ namespace Blog.Common.Builder
         /// <returns></returns>
         private static SqlSugarClient InitDB()
         {
-            string conn = ConfigurationUtil.DBConnectionString;
-
             var db = new SqlSugarClient(new ConnectionConfig()
             {
-                ConnectionString = ConfigurationUtil.DBConnectionString,
+                ConnectionString = "Database=appsoft;Data Source=127.0.0.1;User Id=root;Password=123456;pooling=false;CharSet=utf8;port=3306",
                 DbType = DbType.MySql,
                 InitKeyType = InitKeyType.Attribute,//使用特性识别主键
                 IsAutoCloseConnection = true
@@ -111,11 +109,11 @@ namespace Blog.Common.Builder
         public static void Builder(string tableName, string entityName = null, bool isSqlSugarAttr = true)
         {
             GenerateEntity(tableName, entityName, EntityNameSpace, isSqlSugarAttr);
-            //entityName = entityName ?? tableName;
-            //GenerateIRepository(entityName);
-            //GenerateRepository(entityName);
-            //GenerateIService(entityName);
-            //GenerateService(entityName);
+            entityName = entityName ?? tableName;
+            GenerateIRepository(entityName);
+            GenerateRepository(entityName);
+            GenerateIService(entityName);
+            GenerateService(entityName);
         }
 
         /// <summary>
@@ -182,6 +180,7 @@ namespace Blog.Common.Builder
                     sb.AppendLine($"\t\t[SugarColumn(IsPrimaryKey = true{(item.IsIdentity ? ", IsIdentity = true" : "")})]");
                 }
                 sb.AppendLine($"\t\tpublic {type} {item.DbColumnName}" + " { get; set; }");
+                sb.AppendLine("");
             }
             template = template.Replace("@Properties", sb.ToString());
             return template;
@@ -205,9 +204,9 @@ namespace Blog.Common.Builder
         /// 生成IRepository代码预览
         /// </summary>
         /// <param name="entityName"></param>
-        /// <param name="NameSpace"></param>
+        /// <param name="nameSpace"></param>
         /// <returns></returns>
-        public static string GenerateIRepositoryView(string entityName, string NameSpace = IRepositoryNameSpace)
+        public static string GenerateIRepositoryView(string entityName, string nameSpace = IRepositoryNameSpace)
         {
             string template = string.Empty;
             var currentAssembly = Assembly.GetExecutingAssembly();
@@ -225,7 +224,7 @@ namespace Blog.Common.Builder
               .Replace("@Author", Author)
               .Replace("@Verison", Verison)
               .Replace("@GeneratorTime", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-              .Replace("@Namespace", NameSpace)
+              .Replace("@Namespace", nameSpace)
               .Replace("@IRepositoryName", $"I{entityName}Repository")
               .Replace("@ModelName", entityName);
             return template;
@@ -235,10 +234,10 @@ namespace Blog.Common.Builder
         /// 生成IRepository接口文件
         /// </summary>
         /// <param name="entityName">实体类名</param>
-        /// <param name="NameSpace">名称空间</param>
-        public static void GenerateIRepository(string entityName, string NameSpace = IRepositoryNameSpace)
+        /// <param name="nameSpace">名称空间</param>
+        public static void GenerateIRepository(string entityName, string nameSpace = IRepositoryNameSpace)
         {
-            string code = GenerateIRepositoryView(entityName, NameSpace);
+            string code = GenerateIRepositoryView(entityName, nameSpace);
             string fileName = $"I{entityName}Repository";
             CreateFile(code, IRepositoryPath, fileName);
         }
@@ -247,9 +246,9 @@ namespace Blog.Common.Builder
         /// 生成Repository代码预览
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
+        /// <param name="nameSpace">名称空间</param>
         /// <returns></returns>
-        public static string GenerateRepositoryView(string entityName, string NameSpace = RepositoryNameSpace)
+        public static string GenerateRepositoryView(string entityName, string nameSpace = RepositoryNameSpace)
         {
             string template = string.Empty;
             var currentAssembly = Assembly.GetExecutingAssembly();
@@ -267,7 +266,7 @@ namespace Blog.Common.Builder
               .Replace("@Author", Author)
               .Replace("@Verison", Verison)
               .Replace("@GeneratorTime", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-              .Replace("@Namespace", NameSpace)
+              .Replace("@Namespace", nameSpace)
               .Replace("@RepositoryName", $"{entityName}Repository")
               .Replace("@ModelName", entityName)
               .Replace("@IRepository", $"I{entityName}Repository");
@@ -278,10 +277,10 @@ namespace Blog.Common.Builder
         /// 生成Repository代码文件
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
-        public static void GenerateRepository(string entityName, string NameSpace = RepositoryNameSpace)
+        /// <param name="nameSpace">名称空间</param>
+        public static void GenerateRepository(string entityName, string nameSpace = RepositoryNameSpace)
         {
-            string code = GenerateRepositoryView(entityName, NameSpace);
+            string code = GenerateRepositoryView(entityName, nameSpace);
             string fileName = $"{entityName}Repository";
             CreateFile(code, RepositoryPath, fileName);
         }
@@ -290,9 +289,9 @@ namespace Blog.Common.Builder
         /// 生成IService代码预览
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
+        /// <param name="nameSpace">名称空间</param>
         /// <returns></returns>
-        public static string GenerateIServiceView(string entityName, string NameSpace = IServiceNameSpace)
+        public static string GenerateIServiceView(string entityName, string nameSpace = IServiceNameSpace)
         {
             string template = string.Empty;
             var currentAssembly = Assembly.GetExecutingAssembly();
@@ -310,7 +309,7 @@ namespace Blog.Common.Builder
               .Replace("@Author", Author)
               .Replace("@Verison", Verison)
               .Replace("@GeneratorTime", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-              .Replace("@Namespace", NameSpace)
+              .Replace("@Namespace", nameSpace)
               .Replace("@IServiceName", $"I{entityName}Service")
               .Replace("@ModelName", entityName);
             return template;
@@ -320,10 +319,10 @@ namespace Blog.Common.Builder
         /// 生成IService代码文件
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
-        public static void GenerateIService(string entityName, string NameSpace = IServiceNameSpace)
+        /// <param name="nameSpace">名称空间</param>
+        public static void GenerateIService(string entityName, string nameSpace = IServiceNameSpace)
         {
-            string code = GenerateIServiceView(entityName, NameSpace);
+            string code = GenerateIServiceView(entityName, nameSpace);
             CreateFile(code, IServicePath, $"I{entityName}Service");
         }
 
@@ -331,9 +330,9 @@ namespace Blog.Common.Builder
         /// 生成Service代码预览
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
+        /// <param name="nameSpace">名称空间</param>
         /// <returns></returns>
-        public static string GenerateServiceView(string entityName, string NameSpace = ServiceNameSpace)
+        public static string GenerateServiceView(string entityName, string nameSpace = ServiceNameSpace)
         {
             string template = string.Empty;
             var currentAssembly = Assembly.GetExecutingAssembly();
@@ -351,7 +350,7 @@ namespace Blog.Common.Builder
               .Replace("@Author", Author)
               .Replace("@Verison", Verison)
               .Replace("@GeneratorTime", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"))
-              .Replace("@Namespace", NameSpace)
+              .Replace("@Namespace", nameSpace)
               .Replace("@ServiceName", $"{entityName}Service")
               .Replace("@IServiceName", $"I{entityName}Service")
               .Replace("@ModelName", entityName)
@@ -363,10 +362,10 @@ namespace Blog.Common.Builder
         /// 生成IService代码文件
         /// </summary>
         /// <param name="entityName">实体类名称</param>
-        /// <param name="NameSpace">名称空间</param>
-        public static void GenerateService(string entityName, string NameSpace = ServiceNameSpace)
+        /// <param name="nameSpace">名称空间</param>
+        public static void GenerateService(string entityName, string nameSpace = ServiceNameSpace)
         {
-            string code = GenerateServiceView(entityName, NameSpace);
+            string code = GenerateServiceView(entityName, nameSpace);
             CreateFile(code, ServicePath, $"{entityName}Service");
         }
 

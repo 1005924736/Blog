@@ -1,5 +1,4 @@
 ﻿using Blog.IServices;
-using Blog.Web;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
@@ -14,7 +13,7 @@ namespace Blog.Web.Controllers
         }
         public IActionResult Index()
         {
-            return Json(_categoryInfoService.Queryable(c => c.EnabledMark == true && c.ParentId == "0").Select(s => new { CategoryId = s.CategoryId, CategoryName = s.CategoryName }));
+            return Json(_categoryInfoService.QueryableCache(c => c.EnabledMark == true && c.ParentId == "0").Select(s => new { CategoryId = s.CategoryId, CategoryName = s.CategoryName }));
         }
     }
 }

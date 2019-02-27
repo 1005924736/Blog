@@ -8,9 +8,9 @@ using System;
 using System.ComponentModel;
 using System.IO;
 
-namespace Blog.Web.Areas.CompanyManage.Controllers
+namespace Blog.Web.Areas.CompanyManag.Controllers
 {
-    [Area("CompanyManage")]
+    [Area("CompanyManag")]
     public class UserController : BaseControler
     {
         ISysAccountService _sysAccountService;

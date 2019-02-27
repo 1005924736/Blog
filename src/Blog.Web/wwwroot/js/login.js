@@ -17,11 +17,11 @@ layui.use(['form', 'layer', 'jquery'], function () {
         $("form input").each(function () {
             parm[$(this).attr("id")] = $(this).val();
         });
-        $.post("/MainManage/Login/Login", parm, function (result) {
+        $.post("/Main/Login/Login", parm, function (result) {
             if (result.Status == 0) {
                 window.location.href = result.Data
             } else {
-                $("#imgVerifyCode").attr("src", "/MainManage/Login/ValidateCode?" + Math.random());
+                $("#imgVerifyCode").attr("src", "/Main/Login/ValidateCode?" + Math.random());
                 $("#code").val("");
                 layer.msg(result.Message, { icon: 5 });
                 $btn.text('登录').removeClass("layui-disabled").removeAttr("disabled");

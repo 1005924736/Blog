@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel;
-using Blog.Entities;
+﻿using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
+using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel;
 
 namespace Blog.Web.Areas.BlogManage.Controllers
 {

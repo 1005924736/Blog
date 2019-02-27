@@ -1,6 +1,5 @@
 ﻿using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -27,7 +26,7 @@ namespace Blog.Web.Controllers
         /// <returns></returns>
         public IActionResult Notice()
         {
-            return Json(_noticeinfoService.Queryable(null, o => o.SortCode, false));
+            return Json(_noticeinfoService.QueryableCache(null, o => o.SortCode, false));
         }
 
         /// <summary>
@@ -36,7 +35,7 @@ namespace Blog.Web.Controllers
         /// <returns></returns>
         public IActionResult Link()
         {
-            return Json(_friendLinkService.Queryable(null, o => o.SortCode, false));
+            return Json(_friendLinkService.QueryableCache(null, o => o.SortCode, false));
         }
 
         /// <summary>

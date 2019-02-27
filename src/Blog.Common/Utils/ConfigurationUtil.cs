@@ -1,7 +1,8 @@
-﻿using System.IO;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using System.IO;
+using SqlSugar;
 
 namespace Blog.Common.Utils
 {
@@ -21,6 +22,41 @@ namespace Blog.Common.Utils
         /// Redis连接字符串
         /// </summary>
         public static string RedisConnectionString { get => Configuration.GetConnectionString("RedisConnection"); }
+
+        /// <summary>
+        /// 数据库类型
+        /// </summary>
+        public static DbType DbType
+        {
+            get
+            {
+                DbType dbType = DbType.SqlServer;
+                string s = ConfigurationUtil.GetSection("DbType");
+                switch (s)
+                {
+                    case "MySql":
+                        dbType = DbType.MySql;
+                        break;
+                    case "SqlServer":
+                        dbType = DbType.SqlServer;
+                        break;
+                    case "Sqlite":
+                        dbType = DbType.Sqlite;
+                        break;
+                    case "Oracle":
+                        dbType = DbType.Oracle;
+                        break;
+                    case "PostgreSQL":
+                        dbType = DbType.PostgreSQL;
+                        break;
+                    default:
+                        dbType = DbType.SqlServer;
+                        break;
+                }
+
+                return dbType;
+            }
+        }
 
         static ConfigurationUtil()
         {

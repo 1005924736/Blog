@@ -98,6 +98,7 @@ namespace Blog.Repository
                       });
 
                      it.Tags = Db.Queryable<TagsInfo>().Where(c => c.DeleteMark == false && c.EnabledMark == true && tids.Contains(c.TagId)).Select<TagDto>().ToList();
+                     it.MsgTimes = Db.Queryable<LeavemsgInfo>().Where(msg => SqlFunc.IsNullOrEmpty(msg.ToUId) && msg.ArticleId == it.ArticleId).Count();
 
                  }).ToPageList(pageIndex, pageSize, ref total);
             return Tuple.Create(ad, total);

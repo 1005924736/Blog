@@ -1,5 +1,4 @@
-﻿using Blog.Common.Builder;
-using Blog.Common.Net;
+﻿using Blog.Common.Net;
 using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
@@ -31,9 +30,7 @@ namespace Blog.Web.Controllers
         /// <returns></returns>
         public IActionResult Index(string code, string state)
         {
-            CodeGenerate.Builder("sysuser", "SysUser1");
-
-            List<BannerInfo> list = _bannerInfoService.Queryable(null, o => o.SortCode, false);
+            List<BannerInfo> list = _bannerInfoService.QueryableCache(null, o => o.SortCode, false);
             return View(list);
         }
 

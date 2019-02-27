@@ -5,14 +5,34 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Builder\Template\EntityTemplate.txt" />
+    <None Remove="Builder\Template\IRepositoryTemplate.txt" />
+    <None Remove="Builder\Template\IServiceTemplate.txt" />
+    <None Remove="Builder\Template\RepositoryTemplate.txt" />
+    <None Remove="Builder\Template\ServiceTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Builder\Template\EntityTemplate.txt" />
+    <EmbeddedResource Include="Builder\Template\IRepositoryTemplate.txt" />
+    <EmbeddedResource Include="Builder\Template\IServiceTemplate.txt" />
+    <EmbeddedResource Include="Builder\Template\RepositoryTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="CSRedisCore" Version="3.0.39" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="NLog" Version="4.5.11" />
     <PackageReference Include="Snowflake.Core" Version="2.0.0" />
-    <PackageReference Include="sqlSugarCore" Version="4.9.9.1" />
+    <PackageReference Include="sqlSugarCore" Version="4.9.8.1" />
     <PackageReference Include="ZKWeb.System.Drawing" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Builder\Template\ServiceTemplate.txt" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
-﻿using Blog.Common.Log;
-using Blog.Common.Auth;
+﻿using Blog.Common.Auth;
+using Blog.Common.Log;
 using Blog.Common.Utils;
 using Blog.Entities;
 using Blog.Entities.Dtos;
@@ -10,10 +10,10 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
-namespace Blog.Web.Areas.MainManage.Controllers
+namespace Blog.Web.Areas.Main.Controllers
 {
     [ExceptionGlobalFilter]
-    [Area("MainManage")]
+    [Area("Main")]
     public class LoginController : Controller
     {
         private readonly ISysAccountService _sysAccountService;
@@ -73,7 +73,7 @@ namespace Blog.Web.Areas.MainManage.Controllers
                 {
                     await AuthenticationHelper.SetAuthCookie(auth);
                     result.Status = ResultStatus.Success;
-                    result.Data = "/MainManage/Home/Index";
+                    result.Data = "/Main/Home/Index";
 
                     #region 记录登录日志
                     LoginLogHandler loginLog = new LoginLogHandler(auth.LoginId);

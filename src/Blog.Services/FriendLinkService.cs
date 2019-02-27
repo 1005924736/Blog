@@ -24,11 +24,11 @@ namespace Blog.Services
             if (string.IsNullOrWhiteSpace(link.FriendLinkId))
             {
                 link.FriendLinkId = SnowflakeUtil.NextStringId();
-                return Insert(link);
+                return InsertRemoveCache(link);
             }
             else
             {
-                return Update(link, f => new { f.DeleteMark, f.CreatorTime });
+                return UpdateRemoveCache(link, f => new { f.DeleteMark, f.CreatorTime });
             }
         }
     }

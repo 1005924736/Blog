@@ -29,7 +29,6 @@ layui.use(['form', 'laytpl', 'flow'], function () {
                                         });
                                     } else {
                                         tpl = dayview.innerHTML;
-                                        console.log(item.Items[key]);
                                         laytpl(tpl).render(item.Items[key], function (html) {
                                             $("#m-" + item.Year + key + " ul").append(html);
                                         });

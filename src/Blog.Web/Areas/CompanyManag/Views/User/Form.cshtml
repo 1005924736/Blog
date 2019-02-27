@@ -76,7 +76,7 @@
             var key = tools.queryString("key");
             if (key) {
                 $("#pwd").remove();
-                var parm = [{ url: "/CompanyManage/User/GetForm?key=" + key }, { url: "/SystemManage/Role/Select" }];
+                var parm = [{ url: "/CompanyManag/User/GetForm?key=" + key }, { url: "/SystemManage/Role/Select" }];
                 tools.requestAll(parm, function (data1, data2) {
                     tools.renderSelect({
                         elem: '#RoleId',
@@ -98,7 +98,7 @@
             //创建一个上传组件
             upload.render({
                 elem: '#upload'
-                , url: '/CompanyManage/User/Upload'
+                , url: '/CompanyManag/User/Upload'
                 , done: function (res, index, upload) { //上传后的回调
                     if (res.Status == 0) {
                         $("#pic").attr("src", res.Data);

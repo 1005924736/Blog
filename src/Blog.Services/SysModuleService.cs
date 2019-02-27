@@ -39,7 +39,7 @@ namespace Blog.Services
                 if (string.IsNullOrWhiteSpace(module.ModuleId))
                 {
                     module.ModuleId = SnowflakeUtil.NextStringId();
-                    return Insert(module);
+                    return InsertRemoveCache(module);
                 }
                 else
                 {
@@ -51,7 +51,7 @@ namespace Blog.Services
                     }
                     if (module.ParentId != "0")
                     {
-                        var list = Queryable(m => m.DeleteMark == false && m.EnabledMark == true);
+                        var list = QueryableCache(m => m.DeleteMark == false && m.EnabledMark == true);
                         if (GetChildMenu(list, module.ModuleId).Where(o => o.ModuleId == module.ParentId).Any())
                         {
                             OperateResult result = new OperateResult();
@@ -59,7 +59,7 @@ namespace Blog.Services
                             return result;
                         }
                     }
-                    return Update(module, c => new { c.CreatorTime, c.CreatorAccountId, c.DeleteMark });
+                    return UpdateRemoveCache(module, c => new { c.CreatorTime, c.CreatorAccountId, c.DeleteMark });
                 }
             }
         }
@@ -71,9 +71,9 @@ namespace Blog.Services
         public async Task<List<TreeModuleDto>> Tree()
         {
             //所有菜单
-            var menuList = await QueryableAsync(m => m.EnabledMark == true && m.DeleteMark == false);
+            var menuList = await QueryableCacheAsync(m => m.EnabledMark == true && m.DeleteMark == false);
             //所有按钮
-            var buttonList = await _sysButtonService.QueryableAsync();
+            var buttonList = await _sysButtonService.QueryableCacheAsync();
 
             var list = GetTrees(menuList, buttonList, "0");
             //list.Insert(0, new TreeModule() { id = Guid.Empty.ToString(), name = "模块", pid = "" });

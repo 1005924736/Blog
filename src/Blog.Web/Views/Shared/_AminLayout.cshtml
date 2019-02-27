@@ -21,10 +21,10 @@
     <form class="layui-form" id="domainform" lay-filter="form">
         <script type="text/javascript">
             var currUrl = window.location.pathname.toLowerCase();
-            if (currUrl.indexOf("login") > -1 || currUrl == "/" || currUrl == "/mainmanage") {
+            if (currUrl.indexOf("login") > -1 || currUrl == "/" || currUrl == "/main") {
                 document.getElementsByTagName("html")[0].className = "loginHtml";
                 document.getElementsByTagName("body")[0].className = "loginBody";
-            } else if (currUrl.indexOf("mainmanage") > -1) {
+            } else if (currUrl.indexOf("main") > -1) {
                 document.getElementsByTagName("body")[0].className = "main_body";
             } else {
                 document.getElementsByTagName("body")[0].className = "childrenBody";

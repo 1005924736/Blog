@@ -1,10 +1,11 @@
-﻿using Blog.Common.Log;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using SqlSugar;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using Blog.Common.Cache;
+using Blog.Common.Log;
 using Blog.Common.Utils;
 using SqlSugarDbType = SqlSugar.DbType;
 
@@ -31,7 +32,7 @@ namespace Blog.Core
         {
             get
             {
-                return InitDB(30, SqlSugarDbType.MySql, true);
+                return InitDB(30, ConfigurationUtil.DbType, true);
             }
         }
 
@@ -60,7 +61,11 @@ namespace Blog.Core
                 ConnectionString = ConnectionString,
                 DbType = dbType,
                 InitKeyType = InitKeyType.Attribute,//使用特性识别主键
-                IsAutoCloseConnection = isAutoCloseConnection
+                IsAutoCloseConnection = isAutoCloseConnection,
+                ConfigureExternalServices = new ConfigureExternalServices
+                {
+                    DataInfoCacheService = new RedisCache() //Reids缓存实现类
+                }
             });
             db.Ado.CommandTimeOut = commandTimeOut;
 
@@ -111,6 +116,7 @@ namespace Blog.Core
                 }
                 catch (Exception ex)
                 {
+                    NLogger.Error(ex);
                     throw ex;
                 }
                 finally
@@ -143,6 +149,7 @@ namespace Blog.Core
                 catch (Exception ex)
                 {
                     db.Ado.RollbackTran();
+                    NLogger.Error(ex);
                     throw ex;
                 }
                 finally

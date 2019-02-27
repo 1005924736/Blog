@@ -24,11 +24,11 @@ namespace Blog.Services
             if (string.IsNullOrWhiteSpace(noticeinfo.NoticeId))
             {
                 noticeinfo.NoticeId = SnowflakeUtil.NextStringId();
-                return Insert(noticeinfo);
+                return InsertRemoveCache(noticeinfo);
             }
             else
             {
-                return Update(noticeinfo, f => new { f.DeleteMark, f.CreatorTime });
+                return UpdateRemoveCache(noticeinfo, f => new { f.DeleteMark, f.CreatorTime });
             }
         }
     }

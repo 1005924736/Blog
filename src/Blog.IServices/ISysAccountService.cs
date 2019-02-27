@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Blog.Common.Auth;
+﻿using Blog.Common.Auth;
 using Blog.Entities;
 using Blog.Entities.Dtos;
+using System.Collections.Generic;
 
 namespace Blog.IServices
 {

@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel;
-using Blog.Entities;
+﻿using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
+using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel;
 
 namespace Blog.Web.Areas.BlogManage.Controllers
 {
@@ -41,7 +40,7 @@ namespace Blog.Web.Areas.BlogManage.Controllers
         [HttpPost]
         public IActionResult Delete(string key)
         {
-            return Json(_friendLinkService.Update(f => new FriendLink() { DeleteMark = true }, c => c.FriendLinkId == key));
+            return Json(_friendLinkService.UpdateRemoveCache(f => new FriendLink() { DeleteMark = true }, c => c.FriendLinkId == key));
         }
     }
 }

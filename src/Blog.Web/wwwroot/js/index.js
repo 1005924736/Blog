@@ -20,7 +20,7 @@ layui.use(['bodyTab', 'tools'], function () {
     $("#changepwd").click(function () {
         tools.moduleOpen({
             title: "修改密码",
-            url: "/MainManage/Home/Password",
+            url: "/Main/Home/Password",
             width: "450px",
             height: "230px",
             callBack: function (index, layero) {
@@ -31,7 +31,7 @@ layui.use(['bodyTab', 'tools'], function () {
                         return false;
                     }
                     tools.submit({
-                        url: '/MainManage/Home/ChangePwd',
+                        url: '/Main/Home/ChangePwd',
                         data: data.field,
                         loading: "正在保存数据...",
                         success: function () {
@@ -140,7 +140,7 @@ layui.use(['bodyTab', 'tools'], function () {
     $("#signOut").click(function () {
         tools.submitConfrim({
             prompt: "您确定需要退出登录吗？",
-            url: '/MainManage/Login/SignOut',
+            url: '/Main/Login/SignOut',
             success: function () {
 
             }

@@ -72,7 +72,7 @@
         layui.use(['laydate', 'tools', 'upload'], function () {
             var $ = layui.$, form = layui.form, tools = layui.tools, laydate = layui.laydate, upload = layui.upload;
             var aid = $("#AccountId").val();
-            var parm = [{ url: "/CompanyManage/User/GetForm?key=" + aid }, { url: "/SystemManage/Role/Select" }];
+            var parm = [{ url: "/CompanyManag/User/GetForm?key=" + aid }, { url: "/SystemManage/Role/Select" }];
             tools.requestAll(parm, function (data1, data2) {
                 tools.renderSelect({
                     elem: '#RoleId',
@@ -86,7 +86,7 @@
 
             form.on("submit(save)", function (data) {
                 tools.submit({
-                    url: "/MainManage/Home/Info",
+                    url: "/Main/Home/Info",
                     data: data.field,
                     loading: "正在保存数据...",
                     success: function () {
@@ -99,7 +99,7 @@
             //创建一个上传组件
             upload.render({
                 elem: '#upload'
-                , url: '/CompanyManage/User/Upload'
+                , url: '/CompanyManag/User/Upload'
                 , done: function (res, index, upload) { //上传后的回调
                     if (res.Status == 0) {
                         $("#pic").attr("src", res.Data);

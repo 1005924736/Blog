@@ -1,7 +1,6 @@
 ﻿using Blog.Entities;
 using Blog.Entities.Dtos;
 using Blog.IServices;
-using Blog.Web;
 using Blog.Web.Filter;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel;
@@ -30,7 +29,7 @@ namespace Blog.Web.Areas.BlogManage.Controllers
         {
             return Json(_noticeinfoService.Save(noticeinfo));
         }
-        
+
         [AllowAccessFilter]
         [Description("通知详情")]
         public IActionResult Detail(string key)
@@ -42,7 +41,7 @@ namespace Blog.Web.Areas.BlogManage.Controllers
         [Description("删除通知")]
         public IActionResult Delete(string key)
         {
-            return Json(_noticeinfoService.Update(n => new Noticeinfo() { DeleteMark = true }, c => c.NoticeId == key));
+            return Json(_noticeinfoService.UpdateRemoveCache(n => new Noticeinfo() { DeleteMark = true }, c => c.NoticeId == key));
         }
     }
 }
