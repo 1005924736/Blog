@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using System.IO;
@@ -60,8 +61,9 @@ namespace Blog.Common.Utils
 
         static ConfigurationUtil()
         {
+            string directory = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf(@"\bin")); //Directory.GetCurrentDirectory()
             Configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(directory)
                 .AddJsonFile("appsettings.json", true)
                 .Build();
         }
