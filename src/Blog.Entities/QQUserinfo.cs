@@ -1,6 +1,7 @@
 ﻿using SqlSugar;
 using System;
-namespace App.Entities
+
+namespace Blog.Entities
 {
     /// <summary>
     /// 记录QQ授权后信息接入QQ授权登录
