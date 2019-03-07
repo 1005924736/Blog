@@ -18,6 +18,7 @@ namespace Blog.Web.Areas.SystemManage.Controllers
             _sysPermissionService = sysPermissionService;
             _sysModuleService = sysModuleService;
         }
+
         [HttpGet, AllowAccessFilter]
         [Description("获取角色授权信息")]
         public async Task<JsonResult> GetAuthorization(string key)
