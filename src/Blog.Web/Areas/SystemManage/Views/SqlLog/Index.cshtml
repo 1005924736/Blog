@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "通知列表";
+    ViewData["Title"] = "Sql日志列表";
 }
 <blockquote class="layui-elem-quote quoteBox">
     <div class="layui-inline">
@@ -12,7 +12,7 @@
     <div></div>
 </blockquote>
 
-<table id="laytable" lay-filter="noticeList"></table>
+<table id="laytable" lay-filter="sqllogList"></table>
 @section script{
     <script type="text/javascript">
         layui.use(['tools', 'laytpl'], function () {
@@ -20,7 +20,7 @@
 
             table.render({
                 elem: '#laytable',
-                url: '/SystemManage/Log/LoginLog',
+                url: '/SystemManage/SqlLog/Index',
                 method: 'post',
                 toolbar: '#toolsHead',
                 loading: true,
@@ -28,34 +28,34 @@
                 limit: 15,
                 limits: [10, 15, 20, 25, 30, 35, 40, 45, 50],
                 page: true,
-                where: { order: 'SortCode asc' },
+                where: { order: 'CreatorTime desc' },
                 cols: [[
                     { type: 'numbers' },
-                    //{ field: 'Description', title: '通知内容' },
-                    //{
-                    //    field: 'Link', title: '链接'
-                    //},
-                    //{ field: 'SortCode', title: '排序', sort: true },
-                    //{ field: 'CreatorTime', title: '创建日期', sort: true },
-                    //{ title: '操作', fixed: 'right', align: 'center', hide: rowButton.length == 0, width: rowButton.length * 80, templet: '#toolsRow' }
+                    { field: 'SqlCommand', title: 'SQL命令' },
+                    { field: 'Parameter', title: '参数' },
+                    { field: 'ElapsedTime', title: '耗时(秒)' },
+                    { field: 'IsFail', title: '是否执行失败'},
+                    { field: 'Massage', title: '执行SQL错误消息' },
+                    { field: 'CreateUserName', title: '创建人姓名' },
+                    { field: 'CreatorTime', title: '创建时间' }
                 ]],
                 done: function (res, curr, count) {
                     total = count;
                 }
             });
 
-            table.on('tool(noticeList)', function (obj) {
+            table.on('tool(sqllogList)', function (obj) {
                 var url = $(this).data("url"), layEvent = obj.event;
                 active[layEvent](url, obj.data.NoticeId);
             });
 
-            table.on('toolbar(noticeList)', function (obj) {
+            table.on('toolbar(sqllogList)', function (obj) {
                 var url = $(this).data("url");
                 var layEvent = obj.event;
                 active[layEvent](url);
             });
 
-            table.on('sort(noticeList)', function (obj) {
+            table.on('sort(sqllogList)', function (obj) {
                 table.reload("laytable", {
                     page: {
                         curr: 1 //重新从第 1 页开始
