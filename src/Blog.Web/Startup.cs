@@ -14,6 +14,7 @@ using Newtonsoft.Json.Serialization;
 using NLog.Extensions.Logging;
 using NLog.Web;
 using System;
+using System.IO;
 using System.Reflection;
 using Blog.Common.Cache;
 
@@ -90,7 +91,8 @@ namespace Blog.Web
         {
             //配置nlog
             loggerFactory.AddNLog();
-            env.ConfigureNLog("Configs/nlog.config");
+            var nlogFile = Path.Combine(env.ContentRootPath, "nlog.config");
+            env.ConfigureNLog(nlogFile);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
