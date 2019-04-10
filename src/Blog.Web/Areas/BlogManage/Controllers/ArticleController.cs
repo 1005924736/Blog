@@ -314,6 +314,13 @@ namespace Blog.Web.Areas.BlogManage.Controllers
             return Json(result);
         }
 
+        [HttpPost]
+        [Description("删除文章")]
+        public IActionResult Delete(string key)
+        {
+            return Json(_articleInfoService.UpdateRemoveCache(info => new ArticleInfo() { DeleteMark = true}, info => info.ArticleId == key));
+        }
+
 
         #region 对象比较
         public class NameSorter : IComparer
