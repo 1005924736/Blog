@@ -61,7 +61,7 @@ namespace Blog.Common.Utils
 
         static ConfigurationUtil()
         {
-            string directory = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf(@"\bin")); //Directory.GetCurrentDirectory()
+            string directory = Directory.GetCurrentDirectory(); //AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf(@"\bin")); //
             Configuration = new ConfigurationBuilder()
                 .SetBasePath(directory)
                 .AddJsonFile("appsettings.json", true)
