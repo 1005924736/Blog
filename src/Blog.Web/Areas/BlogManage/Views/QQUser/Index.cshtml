@@ -51,7 +51,7 @@
 
             table.on('tool(qqList)', function (obj) {
                 var url = $(this).data("url"), layEvent = obj.event;
-                active[layEvent](url, obj.data.TagId);
+                active[layEvent](url, obj.data.UserId);
             });
 
             table.on('toolbar(qqList)', function (obj) {

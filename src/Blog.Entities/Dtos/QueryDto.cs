@@ -105,6 +105,12 @@ namespace Blog.Entities.Dtos
                 case "ni"://不包括
                     type = ConditionalType.NotIn;
                     break;
+                case "ie":
+                    type = ConditionalType.IsNullOrEmpty;
+                    break;
+                case "is":
+                    type = ConditionalType.IsNot;
+                    break;
             }
             return type;
         }
