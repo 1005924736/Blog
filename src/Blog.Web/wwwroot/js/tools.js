@@ -75,7 +75,7 @@
                 btn: options.btn,
                 resize: options.resize,
                 yes: function (index, layero) {
-                    options.callBack(index, layero)
+                    options.callBack(index, layero);
                 }, cancel: function (index, layero) {
                     if (options.cancelCallBack) {
                         options.cancel(index, layero);

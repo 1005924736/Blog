@@ -168,6 +168,7 @@
                         callBack: function (index, layero) {
                             let iframeWindow = window["layui-layer-iframe" + index];
                             iframeWindow.layui.form.on("submit(save)", function (data) {
+                                console.log(data);
                                 data.field.IsTop = data.field.IsTop == 1;
                                 data.field.Visible = data.field.Visible == 1;
                                 data.field.Tags = data.field.Tags.split(",");
