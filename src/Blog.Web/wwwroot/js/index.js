@@ -266,7 +266,7 @@ function donation() {
         area: ['260px', '367px'],
         tab: [{
             title: "微信",
-            content: "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img width='100%' src='/images/wxpay.png'></div>"
+            content: "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img width='100%' src='/images/wxpay.jpg'></div>"
         }, {
             title: "支付宝",
             content: "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img width='100%' src='/images/alipay.jpg'></div>"
